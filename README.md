@@ -4,7 +4,7 @@ This Jupyter book contains work from UCSB's Data Science Capstone Project Class 
 
 ## Building locally for development
 
-If you'd like to develop on and build the UCSB Data Science Capstone Projects 2021 book, you need to setup your environment:
+If you'd like to develop on and build the UCSB Data Science Capstone Projects 2022 book, you need to setup your environment:
 
 - [Install Anaconda](https://docs.anaconda.com/anaconda/install/)
 - Create a virtual environment. Let's call it `jb`:  
