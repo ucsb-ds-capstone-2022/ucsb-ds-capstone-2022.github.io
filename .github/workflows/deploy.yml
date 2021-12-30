@@ -29,17 +29,17 @@ jobs:
     # Build the book
     - name: Build the book
       run: |
-        jupyter-book build ucsb_ds_capstone_projects_2021
+        jupyter-book build ucsb_ds_capstone_projects_2022
         
     # Add slides from 
     - name: Copy slides
       run: |
-        git clone -b gh-pages https://github.com/ucsb-ds-capstone-2021/slides.git
-        mv slides/output ucsb_ds_capstone_projects_2021/_build/html/slides
+        git clone -b gh-pages https://github.com/ucsb-ds-capstone-2022/slides.git
+        mv slides/output ucsb_ds_capstone_projects_2022/_build/html/slides
 
     # Deploy the book's HTML to gh-pages branch
     - name: GitHub Pages action
       uses: peaceiris/actions-gh-pages@v3.6.1
       with:
         github_token: ${{ secrets.GITHUB_TOKEN }}
-        publish_dir: ucsb_ds_capstone_projects_2021/_build/html
+        publish_dir: ucsb_ds_capstone_projects_2022/_build/html
