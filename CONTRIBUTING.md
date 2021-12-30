@@ -25,8 +25,8 @@ and "help wanted" is open to whoever wants to implement it.
 
 ## Write Documentation
 
-UCSB Data Science Capstone Projects 2021 could always use more documentation, whether as part of the
-official UCSB Data Science Capstone Projects 2021 docs, in docstrings, or even on the web in blog posts,
+UCSB Data Science Capstone Projects 2022 could always use more documentation, whether as part of the
+official UCSB Data Science Capstone Projects 2022 docs, in docstrings, or even on the web in blog posts,
 articles, and such.
 
 ## Submit Feedback
@@ -53,4 +53,4 @@ Ready to contribute? Here's how to set up `UCSB Data Science Capstone Projects 2
 
 ## Code of Conduct
 
-Please note that the UCSB Data Science Capstone Projects 2021 project is released with a [Contributor Code of Conduct](CONDUCT.md). By contributing to this project you agree to abide by its terms.
+Please note that the UCSB Data Science Capstone Projects 2022 project is released with a [Contributor Code of Conduct](CONDUCT.md). By contributing to this project you agree to abide by its terms.
