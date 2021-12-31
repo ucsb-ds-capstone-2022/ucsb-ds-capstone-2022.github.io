@@ -2,6 +2,9 @@
 
 This Jupyter book contains work from UCSB's Data Science Capstone Project Class sequence: https://ucsb-ds-capstone-2022.github.io/
 
+## Jupyter Book with Github Pages
+https://jupyterbook.org/publish/gh-pages.html
+
 ## Building locally for development
 
 If you'd like to develop on and build the UCSB Data Science Capstone Projects 2022 book, you need to setup your environment:
