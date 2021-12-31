@@ -20,7 +20,7 @@ parts:
   - file: projects/appfolio/description
     sections:
     - file: projects/appfolio/update1
-  - file: projects/calcofi1/description
+  - file: projects/calcofi/description
     sections:
     - file: projects/calcofi/update1
   - file: projects/carpedata/description
@@ -45,6 +45,7 @@ parts:
     - file: projects/evidation2/update1
     - file: projects/evidation2/update2
     - file: projects/evidation2p/update3
+  - file: projects/hg_insights/description
   - file: projects/nri/description
     sections:
     - file: projects/nri/update1
