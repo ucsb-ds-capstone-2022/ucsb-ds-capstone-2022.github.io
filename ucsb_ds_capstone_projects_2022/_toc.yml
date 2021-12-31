@@ -22,7 +22,7 @@ parts:
     - file: projects/appfolio/update1
   - file: projects/calcofi1/description
     sections:
-    - file: projects/calcofi1/update1
+    - file: projects/calcofi/update1
   - file: projects/carpedata/description
     sections:
     - file: projects/carpedata/update1
@@ -50,3 +50,12 @@ parts:
     - file: projects/nri/update1
     - file: projects/nri/update2
     - file: projects/nri/update3
+  - file: projects/pwc/description
+    sections:
+    - file: projects/pwc/update1
+  - file: projects/sprague/description
+    sections:
+    - file: projects/sprague/update1
+  - file: projects/teladoc/description
+    sections:
+    - file: projects/teladoc/update1
