@@ -35,6 +35,9 @@ parts:
   - file: projects/envent/description
     sections:
     - file: projects/envent/update1
+  - file: projects/eri/description
+    sections:
+    - file: projects/eri/update1
   - file: projects/evidation1/description
     sections:
     - file: projects/evidation1/update1
