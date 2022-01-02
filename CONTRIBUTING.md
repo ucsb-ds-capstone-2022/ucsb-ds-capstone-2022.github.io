@@ -42,7 +42,7 @@ If you are proposing a feature:
 
 ## Get Started
 
-Ready to contribute? Here's how to set up `UCSB Data Science Capstone Projects 2021` for local development.
+Ready to contribute? Here's how to set up `UCSB Data Science Capstone Projects 2022` for local development.
 
 1. Fork the repo on GitHub.
 2. Clone your fork locally.
