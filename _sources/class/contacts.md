@@ -2,6 +2,19 @@
 
 ## Directory
 
+```{tabbed} Allthenticate
+| Name                      | Email address              | Membership |
+|---------------------------|----------------------------|------------|
+| Lai, Peng-Yuan            | peng-yuan.lai@appfolio.com | Sponsor    |
+| Thust, Soeren             | soeren.thust@appfolio.com  | Sponsor    |
+| Singh, Ambuj              | ambuj@ucsb.edu             | Faculty    |
+| Banerjee, Priyanka        | pbanerjee@ucsb.edu         | Student    |
+| Kanenobu, Shaka           | shakakanenobu@ucsb.edu     | Student    |
+| Pasupathy, Vikram         | vpasupathy@ucsb.edu        | Student    |
+| Polakof, Ari              | a_polakof@ucsb.edu         | Student    |
+| Lin, Sikun                | sikun@ucsb.edu             | TA         |
+```
+
 ```{tabbed} AppFolio
 | Name                      | Email address              | Membership |
 |---------------------------|----------------------------|------------|
@@ -67,7 +80,72 @@
 | Zheng, Jiajing            | jiajing_zheng@ucsb.edu     | TA         |
 ```
 
+```{tabbed} ERI
+| Name                      | Email address              | Membership |
+|---------------------------|----------------------------|------------|
+| Daza, Eric                | edaza@evidation.com        | Sponsor    |
+| Franks, Alex              | afranks@pstat.ucsb.edu     | Faculty    |
+| Bayerle, Peter            | pbayerle@ucsb.edu          | Student    |
+| Coleman, Matthew          | matthewbcoleman@ucsb.edu   | Student    |
+| Kim, Joanna               | joannakim@ucsb.edu         | Student    |
+| Lee, Karsyn               | karsyn@ucsb.edu            | Student    |
+| Zheng, Jiajing            | jiajing_zheng@ucsb.edu     | TA         |
+```
+
+```{tabbed} ENVENT
+| Name                      | Email address              | Membership |
+|---------------------------|----------------------------|------------|
+| Daza, Eric                | edaza@evidation.com        | Sponsor    |
+| Franks, Alex              | afranks@pstat.ucsb.edu     | Faculty    |
+| Bayerle, Peter            | pbayerle@ucsb.edu          | Student    |
+| Coleman, Matthew          | matthewbcoleman@ucsb.edu   | Student    |
+| Kim, Joanna               | joannakim@ucsb.edu         | Student    |
+| Lee, Karsyn               | karsyn@ucsb.edu            | Student    |
+| Zheng, Jiajing            | jiajing_zheng@ucsb.edu     | TA         |
+```
+
+```{tabbed} HG Insights
+| Name                      | Email address              | Membership |
+|---------------------------|----------------------------|------------|
+| Daza, Eric                | edaza@evidation.com        | Sponsor    |
+| Franks, Alex              | afranks@pstat.ucsb.edu     | Faculty    |
+| Bayerle, Peter            | pbayerle@ucsb.edu          | Student    |
+| Coleman, Matthew          | matthewbcoleman@ucsb.edu   | Student    |
+| Kim, Joanna               | joannakim@ucsb.edu         | Student    |
+| Lee, Karsyn               | karsyn@ucsb.edu            | Student    |
+| Zheng, Jiajing            | jiajing_zheng@ucsb.edu     | TA         |
+```
+
 ```{tabbed} NRI
+| Name                      | Email address              | Membership |
+|---------------------------|----------------------------|------------|
+| Acosta-Uribe, Juliana     | acostauribe@ucsb.edu       | Sponsor    |
+| Kosik, Ken                | kosik@ucsb.edu             | Sponsor    |
+| Franks, Alex              | afranks@pstat.ucsb.edu     | Faculty    |
+| Huang, Helen              | ziyihuang@ucsb.edu         | Student    |
+| Misra, Shivam             | shivammisra@ucsb.edu       | Student    |
+| Padmanabhan, Priya        | priyapadmanabhan@ucsb.edu  | Student    |
+| Pugal, Surya              | spugal@ucsb.edu            | Student    |
+| Yue, Rey                  | yixiaoyue@ucsb.edu         | Student    |
+| Bang, Joshua              | joshua_bang@ucsb.edu       | TA         |
+```
+
+
+```{tabbed} PwC
+| Name                      | Email address              | Membership |
+|---------------------------|----------------------------|------------|
+| Acosta-Uribe, Juliana     | acostauribe@ucsb.edu       | Sponsor    |
+| Kosik, Ken                | kosik@ucsb.edu             | Sponsor    |
+| Franks, Alex              | afranks@pstat.ucsb.edu     | Faculty    |
+| Huang, Helen              | ziyihuang@ucsb.edu         | Student    |
+| Misra, Shivam             | shivammisra@ucsb.edu       | Student    |
+| Padmanabhan, Priya        | priyapadmanabhan@ucsb.edu  | Student    |
+| Pugal, Surya              | spugal@ucsb.edu            | Student    |
+| Yue, Rey                  | yixiaoyue@ucsb.edu         | Student    |
+| Bang, Joshua              | joshua_bang@ucsb.edu       | TA         |
+```
+
+```{tabbed} Teladoc Health
 | Name                      | Email address              | Membership |
 |---------------------------|----------------------------|------------|
 | Acosta-Uribe, Juliana     | acostauribe@ucsb.edu       | Sponsor    |
