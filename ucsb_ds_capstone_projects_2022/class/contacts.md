@@ -15,7 +15,7 @@
 | Lin, Sikun                | sikun@ucsb.edu             | TA         |
 ```
 
-```{tabbed} CalCOFI1
+```{tabbed} CalCOFI
 | Name                      | Email address                | Membership |
 |---------------------------|------------------------------|------------|
 | Coates, Julia             | Julia.Coates@wildlife.ca.gov | Sponsor    |
@@ -26,17 +26,6 @@
 | Tieng, Gavin              | got@ucsb.edu                 | Student    |
 | Vong, Meng                | mvong@ucsb.edu               | Student    |
 | Tran, Chau                | chautran@ucsb.edu            | TA         |
-```
-
-```{tabbed} CalCOFI2
-| Name                      | Email address              | Membership |
-|---------------------------|----------------------------|------------|
-| Satterthwaite, Erin       | esatterthwaite@ucsd.edu    | Sponsor    |
-| Oh, Sang-Yun              | syoh@ucsb.edu              | Faculty    |
-| Hollingsworth, Robin      | rhollingsworth@ucsb.edu    | Student    |
-| Patwardhan, Jay           | jaypatwardhan@ucsb.edu     | Student    |
-| Razo, Cristian            | crazo@ucsb.edu             | Student    |
-| Tran, Chau                | chautran@ucsb.edu          | TA         |
 ```
 
 ```{tabbed} Carpe Data
@@ -65,19 +54,8 @@
 | Bang, Joshua              | joshua_bang@ucsb.edu       | TA         |
 ```
 
-```{tabbed} CSEP
-| Name                      | Email address              | Membership |
-|---------------------------|----------------------------|------------|
-| Lenaburg, Lubi            | lubi@ucsb.edu              | Sponsor    |
-| Franks, Alex              | afranks@pstat.ucsb.edu     | Faculty    |
-| Anez, Andrea              | anez@ucsb.edu              | Student    |
-| Benipal, Karanveer        | ksbenipal@ucsb.edu         | Student    |
-| Medrano, Manny            | manny@ucsb.edu             | Student    |
-| Toranji, Romtin           | rtoranji@ucsb.edu          | Student    |
-| Bang, Joshua              | joshua_bang@ucsb.edu       | TA         |
-```
 
-```{tabbed} Evidation
+```{tabbed} Evidation (2 Projects)
 | Name                      | Email address              | Membership |
 |---------------------------|----------------------------|------------|
 | Daza, Eric                | edaza@evidation.com        | Sponsor    |
@@ -87,45 +65,6 @@
 | Kim, Joanna               | joannakim@ucsb.edu         | Student    |
 | Lee, Karsyn               | karsyn@ucsb.edu            | Student    |
 | Zheng, Jiajing            | jiajing_zheng@ucsb.edu     | TA         |
-```
-
-```{tabbed} FLIR
-| Name                      | Email address              | Membership |
-|---------------------------|----------------------------|------------|
-| Tremblay, Louis           | Louis.Tremblay@flir.com    | Sponsor    |
-| Oh, Sang-Yun              | syoh@ucsb.edu              | Faculty    |
-| Muttukuru, Sairisheek     | sairisheek@ucsb.edu        | Student    |
-| Nunes, Nicholas           | nnunes@ucsb.edu            | Student    |
-| Sadhukhan, Neil           | neil_sadhukhan@ucsb.edu    | Student    |
-| Zhang, Bill               | bill_zhang@ucsb.edu        | Student    |
-| Bang, Joshua              | joshua_bang@ucsb.edu       | TA         |
-```
-
-```{tabbed} Invoca
-| Name                      | Email address              | Membership |
-|---------------------------|----------------------------|------------|
-| Lawrence, Mike            | mlawrence@invoca.com       | Sponsor    |
-| Singh, Ambuj              | ambuj@ucsb.edu             | Faculty    |
-| Cho, Amy                  | s_cho@ucsb.edu             | Student    |
-| de la Fuente, Anton       | cadelafuente@ucsb.edu      | Student    |
-| Kathika, Sai              | saiprem@ucsb.edu           | Student    |
-| Quinn, Austin             | austinquinn@ucsb.edu       | Student    |
-| Tang, Shuyun              | shuyun@ucsb.edu            | Student    |
-| Lin, Sikun                | sikun@ucsb.edu             | TA         |
-```
-
-```{tabbed} NCEAS
-| Name                      | Email address              | Membership |
-|---------------------------|----------------------------|------------|
-| Brun, Julien              | brun@nceas.ucsb.edu        | Sponsor    |
-| Horst, Allison            | ahorst@bren.ucsb.edu       | Sponsor    |
-| Oh, Sang-Yun              | syoh@ucsb.edu              | Faculty    |
-| Guo, Sam                  | samuelzguo@ucsb.edu        | Student    |
-| Logan, Adhitya            | adhitya@ucsb.edu           | Student    |
-| Ran, Lia                  | ran275@ucsb.edu            | Student    |
-| Sternberg, Sophia         | sophiasternberg@ucsb.edu   | Student    |
-| Zhao, Karen               | karenezhao@ucsb.edu        | Student    |
-| Tran, Chau                | chautran@ucsb.edu          | TA         |
 ```
 
 ```{tabbed} NRI
@@ -142,38 +81,25 @@
 | Bang, Joshua              | joshua_bang@ucsb.edu       | TA         |
 ```
 
-```{tabbed} Sansum
-| Name                      | Email address              | Membership |
-|---------------------------|----------------------------|------------|
-| Glantz, Namino            | nglantz@sansum.org         | Sponsor    |
-| Kerr, David               | dkerr@sansum.org           | Sponsor    |
-| Franks, Alex              | afranks@pstat.ucsb.edu     | Faculty    |
-| Holzer, Zoe               | zmholzer@ucsb.edu          | Student    |
-| Lin, Lawrence             | lawrencedlin@ucsb.edu      | Student    |
-| Salgado Zavaleta, Vanessa | vsalgadozavaleta@ucsb.edu  | Student    |
-| San Juan, Emily           | emilysanjuan@ucsb.edu      | Student    |
-| Simon, Jake               | jakesimon@ucsb.edu         | Student    |
-| Zheng, Jiajing            | jiajing_zheng@ucsb.edu     | TA         |
-```
-
-
 ## Project Sponsors and Organizations
 
 Projects are co-advised by their respective project sponsors and faculty mentors (alphabetical order).
 
 | Organization                                                             | Sponsor                            |
 |--------------------------------------------------------------------------|------------------------------------|
-| Appfolio                                                                 | Peng-Yuan Lai and Soeren Thust     |
+| Allthenticate                                                            | Chad Spensky                       |
+| Appfolio                                                            | Chad Spensky                       |
 | CalCOFI, California Sea Grant, Scripps Institution of Oceanography, UCSD | Erin Satterthwaite                 |
-| California Department of Fish and Wildlife, Marine Region                | Julia Coates                       |
 | Carpe Data                                                               | Crystal Shuijing Zhang             |
-| Cheadle Center for Biodiversity and Ecological Restoration (CCBER)       | Michelle Lee and Katja Seltmann    |
-| Center for Science and Engineering Partnerships (CSEP)                   | Lubi Lenaburg                      |
-| Evidation Health                                                         | Eric Daza                          |
-| FLIR                                                                     | Louis Tremblay                     |
-| Invoca                                                                   | Mike Lawrence                      |
-| National Center for Ecological Analysis and Synthesis (NCEAS)            | Julien Brun and Allison Horst      |
-| Neuroscience Research Institute (NRI)                                    | Juliana Acosta-Uribe and Ken Kosik |
-| Sansum Diabetes Research Institute                                       | Namino Glantz and David Kerr       |
+| Cheadle Center for Biodiversity and Ecological Restoration (CCBER)       | Katja Seltmann    |
+| Center for Information Technology and Society (CITS)         | Qing Huang                     |
+| Evidation Health                                                         | Eric Daza and Julio Vega                        |
+| Earth Research Institute  (ERI)                                                                   | Kelly Caylor                     |
+| (ENVENT)                                                                | Matto Mildenberger                  |
+| HG Insights           | Rob Fox      |
+| Neuroscience Research Institute (NRI)                                    | Stella Glassauer and Ken Kosik |
+| (PwC)                                    | Robert Bernard        |
+| Sprague Lab at UCSB | Tommy Sprague |
+| TelaDoc Health | Ole Eichorn |
 
 
