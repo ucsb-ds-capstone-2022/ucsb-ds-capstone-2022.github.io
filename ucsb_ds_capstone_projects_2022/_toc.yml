@@ -8,6 +8,7 @@ parts:
     - file: class/syllabus_readings
     - file: class/syllabus_participation
     - file: class/syllabus_deliverables
+    - file: class/syllabus_policies
   - file: class/contacts
   - file: class/software-tools
     sections:
