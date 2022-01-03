@@ -23,9 +23,3 @@ Any evidence of problematic academic conduct will be discussed with the student(
 ## Accommodations
 
 Reasonable accommodations will be made for any student with a qualifying disability. Such requests should be made through the Disabled Students Program (DSP). More information, instructions on how to access accommodations, and information on related resources can be found on the [DSP website](https://dsp.sa.ucsb.edu/). Hybrid remote/in-person learning may present unique accommodation needs requiring additional flexibility; students receiving accommodation via DSP are invited to discuss this with the instructors if desired.
-
-## Student evaluations
-
-Toward the end of the term you will be given an opportunity to provide feedback about the course via ESCI. Your suggestions and assessments are essential to improving the course, so please take the time to fill out the evaluations thoughtfully.
-
-In addition, content-specific feedback will be collected for the Central Coast Data Science Partnership (CCDSP) at the end of the quarter. This information will be used to assess learning outcomes, understand student demographics, and plan further course development; your input on the CCDSP survey is especially valuable, and a small amount of course participation credit will be tied to completion of this survey.
