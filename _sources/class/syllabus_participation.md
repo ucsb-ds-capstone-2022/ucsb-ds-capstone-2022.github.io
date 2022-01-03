@@ -17,6 +17,6 @@ Each project team will collectively decide on a weekly standing meeting time.
 ```{tip}
 Recommended weekly meeting format:
 
-* **First 30-45 minutes**: weekly updates and discussion with sponsor and faculty mentor
-* **Second 30-45 minutes**: discussion with faculty mentor on statistical methods and tools
+* **First 30-45 minutes**: weekly updates and discussion with sponsor and project mentor
+* **Second 30-45 minutes**: discussion with project mentor on statistical methods and tools
 ```
