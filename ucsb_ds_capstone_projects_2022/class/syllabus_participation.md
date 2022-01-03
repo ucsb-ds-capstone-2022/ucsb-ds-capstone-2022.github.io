@@ -1,4 +1,6 @@
-# Class meetings
+# Meetings and participation
+
+## Class meetings
 
 Each team will collectively keep track of attendance in a shared Google sheet.
 
