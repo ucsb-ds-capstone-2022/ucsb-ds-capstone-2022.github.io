@@ -173,7 +173,7 @@ Projects are co-advised by their respective project sponsors and faculty mentors
 | Center for Information Technology and Society (CITS)         | Qing Huang                     |
 | Evidation Health                                                         | Eric Daza and Julio Vega                        |
 | Earth Research Institute  (ERI)                                                                   | Kelly Caylor                     |
-| (ENVENT)                                                                | Matto Mildenberger                  |
+| Energy and Environment Transitions (ENVENT)  Lab                                                           | Matto Mildenberger                  | 
 | HG Insights           | Rob Fox      |
 | Neuroscience Research Institute (NRI)                                    | Stella Glassauer and Ken Kosik |
 | (PwC)                                    | Robert Bernard        |
