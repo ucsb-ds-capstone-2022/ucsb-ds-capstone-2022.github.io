@@ -89,20 +89,20 @@
 
 Projects are co-advised by their respective project sponsors and faculty mentors (alphabetical order).
 
-| Organization                                                             | Sponsor                            |
-|--------------------------------------------------------------------------|------------------------------------|
-| Allthenticate                                                            | Chad Spensky                       |
-| Appfolio                                                            | Chad Spensky                       |
-| CalCOFI, California Sea Grant, Scripps Institution of Oceanography, UCSD | Erin Satterthwaite                 |
-| Carpe Data                                                               | Crystal Shuijing Zhang             |
-| Cheadle Center for Biodiversity and Ecological Restoration (CCBER)       | Katja Seltmann    |
-| Center for Information Technology and Society (CITS)         | Qing Huang                     |
-| Evidation Health                                                         | Eric Daza and Julio Vega                        |
-| Earth Research Institute  (ERI)                                                                   | Kelly Caylor                     |
-| Energy and Environment Transitions (ENVENT)  Lab                                                           | Matto Mildenberger                  | 
-| HG Insights           | Rob Fox      |
-| Neuroscience Research Institute (NRI)                                    | Stella Glassauer and Ken Kosik |
-| (PwC)                                    | Robert Bernard        |
+| Organization | Sponsor |
+|---|---|
+| Allthenticate | Chad Spensky |
+| Appfolio | Shyr-Shea Chang |
+| CalCOFI, California Sea Grant, Scripps Institution of Oceanography, UCSD | Erin Satterthwaite |
+| Carpe Data | Crystal Shuijing Zhang |
+| Cheadle Center for Biodiversity and Ecological Restoration (CCBER) | Katja Seltmann |
+| Center for Information Technology and Society (CITS) | Qing Huang |
+| Evidation Health | Eric Daza and Julio Vega |
+| Earth Research Institute  (ERI) | Kelly Caylor |
+| Energy and Environment Transitions (ENVENT)  Lab | Matto Mildenberger | 
+| HG Insights | Rob Fox |
+| Neuroscience Research Institute (NRI) | Stella Glassauer and Ken Kosik |
+| (PwC) | Robert Bernard |
 | Sprague Lab at UCSB | Tommy Sprague |
 | TelaDoc Health | Ole Eichorn |
 

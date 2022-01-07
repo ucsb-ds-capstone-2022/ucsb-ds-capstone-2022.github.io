@@ -41,7 +41,7 @@
     <script src="../_static/clipboard.min.js"></script>
     <script src="../_static/copybutton.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
-    <script src="../_static/sphinx-book-theme.12a9622fbb08dcb3a2a40b2c02b83a57.js"></script>
+    <script src="../_static/sphinx-book-theme.d59cb220de22ca1c485ebbdc042f0030.js"></script>
     <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
     <script>
         const thebe_selector = ".thebe"
@@ -407,7 +407,7 @@
                 data-placement="left">.md</button></a>
         <!-- Download PDF via print -->
         <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
-            onClick="window.print()" data-toggle="tooltip" data-placement="left">.pdf</button>
+                onclick="printPdf(this)" data-toggle="tooltip" data-placement="left">.pdf</button>
     </div>
 </div>
 
@@ -443,7 +443,7 @@
         </div>
 
         <!-- Table of contents -->
-        <div class="d-none d-md-block col-md-2 bd-toc show">
+        <div class="d-none d-md-block col-md-2 bd-toc show noprint">
             
             <div class="tocsection onthispage pt-5 pb-3">
                 <i class="fas fa-list"></i> Contents
@@ -468,7 +468,35 @@
 </div>
     <div id="main-content" class="row">
         <div class="col-12 col-md-9 pl-md-3 pr-md-0">
-        
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>Teams and Contacts</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#directory">
+   Directory
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#project-sponsors-and-organizations">
+   Project Sponsors and Organizations
+  </a>
+ </li>
+</ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            
               <div>
                 
   <div class="tex2jax_ignore mathjax_ignore section" id="teams-and-contacts">
@@ -476,8 +504,8 @@
 <div class="section" id="directory">
 <h2>Directory<a class="headerlink" href="#directory" title="Permalink to this headline">¶</a></h2>
 <div class="tabbed-set docutils">
-<input checked="checked" id="82b1593f-d862-439d-841f-30c108c7d931" name="2fdc3ab0-b1df-4685-a300-62fa40700e50" type="radio">
-</input><label class="tabbed-label" for="82b1593f-d862-439d-841f-30c108c7d931">
+<input checked="checked" id="7b7eebed-b969-4a95-893c-8d39bc7761d4" name="bb9ef264-032c-47a4-a304-5446390b9dff" type="radio">
+</input><label class="tabbed-label" for="7b7eebed-b969-4a95-893c-8d39bc7761d4">
 Allthenticate</label><div class="tabbed-content docutils">
 <table class="colwidths-auto table">
 <thead>
@@ -494,8 +522,8 @@ Allthenticate</label><div class="tabbed-content docutils">
 </tbody>
 </table>
 </div>
-<input id="90c59126-7ff5-4af3-9b9a-63f2138c3a54" name="2fdc3ab0-b1df-4685-a300-62fa40700e50" type="radio">
-</input><label class="tabbed-label" for="90c59126-7ff5-4af3-9b9a-63f2138c3a54">
+<input id="814e8742-2930-4b5a-820b-26d0febaf8c1" name="bb9ef264-032c-47a4-a304-5446390b9dff" type="radio">
+</input><label class="tabbed-label" for="814e8742-2930-4b5a-820b-26d0febaf8c1">
 AppFolio</label><div class="tabbed-content docutils">
 <table class="colwidths-auto table">
 <thead>
@@ -512,8 +540,8 @@ AppFolio</label><div class="tabbed-content docutils">
 </tbody>
 </table>
 </div>
-<input id="0d89c7b8-92c8-4e83-8627-c95b4f49bafe" name="2fdc3ab0-b1df-4685-a300-62fa40700e50" type="radio">
-</input><label class="tabbed-label" for="0d89c7b8-92c8-4e83-8627-c95b4f49bafe">
+<input id="5b1fc744-741e-4595-9125-bda5a17f4ad2" name="bb9ef264-032c-47a4-a304-5446390b9dff" type="radio">
+</input><label class="tabbed-label" for="5b1fc744-741e-4595-9125-bda5a17f4ad2">
 CalCOFI</label><div class="tabbed-content docutils">
 <table class="colwidths-auto table">
 <thead>
@@ -530,8 +558,8 @@ CalCOFI</label><div class="tabbed-content docutils">
 </tbody>
 </table>
 </div>
-<input id="57ce7748-6b5f-47f4-986c-e01603ca14f3" name="2fdc3ab0-b1df-4685-a300-62fa40700e50" type="radio">
-</input><label class="tabbed-label" for="57ce7748-6b5f-47f4-986c-e01603ca14f3">
+<input id="f6d4f5e6-1e25-4562-b914-c00da38c2139" name="bb9ef264-032c-47a4-a304-5446390b9dff" type="radio">
+</input><label class="tabbed-label" for="f6d4f5e6-1e25-4562-b914-c00da38c2139">
 Carpe Data</label><div class="tabbed-content docutils">
 <table class="colwidths-auto table">
 <thead>
@@ -548,8 +576,8 @@ Carpe Data</label><div class="tabbed-content docutils">
 </tbody>
 </table>
 </div>
-<input id="e56800ac-7be1-4c1d-ba3c-360b7a818a40" name="2fdc3ab0-b1df-4685-a300-62fa40700e50" type="radio">
-</input><label class="tabbed-label" for="e56800ac-7be1-4c1d-ba3c-360b7a818a40">
+<input id="24fb595a-c547-4aac-ad80-356a95e03c93" name="bb9ef264-032c-47a4-a304-5446390b9dff" type="radio">
+</input><label class="tabbed-label" for="24fb595a-c547-4aac-ad80-356a95e03c93">
 CCBER</label><div class="tabbed-content docutils">
 <table class="colwidths-auto table">
 <thead>
@@ -598,8 +626,8 @@ CCBER</label><div class="tabbed-content docutils">
 </tbody>
 </table>
 </div>
-<input id="6ead59e1-1047-410b-badb-b36b9ba2ab10" name="2fdc3ab0-b1df-4685-a300-62fa40700e50" type="radio">
-</input><label class="tabbed-label" for="6ead59e1-1047-410b-badb-b36b9ba2ab10">
+<input id="10ab1655-58fe-40d9-b141-41fb3d297761" name="bb9ef264-032c-47a4-a304-5446390b9dff" type="radio">
+</input><label class="tabbed-label" for="10ab1655-58fe-40d9-b141-41fb3d297761">
 Evidation (2 Projects)</label><div class="tabbed-content docutils">
 <table class="colwidths-auto table">
 <thead>
@@ -616,8 +644,8 @@ Evidation (2 Projects)</label><div class="tabbed-content docutils">
 </tbody>
 </table>
 </div>
-<input id="09b287d6-0cf9-45eb-9a9c-8fdc187d4d00" name="2fdc3ab0-b1df-4685-a300-62fa40700e50" type="radio">
-</input><label class="tabbed-label" for="09b287d6-0cf9-45eb-9a9c-8fdc187d4d00">
+<input id="69936c54-83e5-4d1e-9903-4ebbdd91d2fe" name="bb9ef264-032c-47a4-a304-5446390b9dff" type="radio">
+</input><label class="tabbed-label" for="69936c54-83e5-4d1e-9903-4ebbdd91d2fe">
 ERI</label><div class="tabbed-content docutils">
 <table class="colwidths-auto table">
 <thead>
@@ -634,8 +662,8 @@ ERI</label><div class="tabbed-content docutils">
 </tbody>
 </table>
 </div>
-<input id="6201c1d5-dbae-479d-87ab-4fa966f2f7f2" name="2fdc3ab0-b1df-4685-a300-62fa40700e50" type="radio">
-</input><label class="tabbed-label" for="6201c1d5-dbae-479d-87ab-4fa966f2f7f2">
+<input id="ea534bc2-f1c4-4220-b1dd-4ebcbd58e7cb" name="bb9ef264-032c-47a4-a304-5446390b9dff" type="radio">
+</input><label class="tabbed-label" for="ea534bc2-f1c4-4220-b1dd-4ebcbd58e7cb">
 ENVENT</label><div class="tabbed-content docutils">
 <table class="colwidths-auto table">
 <thead>
@@ -652,8 +680,8 @@ ENVENT</label><div class="tabbed-content docutils">
 </tbody>
 </table>
 </div>
-<input id="65bf5f0f-b1f7-4ada-9b34-4aef113364bc" name="2fdc3ab0-b1df-4685-a300-62fa40700e50" type="radio">
-</input><label class="tabbed-label" for="65bf5f0f-b1f7-4ada-9b34-4aef113364bc">
+<input id="c3c5a01c-8f93-4722-98ed-3c9a3ed0c108" name="bb9ef264-032c-47a4-a304-5446390b9dff" type="radio">
+</input><label class="tabbed-label" for="c3c5a01c-8f93-4722-98ed-3c9a3ed0c108">
 HG Insights</label><div class="tabbed-content docutils">
 <table class="colwidths-auto table">
 <thead>
@@ -670,8 +698,8 @@ HG Insights</label><div class="tabbed-content docutils">
 </tbody>
 </table>
 </div>
-<input id="2679e267-4137-4d88-b40f-fb8ec078925d" name="2fdc3ab0-b1df-4685-a300-62fa40700e50" type="radio">
-</input><label class="tabbed-label" for="2679e267-4137-4d88-b40f-fb8ec078925d">
+<input id="1bacb485-d726-4a96-848d-70c0c3bd0115" name="bb9ef264-032c-47a4-a304-5446390b9dff" type="radio">
+</input><label class="tabbed-label" for="1bacb485-d726-4a96-848d-70c0c3bd0115">
 NRI</label><div class="tabbed-content docutils">
 <table class="colwidths-auto table">
 <thead>
@@ -688,8 +716,8 @@ NRI</label><div class="tabbed-content docutils">
 </tbody>
 </table>
 </div>
-<input id="e6258dd9-156b-4741-b94b-7150c500e63c" name="2fdc3ab0-b1df-4685-a300-62fa40700e50" type="radio">
-</input><label class="tabbed-label" for="e6258dd9-156b-4741-b94b-7150c500e63c">
+<input id="59a28280-fc66-4270-a071-fc0b219bf50c" name="bb9ef264-032c-47a4-a304-5446390b9dff" type="radio">
+</input><label class="tabbed-label" for="59a28280-fc66-4270-a071-fc0b219bf50c">
 PwC</label><div class="tabbed-content docutils">
 <table class="colwidths-auto table">
 <thead>
@@ -706,8 +734,8 @@ PwC</label><div class="tabbed-content docutils">
 </tbody>
 </table>
 </div>
-<input id="4b2571e9-87b7-430e-b2a8-66bd4f1e64f0" name="2fdc3ab0-b1df-4685-a300-62fa40700e50" type="radio">
-</input><label class="tabbed-label" for="4b2571e9-87b7-430e-b2a8-66bd4f1e64f0">
+<input id="dc12baae-68f1-4e4c-ae77-47f5b87f338b" name="bb9ef264-032c-47a4-a304-5446390b9dff" type="radio">
+</input><label class="tabbed-label" for="dc12baae-68f1-4e4c-ae77-47f5b87f338b">
 Teladoc Health</label><div class="tabbed-content docutils">
 <table class="colwidths-auto table">
 <thead>
@@ -740,7 +768,7 @@ Teladoc Health</label><div class="tabbed-content docutils">
 <td><p>Chad Spensky</p></td>
 </tr>
 <tr class="row-odd"><td><p>Appfolio</p></td>
-<td><p>Chad Spensky</p></td>
+<td><p>Shyr-Shea Chang</p></td>
 </tr>
 <tr class="row-even"><td><p>CalCOFI, California Sea Grant, Scripps Institution of Oceanography, UCSD</p></td>
 <td><p>Erin Satterthwaite</p></td>
@@ -805,8 +833,8 @@ Teladoc Health</label><div class="tabbed-content docutils">
 
               </div>
               
-        
-            <!-- Previous / next buttons -->
+            
+                <!-- Previous / next buttons -->
 <div class='prev-next-area'> 
     <a class='left-prev' id="prev-link" href="syllabus_policies.html" title="previous page">
         <i class="fas fa-angle-left"></i>
@@ -823,19 +851,17 @@ Teladoc Health</label><div class="tabbed-content docutils">
     <i class="fas fa-angle-right"></i>
     </a>
 </div>
-        
+            
         </div>
     </div>
     <footer class="footer">
-    <div class="container">
-      <p>
-        
-          By UCSB DS Capstone Class<br/>
-        
-            &copy; Copyright 2022.<br/>
-      </p>
-    </div>
-  </footer>
+  <p>
+    
+      By UCSB DS Capstone Class<br/>
+    
+        &copy; Copyright 2022.<br/>
+  </p>
+</footer>
 </main>
 
 
