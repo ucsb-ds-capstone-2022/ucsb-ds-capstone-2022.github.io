@@ -1,4 +1,4 @@
-# Project organizations, sponsors, and mentors
+# Project sponsors
 
 Projects are co-advised by their respective project sponsors and mentors. Listed in alphabetical order by organization.
 
