@@ -1,10 +1,6 @@
-# Teams and Contacts
+# Project organizations, sponsors, and mentors
 
-
-
-## Project Sponsors and Organizations
-
-Projects are co-advised by their respective project sponsors and mentors (alphabetical order).
+Projects are co-advised by their respective project sponsors and mentors. Listed in alphabetical order by organization.
 
 | Organization | Sponsor | Mentor
 |---|---|---|
