@@ -51,6 +51,8 @@
     <script async="async" src="../_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="allthenticate" href="../projects/allthenticate/description.html" />
+    <link rel="prev" title="Software and Tools" href="software-tools.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -109,7 +111,7 @@
   Class Logistics
  </span>
 </p>
-<ul class="nav bd-sidenav">
+<ul class="current nav bd-sidenav">
  <li class="toctree-l1 has-children">
   <a class="reference internal" href="syllabus.html">
    Course Syllabus
@@ -147,19 +149,19 @@
    Project sponsors
   </a>
  </li>
- <li class="toctree-l1 has-children">
+ <li class="toctree-l1 current active has-children">
   <a class="reference internal" href="software-tools.html">
    Software and Tools
   </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
   <label for="toctree-checkbox-2">
    <i class="fas fa-chevron-down">
    </i>
   </label>
-  <ul>
-   <li class="toctree-l2">
-    <a class="reference internal" href="software-tools_create-update-pages.html">
-     Create Project Update Pages
+  <ul class="current">
+   <li class="toctree-l2 current active">
+    <a class="current reference internal" href="#">
+     Progress update guidelines
     </a>
    </li>
   </ul>
@@ -462,6 +464,33 @@
   <a class="reference internal nav-link" href="#posting-instructions">
    Posting instructions
   </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#step-1a-fork-class-page-repository">
+     Step 1a. Fork class page repository
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#step-1b-fetch-upstream-changes">
+     Step 1b. Fetch upstream changes
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#step-2-enable-actions">
+     Step 2. Enable Actions
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#step-3-publish-github-pages">
+     Step 3. Publish GitHub Pages
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#step-4-update-team-project">
+     Step 4. Update team project
+    </a>
+   </li>
+  </ul>
  </li>
 </ul>
 
@@ -497,6 +526,33 @@
   <a class="reference internal nav-link" href="#posting-instructions">
    Posting instructions
   </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#step-1a-fork-class-page-repository">
+     Step 1a. Fork class page repository
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#step-1b-fetch-upstream-changes">
+     Step 1b. Fetch upstream changes
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#step-2-enable-actions">
+     Step 2. Enable Actions
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#step-3-publish-github-pages">
+     Step 3. Publish GitHub Pages
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#step-4-update-team-project">
+     Step 4. Update team project
+    </a>
+   </li>
+  </ul>
  </li>
 </ul>
 
@@ -570,6 +626,59 @@
 </div>
 <div class="section" id="posting-instructions">
 <h2>Posting instructions<a class="headerlink" href="#posting-instructions" title="Permalink to this headline">¶</a></h2>
+<div class="section" id="step-1a-fork-class-page-repository">
+<h3>Step 1a. Fork class page repository<a class="headerlink" href="#step-1a-fork-class-page-repository" title="Permalink to this headline">¶</a></h3>
+<p>You need to fork the class page GitHub repository to your own GitHub. <strong>You only need to do this once before your initial post – you do not need to repeat this step every time you post an update</strong>. This will create a copy of the repository associated with your personal GitHub account that remains linked with the original repository (so you can continue to fetch changes made to the class page). To fork class github repo:</p>
+<ol class="simple">
+<li><p>Go to <a class="reference external" href="https://github.com/ucsb-ds-capstone-2022/ucsb-ds-capstone-2022.github.io">class page github repository</a>. At the top right corner click Fork.</p></li>
+<li><p>Choose to fork to your own github.</p></li>
+<li><p>You should see the repository appear in your personal account.</p></li>
+</ol>
+</div>
+<div class="section" id="step-1b-fetch-upstream-changes">
+<h3>Step 1b. Fetch upstream changes<a class="headerlink" href="#step-1b-fetch-upstream-changes" title="Permalink to this headline">¶</a></h3>
+<p><strong>If this is your initial post, skip this step.</strong> If this is not your initial post, you simply need to update your forked copy of the class page repository so that it is current with any changes to the class page made since you created the fork (or since your last update).</p>
+<ol class="simple">
+<li><p>Navigate to your forked copy of the class page repository.</p></li>
+<li><p>Just above the repository directory select ‘Fetch upstream’.</p></li>
+<li><p>Select ‘Fetch and merge’.</p></li>
+<li><p>You should see a message indicating that your current branch is up to date with the original repository.</p></li>
+</ol>
+</div>
+<div class="section" id="step-2-enable-actions">
+<h3>Step 2. Enable Actions<a class="headerlink" href="#step-2-enable-actions" title="Permalink to this headline">¶</a></h3>
+<p><strong>Actions</strong> will allow the github pages to automatically rebuild each time you commit an update.
+To enable Actions:</p>
+<ol class="simple">
+<li><p>On your own repo of class website choose tab <strong>Actions</strong>.</p></li>
+<li><p>Click the green button to enable <strong>Actions</strong>.</p></li>
+<li><p>You should see the workflows of this repo have an action called <strong>deploy</strong>.</p></li>
+</ol>
+</div>
+<div class="section" id="step-3-publish-github-pages">
+<h3>Step 3. Publish GitHub Pages<a class="headerlink" href="#step-3-publish-github-pages" title="Permalink to this headline">¶</a></h3>
+<p>This step will allow you to view and test updates that you made on your fork of the repository before you submit your update to the class repository. To publish GitHub pages:</p>
+<ol class="simple">
+<li><p>Go to Settings. Find the ‘Pages’ item in the navigation pane to the left.</p></li>
+<li><p>Choose the <strong>gh-pages</strong> branch as the source. Click save.</p></li>
+<li><p>Wait and refresh the webpage until you see a green tick with the message “your site is published”.</p></li>
+<li><p>Follow the website link to confirm that the page is published. You should see a duplicate of the class webpage.</p></li>
+</ol>
+</div>
+<div class="section" id="step-4-update-team-project">
+<h3>Step 4. Update team project<a class="headerlink" href="#step-4-update-team-project" title="Permalink to this headline">¶</a></h3>
+<p>Now you have your own copy of the webpage to test run updates that you make for your teams. To update your project:</p>
+<ol class="simple">
+<li><p>Clone the repository fork to your local directory.</p></li>
+<li><p>Navigate to your team’s directory: <code class="docutils literal notranslate"><span class="pre">ucsb_ds_capstone_projects_2022/projects/[&quot;your</span> <span class="pre">team</span> <span class="pre">name&quot;]</span></code></p></li>
+<li><p>Choose the file that you want to update or create a new markdown (.md) file for a new update. You can create directories for additional files such as images if you wish.</p></li>
+<li><p>Update the file and commit changes. (You may find <a class="reference external" href="https://jupyterbook.org/content/myst.html">this Jupyter book MyST Markdown guide</a> helpful.) If you are not modifying an existing file, find <code class="docutils literal notranslate"><span class="pre">ucsb_ds_capstone_projects_2022/_toc.yml</span></code>, find the ‘chapter’ for your group, and create a new ‘section’ by adding a line of the form <code class="docutils literal notranslate"><span class="pre">-file:</span> <span class="pre">projects/[YOUR</span> <span class="pre">TEAM</span> <span class="pre">NAME]/[YOUR</span> <span class="pre">NEW</span> <span class="pre">MARKDOWN</span> <span class="pre">FILE</span> <span class="pre">NAME]</span></code>.</p></li>
+<li><p>Return to the GitHub repository in your web browser and navigate to <strong>Actions</strong>. Wait until you see the green tick indicating your page is rebuilt.</p></li>
+<li><p>View your changes on your copy of the website; check for anything aesthetic or rendering issues, typos, and the like. Continue to update, commit changes, and preview as needed.</p></li>
+<li><p>When you are ready, navigate to the <strong>Code</strong> section of the repository fork. Choose ‘Contribute &gt; Open pull request’ and add any comments you would like to be reviewed along with your changes.</p></li>
+</ol>
+<p>After you create a pull request, course staff will check your request for conflicts. If your request is accepted to the main repository, your update will be seen on the class website.</p>
+</div>
 </div>
 </div>
 
@@ -597,7 +706,21 @@
               
             
                 <!-- Previous / next buttons -->
-<div class='prev-next-area'>
+<div class='prev-next-area'> 
+    <a class='left-prev' id="prev-link" href="software-tools.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">Software and Tools</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="../projects/allthenticate/description.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">allthenticate</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
 </div>
             
         </div>
