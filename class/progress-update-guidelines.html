@@ -1,0 +1,614 @@
+
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Progress update guidelines &#8212; Data Science Capstone 2022</title>
+    
+  <link href="../_static/css/theme.css" rel="stylesheet">
+  <link href="../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
+
+    
+  <link rel="stylesheet"
+    href="../_static/vendor/fontawesome/5.13.0/css/all.min.css">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-solid-900.woff2">
+  <link rel="preload" as="font" type="font/woff2" crossorigin
+    href="../_static/vendor/fontawesome/5.13.0/webfonts/fa-brands-400.woff2">
+
+    
+      
+
+    
+    <link rel="stylesheet" type="text/css" href="../_static/pygments.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-book-theme.css?digest=c3fdc42140077d1ad13ad2f1588a4309" />
+    <link rel="stylesheet" type="text/css" href="../_static/togglebutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/copybutton.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/mystnb.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/sphinx-thebe.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-main.c949a650a448cc0ae9fd3441c0e17fb0.css" />
+    <link rel="stylesheet" type="text/css" href="../_static/panels-variables.06eb56fa6e07937060861dad626602ad.css" />
+    
+  <link rel="preload" as="script" href="../_static/js/index.be7d3bbb2ef33a8344ce.js">
+
+    <script data-url_root="../" id="documentation_options" src="../_static/documentation_options.js"></script>
+    <script src="../_static/jquery.js"></script>
+    <script src="../_static/underscore.js"></script>
+    <script src="../_static/doctools.js"></script>
+    <script src="../_static/togglebutton.js"></script>
+    <script src="../_static/clipboard.min.js"></script>
+    <script src="../_static/copybutton.js"></script>
+    <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
+    <script src="../_static/sphinx-book-theme.d59cb220de22ca1c485ebbdc042f0030.js"></script>
+    <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
+    <script>
+        const thebe_selector = ".thebe"
+        const thebe_selector_input = "pre"
+        const thebe_selector_output = ".output"
+    </script>
+    <script async="async" src="../_static/sphinx-thebe.js"></script>
+    <link rel="index" title="Index" href="../genindex.html" />
+    <link rel="search" title="Search" href="../search.html" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="docsearch:language" content="None">
+    
+
+    <!-- Google Analytics -->
+    
+<script async="" src="https://www.google-analytics.com/analytics.js"></script>
+<script>
+                        window.ga = window.ga || function () {
+                            (ga.q = ga.q || []).push(arguments) };
+                        ga.l = +new Date;
+                        ga('create', 'UA-186739861-1', 'auto');
+                        ga('set', 'anonymizeIp', true);
+                        ga('send', 'pageview');
+                    </script>
+
+  </head>
+  <body data-spy="scroll" data-target="#bd-toc-nav" data-offset="80">
+    
+    <div class="container-fluid" id="banner"></div>
+
+    
+
+    <div class="container-xl">
+      <div class="row">
+          
+<div class="col-12 col-md-3 bd-sidebar site-navigation show" id="site-navigation">
+    
+        <div class="navbar-brand-box">
+    <a class="navbar-brand text-wrap" href="../index.html">
+      
+        <!-- `logo` is deprecated in Sphinx 4.0, so remove this when we stop supporting 3 -->
+        
+      
+      
+      <img src="../_static/logo.png" class="logo" alt="logo">
+      
+      
+      <h1 class="site-logo" id="site-title">Data Science Capstone 2022</h1>
+      
+    </a>
+</div><form class="bd-search d-flex align-items-center" action="../search.html" method="get">
+  <i class="icon fas fa-search"></i>
+  <input type="search" class="form-control" name="q" id="search-input" placeholder="Search this book..." aria-label="Search this book..." autocomplete="off" >
+</form><nav class="bd-links" id="bd-docs-nav" aria-label="Main">
+    <div class="bd-toc-item active">
+        <ul class="nav bd-sidenav">
+ <li class="toctree-l1">
+  <a class="reference internal" href="../welcome.html">
+   Welcome to Data Science Capstone
+  </a>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Class Logistics
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="syllabus.html">
+   Course Syllabus
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-1" name="toctree-checkbox-1" type="checkbox"/>
+  <label for="toctree-checkbox-1">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="syllabus_readings.html">
+     Readings
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="syllabus_participation.html">
+     Meetings and participation
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="syllabus_deliverables.html">
+     Deliverables
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="syllabus_policies.html">
+     Course policies
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="contacts.html">
+   Project sponsors
+  </a>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="software-tools.html">
+   Software and Tools
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+  <label for="toctree-checkbox-2">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="software-tools_create-update-pages.html">
+     Create Project Update Pages
+    </a>
+   </li>
+  </ul>
+ </li>
+</ul>
+<p aria-level="2" class="caption" role="heading">
+ <span class="caption-text">
+  Projects
+ </span>
+</p>
+<ul class="nav bd-sidenav">
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../projects/allthenticate/description.html">
+   allthenticate
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-3" name="toctree-checkbox-3" type="checkbox"/>
+  <label for="toctree-checkbox-3">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul class="simple">
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../projects/appfolio/description.html">
+   appfolio
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-4" name="toctree-checkbox-4" type="checkbox"/>
+  <label for="toctree-checkbox-4">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul class="simple">
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../projects/calcofi/description.html">
+   calcofi1
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-5" name="toctree-checkbox-5" type="checkbox"/>
+  <label for="toctree-checkbox-5">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul class="simple">
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../projects/carpedata/description.html">
+   carpedata
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/>
+  <label for="toctree-checkbox-6">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul class="simple">
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../projects/ccber/description.html">
+   ccber
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-7" name="toctree-checkbox-7" type="checkbox"/>
+  <label for="toctree-checkbox-7">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul class="simple">
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../projects/cits/description.html">
+   cits
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-8" name="toctree-checkbox-8" type="checkbox"/>
+  <label for="toctree-checkbox-8">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul class="simple">
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../projects/envent/description.html">
+   envent
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-9" name="toctree-checkbox-9" type="checkbox"/>
+  <label for="toctree-checkbox-9">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul class="simple">
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../projects/eri/description.html">
+   appfolio
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-10" name="toctree-checkbox-10" type="checkbox"/>
+  <label for="toctree-checkbox-10">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul class="simple">
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../projects/evidation1/description.html">
+   evidation1
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-11" name="toctree-checkbox-11" type="checkbox"/>
+  <label for="toctree-checkbox-11">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul class="simple">
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../projects/evidation2/description.html">
+   evidation2
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-12" name="toctree-checkbox-12" type="checkbox"/>
+  <label for="toctree-checkbox-12">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul class="simple">
+  </ul>
+ </li>
+ <li class="toctree-l1">
+  <a class="reference internal" href="../projects/hg_insights/description.html">
+   hg_insights
+  </a>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../projects/nri/description.html">
+   nri
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-13" name="toctree-checkbox-13" type="checkbox"/>
+  <label for="toctree-checkbox-13">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../projects/nri/update1.html">
+     NRI - Update 1
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../projects/nri/update2.html">
+     NRI - Update 2
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../projects/nri/update3.html">
+     NRI - Update 3
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../projects/pwc/description.html">
+   pwc
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-14" name="toctree-checkbox-14" type="checkbox"/>
+  <label for="toctree-checkbox-14">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul class="simple">
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../projects/sprague/description.html">
+   sprague
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-15" name="toctree-checkbox-15" type="checkbox"/>
+  <label for="toctree-checkbox-15">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul class="simple">
+  </ul>
+ </li>
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../projects/teladoc/description.html">
+   teladoc
+  </a>
+  <input class="toctree-checkbox" id="toctree-checkbox-16" name="toctree-checkbox-16" type="checkbox"/>
+  <label for="toctree-checkbox-16">
+   <i class="fas fa-chevron-down">
+   </i>
+  </label>
+  <ul class="simple">
+  </ul>
+ </li>
+</ul>
+
+    </div>
+</nav> <!-- To handle the deprecated key -->
+
+<div class="navbar_extra_footer">
+  Powered by <a href="https://jupyterbook.org">Jupyter Book</a>
+</div>
+
+</div>
+
+
+          
+
+
+          
+<main class="col py-md-3 pl-md-4 bd-content overflow-auto" role="main">
+    
+    <div class="topbar container-xl fixed-top">
+    <div class="topbar-contents row">
+        <div class="col-12 col-md-3 bd-topbar-whitespace site-navigation show"></div>
+        <div class="col pl-md-4 topbar-main">
+            
+            <button id="navbar-toggler" class="navbar-toggler ml-0" type="button" data-toggle="collapse"
+                data-toggle="tooltip" data-placement="bottom" data-target=".site-navigation" aria-controls="navbar-menu"
+                aria-expanded="true" aria-label="Toggle navigation" aria-controls="site-navigation"
+                title="Toggle navigation" data-toggle="tooltip" data-placement="left">
+                <i class="fas fa-bars"></i>
+                <i class="fas fa-arrow-left"></i>
+                <i class="fas fa-arrow-up"></i>
+            </button>
+            
+            
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn" aria-label="Download this page"><i
+            class="fas fa-download"></i></button>
+
+    <div class="dropdown-buttons">
+        <!-- ipynb file if we had a myst markdown file -->
+        
+        <!-- Download raw file -->
+        <a class="dropdown-buttons" href="../_sources/class/progress-update-guidelines.md"><button type="button"
+                class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
+                data-placement="left">.md</button></a>
+        <!-- Download PDF via print -->
+        <button type="button" id="download-print" class="btn btn-secondary topbarbtn" title="Print to PDF"
+                onclick="printPdf(this)" data-toggle="tooltip" data-placement="left">.pdf</button>
+    </div>
+</div>
+
+            <!-- Source interaction buttons -->
+
+<div class="dropdown-buttons-trigger">
+    <button id="dropdown-buttons-trigger" class="btn btn-secondary topbarbtn"
+        aria-label="Connect with source repository"><i class="fab fa-github"></i></button>
+    <div class="dropdown-buttons sourcebuttons">
+        <a class="repository-button"
+            href="https://github.com/ucsb-ds-capstone-2022/ucsb-ds-capstone-2022.github.io"><button type="button" class="btn btn-secondary topbarbtn"
+                data-toggle="tooltip" data-placement="left" title="Source repository"><i
+                    class="fab fa-github"></i>repository</button></a>
+        <a class="issues-button"
+            href="https://github.com/ucsb-ds-capstone-2022/ucsb-ds-capstone-2022.github.io/issues/new?title=Issue%20on%20page%20%2Fclass/progress-update-guidelines.html&body=Your%20issue%20content%20here."><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
+        <a class="edit-button" href="https://github.com/ucsb-ds-capstone-2022/ucsb-ds-capstone-2022.github.io/edit/main/ucsb_ds_capstone_projects_2022/class/progress-update-guidelines.md"><button
+                type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
+                title="Edit this page"><i class="fas fa-pencil-alt"></i>suggest edit</button></a>
+    </div>
+</div>
+
+            <!-- Full screen (wrap in <a> to have style consistency -->
+
+<a class="full-screen-button"><button type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip"
+        data-placement="bottom" onclick="toggleFullScreen()" aria-label="Fullscreen mode"
+        title="Fullscreen mode"><i
+            class="fas fa-expand"></i></button></a>
+
+            <!-- Launch buttons -->
+
+        </div>
+
+        <!-- Table of contents -->
+        <div class="d-none d-md-block col-md-2 bd-toc show noprint">
+            
+            <div class="tocsection onthispage pt-5 pb-3">
+                <i class="fas fa-list"></i> Contents
+            </div>
+            <nav id="bd-toc-nav" aria-label="Page">
+                <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#general-guidelines">
+   General guidelines
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#initial-post-due-friday-2-4">
+   Initial post (due Friday 2/4)
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#posting-instructions">
+   Posting instructions
+  </a>
+ </li>
+</ul>
+
+            </nav>
+        </div>
+    </div>
+</div>
+    <div id="main-content" class="row">
+        <div class="col-12 col-md-9 pl-md-3 pr-md-0">
+            <!-- Table of contents that is only displayed when printing the page -->
+            <div id="jb-print-docs-body" class="onlyprint">
+                <h1>Progress update guidelines</h1>
+                <!-- Table of contents -->
+                <div id="print-main-content">
+                    <div id="jb-print-toc">
+                        
+                        <div>
+                            <h2> Contents </h2>
+                        </div>
+                        <nav aria-label="Page">
+                            <ul class="visible nav section-nav flex-column">
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#general-guidelines">
+   General guidelines
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#initial-post-due-friday-2-4">
+   Initial post (due Friday 2/4)
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#posting-instructions">
+   Posting instructions
+  </a>
+ </li>
+</ul>
+
+                        </nav>
+                    </div>
+                </div>
+            </div>
+            
+              <div>
+                
+  <div class="tex2jax_ignore mathjax_ignore section" id="progress-update-guidelines">
+<h1>Progress update guidelines<a class="headerlink" href="#progress-update-guidelines" title="Permalink to this headline">¶</a></h1>
+<p>The sections below provide instructions for preparing and posting each progress update that your team will write for the class. Sections will be added as updates are due, so please refer back to this page in advance of submitting your posts.</p>
+<div class="section" id="general-guidelines">
+<h2>General guidelines<a class="headerlink" href="#general-guidelines" title="Permalink to this headline">¶</a></h2>
+<p>Each update will differ in content, but in general the <strong>purpose</strong> of preparing progress updates is the same in each instance:</p>
+<ul class="simple">
+<li><p>step back, organize, and reflect on your project work to date;</p></li>
+<li><p>practice communicating your work to a broader audience in writing;</p></li>
+<li><p>draft materials that could be used in a report, manuscript, or slides.</p></li>
+</ul>
+<p>Even if it seems that you’re in the middle of things and not ready to present your work, these updates create excellent opporutnities to appreciate and acknowledge your efforts, discuss and affirm a shared view of the project with your team, recalibrate your perspective on what you’re currently doing, set goals for future work, and – since posts will be public – ask for feedback from classmates and anyone else whose perspective you value.</p>
+<p>Progress updates should be written for a vaired <strong>audience</strong> (listed from most specialized to least):</p>
+<ul class="simple">
+<li><p>your peers in the capstone class;</p></li>
+<li><p>your sponsor’s colleagues (researchers, specialists, management, etc.);</p></li>
+<li><p>prospective and future data science capstone students.</p></li>
+</ul>
+<p>You can assume all groups share an interest in data science, but you should also assume that your audience is heterogeneous in technical expertise and domain knowledge. (Students, for example, may know more about statistical methods than your sponsor’s colleagues.) You can, of course, include some details that may only be meaningful for technical specialists or domain experts, but overall your writing should be accessible to the broader audience described above. To that end, here are some <strong>suggestions</strong>:</p>
+<ul class="simple">
+<li><p>write in common language (rather than jargon) wherever possible by interpreting technical aspects of your updates in the context of your project;</p></li>
+<li><p>define any domain-specific terminology, technical language (within reason), or acronyms;</p></li>
+<li><p>label plots, tables, and figures clearly and provide descriptive captions;</p></li>
+<li><p>avoid showing codes, computer output, and equations unless they are absolutely essential to communicating or illustrating your point;</p></li>
+<li><p>use descriptive headers and subheaders (<em>e.g.,</em> ‘Customer-agent conversation data’ instaed of ‘Datasets’, ‘Predicting arrests using machine learning’ rather than ‘Introduction’) to organize your post;</p></li>
+<li><p>use links and references to point readers to background resources.</p></li>
+</ul>
+</div>
+<div class="section" id="initial-post-due-friday-2-4">
+<h2>Initial post (due Friday 2/4)<a class="headerlink" href="#initial-post-due-friday-2-4" title="Permalink to this headline">¶</a></h2>
+<p>Your initial post should simply introduce your project.</p>
+<p>The <strong>aim</strong> should be to <em>orient the reader to the project domain, datasets, objectives, and motivations</em>. Sufficiently so that one can easily answer the following questions after reading your post:</p>
+<ol class="simple">
+<li><p><em>What is the subject of the team’s project?</em> This is often easiest to characterize through the specific combination of domain or industry application and technical area/task that the project pertains to; for instance, distinguishing terrestrial habitats from satellite images (application) using image classification (technical task).</p></li>
+<li><p><em>What data is the team working with?</em> This should be answerable at a certain level of detail – the reader should be able to describe the main features/variables, observations, and how data were collected. Often, together with verbal explanation, a few example rows or a table of variable names and descriptions is a helpful way to present this information; of course, for large datasets, or for teams who are in the process of obtaining data, purely qualitative description may have to suffice.</p></li>
+<li><p><em>What is the team hoping to accomplish (or working on right now)?</em> The reader should have some sense of your goals or questions of interest. If you don’t have much clarity about your objectives presently, that’s okay – you can instead try to articulate the question(s) that are guiding your first steps.</p></li>
+</ol>
+<p>The <strong>content</strong> can be kept basic:</p>
+<ul class="simple">
+<li><p>domain <strong>background</strong> and project <strong>motivation</strong>;</p></li>
+<li><p>available <strong>dataset(s)</strong>;</p></li>
+<li><p>project <strong>objectives</strong>.</p></li>
+</ul>
+<p>If it helps you to begin with some structure, create an outline with one header for each item above (but give them good titles – see general suggestions). Review and critique <a class="reference external" href="https://ucsb-ds-capstone-2021.github.io/welcome.html">last year’s project updates</a> for further ideas about post organization. You do not need to stick to this particular outline and should do what suits your project best.</p>
+<p>Your post should meet the following <strong>criteria</strong>:</p>
+<ul class="simple">
+<li><p>domain-specific background relevant to the project is clearly and concisely explained;</p></li>
+<li><p>for at least one primary dataset, the method of data collection, data quantity, and primary attributes (observations and variables) are clearly described;</p></li>
+<li><p>at least one figure is included;</p></li>
+<li><p>at least one question of interest or project aim is clearly stated.</p></li>
+</ul>
+<p>Don’t worry about getting every last thing right for the initial submission. You’ll do a peer review with another team shortly after submission and will be encouraged to post revisions before recieving feedback from your project mentor.</p>
+</div>
+<div class="section" id="posting-instructions">
+<h2>Posting instructions<a class="headerlink" href="#posting-instructions" title="Permalink to this headline">¶</a></h2>
+</div>
+</div>
+
+    <script type="text/x-thebe-config">
+    {
+        requestKernel: true,
+        binderOptions: {
+            repo: "binder-examples/jupyter-stacks-datascience",
+            ref: "master",
+        },
+        codeMirrorConfig: {
+            theme: "abcdef",
+            mode: "python"
+        },
+        kernelOptions: {
+            kernelName: "python3",
+            path: "./class"
+        },
+        predefinedOutput: true
+    }
+    </script>
+    <script>kernelName = 'python3'</script>
+
+              </div>
+              
+            
+                <!-- Previous / next buttons -->
+<div class='prev-next-area'>
+</div>
+            
+        </div>
+    </div>
+    <footer class="footer">
+  <p>
+    
+      By UCSB DS Capstone Class<br/>
+    
+        &copy; Copyright 2022.<br/>
+  </p>
+</footer>
+</main>
+
+
+      </div>
+    </div>
+  
+  <script src="../_static/js/index.be7d3bbb2ef33a8344ce.js"></script>
+
+  </body>
+</html>
