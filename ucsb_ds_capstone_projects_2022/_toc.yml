@@ -12,7 +12,7 @@ parts:
   - file: class/contacts
   - file: class/software-tools
     sections:
-    - file: class/software-tools_create-update-pages
+    - file: class/progress-update-guidelines
 - caption: Projects
   chapters:
   - file: projects/allthenticate/description
