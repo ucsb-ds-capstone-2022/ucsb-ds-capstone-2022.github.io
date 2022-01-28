@@ -53,6 +53,12 @@ Your post should meet the following **criteria**:
 - at least one figure is included;
 - at least one question of interest or project aim is clearly stated.
 
-Don't worry about getting every last thing right for the initial submission. You'll do a peer review with another team shortly after submission and will be encouraged to post revisions before recieving feedback from your project mentor.
+Don't worry about getting every last thing right for the initial submission. You'll do a peer review with another team shortly after submission and will be encouraged to post revisions before recieving feedback from your project mentor. More precisely, here are the **logistics** around post submission:
+
+1. Pull requests to the website repo should be submitted by Friday February 4 at 5:00 pm PST.
+2. Your team will review another team's post over the weekend (assignments determined in advance).
+3. We will do a peer review in class on Monday February 7.
+4. Revisions should be submitted (via pull request) by the end of the week.
+5. Mentors will provide feedback. Further revisions optional (but encouraged).
 
 ## Posting instructions
