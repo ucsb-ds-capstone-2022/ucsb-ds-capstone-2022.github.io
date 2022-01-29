@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Create Project Update Pages &#8212; Data Science Capstone 2022</title>
+    <title>How to post project updates &#8212; Data Science Capstone 2022</title>
     
   <link href="../_static/css/theme.css" rel="stylesheet">
   <link href="../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
@@ -51,6 +51,8 @@
     <script async="async" src="../_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="../genindex.html" />
     <link rel="search" title="Search" href="../search.html" />
+    <link rel="next" title="allthenticate" href="../projects/allthenticate/description.html" />
+    <link rel="prev" title="Initial post (due Friday 2/4)" href="progress-update-initial-post-guidelines.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -109,7 +111,7 @@
   Class Logistics
  </span>
 </p>
-<ul class="nav bd-sidenav">
+<ul class="current nav bd-sidenav">
  <li class="toctree-l1 has-children">
   <a class="reference internal" href="syllabus.html">
    Course Syllabus
@@ -147,19 +149,29 @@
    Project sponsors
   </a>
  </li>
- <li class="toctree-l1 has-children">
+ <li class="toctree-l1">
   <a class="reference internal" href="software-tools.html">
    Software and Tools
   </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
+ </li>
+ <li class="toctree-l1 current active has-children">
+  <a class="reference internal" href="progress-update-guidelines.html">
+   Progress update guidelines
+  </a>
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-2" name="toctree-checkbox-2" type="checkbox"/>
   <label for="toctree-checkbox-2">
    <i class="fas fa-chevron-down">
    </i>
   </label>
-  <ul>
+  <ul class="current">
    <li class="toctree-l2">
-    <a class="reference internal" href="progress-update-guidelines.html">
-     Progress update guidelines
+    <a class="reference internal" href="progress-update-initial-post-guidelines.html">
+     Initial post (due Friday 2/4)
+    </a>
+   </li>
+   <li class="toctree-l2 current active">
+    <a class="current reference internal" href="#">
+     How to post project updates
     </a>
    </li>
   </ul>
@@ -400,7 +412,7 @@
         <!-- ipynb file if we had a myst markdown file -->
         
         <!-- Download raw file -->
-        <a class="dropdown-buttons" href="../_sources/class/software-tools_create-update-pages.md"><button type="button"
+        <a class="dropdown-buttons" href="../_sources/class/progress-update-posting-instructions.md"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
                 data-placement="left">.md</button></a>
         <!-- Download PDF via print -->
@@ -420,10 +432,10 @@
                 data-toggle="tooltip" data-placement="left" title="Source repository"><i
                     class="fab fa-github"></i>repository</button></a>
         <a class="issues-button"
-            href="https://github.com/ucsb-ds-capstone-2022/ucsb-ds-capstone-2022.github.io/issues/new?title=Issue%20on%20page%20%2Fclass/software-tools_create-update-pages.html&body=Your%20issue%20content%20here."><button
+            href="https://github.com/ucsb-ds-capstone-2022/ucsb-ds-capstone-2022.github.io/issues/new?title=Issue%20on%20page%20%2Fclass/progress-update-posting-instructions.html&body=Your%20issue%20content%20here."><button
                 type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
                 title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
-        <a class="edit-button" href="https://github.com/ucsb-ds-capstone-2022/ucsb-ds-capstone-2022.github.io/edit/main/ucsb_ds_capstone_projects_2022/class/software-tools_create-update-pages.md"><button
+        <a class="edit-button" href="https://github.com/ucsb-ds-capstone-2022/ucsb-ds-capstone-2022.github.io/edit/main/ucsb_ds_capstone_projects_2022/class/progress-update-posting-instructions.md"><button
                 type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
                 title="Edit this page"><i class="fas fa-pencil-alt"></i>suggest edit</button></a>
     </div>
@@ -449,8 +461,13 @@
             <nav id="bd-toc-nav" aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#step-1-fork-class-github-repository">
-   Step 1. Fork class github Repository
+  <a class="reference internal nav-link" href="#step-1a-fork-class-page-repository">
+   Step 1a. Fork class page repository
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#step-1b-fetch-upstream-changes">
+   Step 1b. Fetch upstream changes
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
@@ -459,13 +476,13 @@
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#step-2-publish-github-pages">
-   Step 2. Publish Github Pages
+  <a class="reference internal nav-link" href="#step-3-publish-github-pages">
+   Step 3. Publish GitHub Pages
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#step-3-update-team-project">
-   Step 3. Update team project
+  <a class="reference internal nav-link" href="#step-4-update-team-project">
+   Step 4. Update team project
   </a>
  </li>
 </ul>
@@ -478,7 +495,7 @@
         <div class="col-12 col-md-9 pl-md-3 pr-md-0">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
-                <h1>Create Project Update Pages</h1>
+                <h1>How to post project updates</h1>
                 <!-- Table of contents -->
                 <div id="print-main-content">
                     <div id="jb-print-toc">
@@ -489,8 +506,13 @@
                         <nav aria-label="Page">
                             <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#step-1-fork-class-github-repository">
-   Step 1. Fork class github Repository
+  <a class="reference internal nav-link" href="#step-1a-fork-class-page-repository">
+   Step 1a. Fork class page repository
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#step-1b-fetch-upstream-changes">
+   Step 1b. Fetch upstream changes
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
@@ -499,13 +521,13 @@
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#step-2-publish-github-pages">
-   Step 2. Publish Github Pages
+  <a class="reference internal nav-link" href="#step-3-publish-github-pages">
+   Step 3. Publish GitHub Pages
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#step-3-update-team-project">
-   Step 3. Update team project
+  <a class="reference internal nav-link" href="#step-4-update-team-project">
+   Step 4. Update team project
   </a>
  </li>
 </ul>
@@ -517,22 +539,25 @@
             
               <div>
                 
-  <div class="tex2jax_ignore mathjax_ignore section" id="create-project-update-pages">
-<h1>Create Project Update Pages<a class="headerlink" href="#create-project-update-pages" title="Permalink to this headline">¶</a></h1>
-<p>Here are steps to create your versions of class website, make updates, and create a pull request to class github repo.</p>
-<div class="admonition tip">
-<p class="admonition-title">Tip</p>
-<p><a class="reference external" href="https://drive.google.com/file/d/1oIbLbgnPfvFCHAZiegXYZ8QnUCd9Z-aE/view?usp=sharing"><strong>Demo screencast video</strong></a> (Log in with your UCSB NetID)</p>
-</div>
-<div class="section" id="step-1-fork-class-github-repository">
-<h2>Step 1. Fork class github Repository<a class="headerlink" href="#step-1-fork-class-github-repository" title="Permalink to this headline">¶</a></h2>
-<p>You need to fork the class github repo <a class="reference external" href="https://github.com/ucsb-ds-capstone-2021/ucsb-ds-capstone-2021.github.io">here</a> to your own github.
-To fork class github repo:</p>
+  <div class="tex2jax_ignore mathjax_ignore section" id="how-to-post-project-updates">
+<h1>How to post project updates<a class="headerlink" href="#how-to-post-project-updates" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="step-1a-fork-class-page-repository">
+<h2>Step 1a. Fork class page repository<a class="headerlink" href="#step-1a-fork-class-page-repository" title="Permalink to this headline">¶</a></h2>
+<p>You need to fork the class page GitHub repository to your own GitHub. <strong>You only need to do this once before your initial post – you do not need to repeat this step every time you post an update</strong>. This will create a copy of the repository associated with your personal GitHub account that remains linked with the original repository (so you can continue to fetch changes made to the class page). To fork class github repo:</p>
 <ol class="simple">
-<li><p>Go to class main github repo <a class="reference external" href="https://github.com/ucsb-ds-capstone-2021/ucsb-ds-capstone-2021.github.io">here</a> to your own github.
-At the top right corner click Fork.</p></li>
+<li><p>Go to <a class="reference external" href="https://github.com/ucsb-ds-capstone-2022/ucsb-ds-capstone-2022.github.io">class page github repository</a>. At the top right corner click Fork.</p></li>
 <li><p>Choose to fork to your own github.</p></li>
-<li><p>You should see the repo is forked to your github.</p></li>
+<li><p>You should see the repository appear in your personal account.</p></li>
+</ol>
+</div>
+<div class="section" id="step-1b-fetch-upstream-changes">
+<h2>Step 1b. Fetch upstream changes<a class="headerlink" href="#step-1b-fetch-upstream-changes" title="Permalink to this headline">¶</a></h2>
+<p><strong>If this is your initial post, skip this step.</strong> If this is not your initial post, you simply need to update your forked copy of the class page repository so that it is current with any changes to the class page made since you created the fork (or since your last update).</p>
+<ol class="simple">
+<li><p>Navigate to your forked copy of the class page repository.</p></li>
+<li><p>Just above the repository directory select ‘Fetch upstream’.</p></li>
+<li><p>Select ‘Fetch and merge’.</p></li>
+<li><p>You should see a message indicating that your current branch is up to date with the original repository.</p></li>
 </ol>
 </div>
 <div class="section" id="step-2-enable-actions">
@@ -545,30 +570,29 @@ To enable Actions:</p>
 <li><p>You should see the workflows of this repo have an action called <strong>deploy</strong>.</p></li>
 </ol>
 </div>
-<div class="section" id="step-2-publish-github-pages">
-<h2>Step 2. Publish Github Pages<a class="headerlink" href="#step-2-publish-github-pages" title="Permalink to this headline">¶</a></h2>
-<p>The github pages will allow you to view and test updates that you made on this repo before you create a pull request to the class main repo.
-To publib github pages:</p>
+<div class="section" id="step-3-publish-github-pages">
+<h2>Step 3. Publish GitHub Pages<a class="headerlink" href="#step-3-publish-github-pages" title="Permalink to this headline">¶</a></h2>
+<p>This step will allow you to view and test updates that you made on your fork of the repository before you submit your update to the class repository. To publish GitHub pages:</p>
 <ol class="simple">
-<li><p>Go to Settings. In Options, scroll down to Github Pages.</p></li>
-<li><p>Choose the source is <strong>gh-pages</strong> branch. Click save.</p></li>
-<li><p>Wait and refresh the webpage until you see a green tick said “your site is published”.</p></li>
-<li><p>Click at the website link to confirm that the github pages is published.</p></li>
+<li><p>Go to Settings. Find the ‘Pages’ item in the navigation pane to the left.</p></li>
+<li><p>Choose the <strong>gh-pages</strong> branch as the source. Click save.</p></li>
+<li><p>Wait and refresh the webpage until you see a green tick with the message “your site is published”.</p></li>
+<li><p>Follow the website link to confirm that the page is published. You should see a duplicate of the class webpage.</p></li>
 </ol>
 </div>
-<div class="section" id="step-3-update-team-project">
-<h2>Step 3. Update team project<a class="headerlink" href="#step-3-update-team-project" title="Permalink to this headline">¶</a></h2>
-<p>Now you have your own github pages to test run updates that you make for your teams, we are ready to make some changes.
-To update your project:</p>
+<div class="section" id="step-4-update-team-project">
+<h2>Step 4. Update team project<a class="headerlink" href="#step-4-update-team-project" title="Permalink to this headline">¶</a></h2>
+<p>Now you have your own copy of the webpage to test run updates that you make for your teams. To update your project:</p>
 <ol class="simple">
-<li><p>From your forked repo, the directory for your team is <code class="docutils literal notranslate"><span class="pre">ucsb_ds_capstone_projects_2021/projects/[&quot;your</span> <span class="pre">team</span> <span class="pre">name&quot;]</span></code></p></li>
-<li><p>Choose the file that you need to update. You can create directories for additional files such as images.</p></li>
-<li><p>Update the file (<a class="reference external" href="https://jupyterbook.org/content/myst.html">using Jupyter book MyST Markdown</a>) and commit changes.</p></li>
-<li><p>Wait until you see the green tick in <strong>Actions</strong>, which means your github pages is rebuilt.</p></li>
-<li><p>View your changes on the website by go to github pages link in step 2, check if it is ready to be publish on the class main website.</p></li>
-<li><p>If changes you made are ready to be publish on class website, go to your repo. Choose pull request. Create a pull request to the main repo.</p></li>
+<li><p>Clone the repository fork to your local directory.</p></li>
+<li><p>Navigate to your team’s directory: <code class="docutils literal notranslate"><span class="pre">ucsb_ds_capstone_projects_2022/projects/[&quot;your</span> <span class="pre">team</span> <span class="pre">name&quot;]</span></code></p></li>
+<li><p>Choose the file that you want to update or create a new markdown (.md) file for a new update. You can create directories for additional files such as images if you wish.</p></li>
+<li><p>Update the file and commit changes. (You may find <a class="reference external" href="https://jupyterbook.org/content/myst.html">this Jupyter book MyST Markdown guide</a> helpful.) If you are not modifying an existing file, find <code class="docutils literal notranslate"><span class="pre">ucsb_ds_capstone_projects_2022/_toc.yml</span></code>, find the ‘chapter’ for your group, and create a new ‘section’ by adding a line of the form <code class="docutils literal notranslate"><span class="pre">-file:</span> <span class="pre">projects/[YOUR</span> <span class="pre">TEAM</span> <span class="pre">NAME]/[YOUR</span> <span class="pre">NEW</span> <span class="pre">MARKDOWN</span> <span class="pre">FILE</span> <span class="pre">NAME]</span></code>.</p></li>
+<li><p>Return to the GitHub repository in your web browser and navigate to <strong>Actions</strong>. Wait until you see the green tick indicating your page is rebuilt.</p></li>
+<li><p>View your changes on your copy of the website; check for anything aesthetic or rendering issues, typos, and the like. Continue to update, commit changes, and preview as needed.</p></li>
+<li><p>When you are ready, navigate to the <strong>Code</strong> section of the repository fork. Choose ‘Contribute &gt; Open pull request’ and add any comments you would like to be reviewed along with your changes.</p></li>
 </ol>
-<p>After you create a pull request, course staff will check your request for conflicts. If your request is accepted to the main repo, your update will be seen on the class website.</p>
+<p>After you create a pull request, course staff will check your request for conflicts. If your request is accepted to the main repository, your update will be seen on the class website.</p>
 </div>
 </div>
 
@@ -596,7 +620,21 @@ To update your project:</p>
               
             
                 <!-- Previous / next buttons -->
-<div class='prev-next-area'>
+<div class='prev-next-area'> 
+    <a class='left-prev' id="prev-link" href="progress-update-initial-post-guidelines.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">Initial post (due Friday 2/4)</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="../projects/allthenticate/description.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">allthenticate</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
 </div>
             
         </div>
