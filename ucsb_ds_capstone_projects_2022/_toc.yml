@@ -11,8 +11,10 @@ parts:
     - file: class/syllabus_policies
   - file: class/contacts
   - file: class/software-tools
+  - file: class/progress-update-guidelines
     sections:
-    - file: class/progress-update-guidelines
+    - file: class/progress-update-initial-post-guidelines
+    - file: class/progress-update-posting-instructions
 - caption: Projects
   chapters:
   - file: projects/allthenticate/description
