@@ -39,16 +39,12 @@ parts:
   - file: projects/eri/description
     sections:
     - file: projects/eri/update1
-  - file: projects/evidation1/description
+  - file: projects/evidation_eric/description
     sections:
-    - file: projects/evidation1/update1
-    - file: projects/evidation1/update2
-    - file: projects/evidation1/update3
-  - file: projects/evidation2/description
+    - file: projects/evidation_eric/update1
+  - file: projects/evidation_julio/description
     sections:
     - file: projects/evidation2/update1
-    - file: projects/evidation2/update2
-    - file: projects/evidation2p/update3
   - file: projects/hg_insights/description
   - file: projects/nri/description
     sections:
@@ -61,6 +57,3 @@ parts:
   - file: projects/sprague/description
     sections:
     - file: projects/sprague/update1
-  - file: projects/teladoc/description
-    sections:
-    - file: projects/teladoc/update1
