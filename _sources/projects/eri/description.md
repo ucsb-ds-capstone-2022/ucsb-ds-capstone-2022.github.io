@@ -1,2 +1,2 @@
-# appfolio
+# ERI
 Project description
