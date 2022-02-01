@@ -26,7 +26,8 @@ We are currently working on setting up an image annotator web service. The data 
 
 ```{note}
 **Center-pivot irrigation**
-This is a effective method of crop irrigation in which 
+This is an effective method of crop irrigation in which crops are watered by a circular pattern around a central pivot point. 
+
 See **center-pivot irrigation** in action! 
 [![Watch the video](https://img.youtube.com/vi/2bILpvH3EuQ/default.jpg)](https://youtu.be/2bILpvH3EuQ)
 ```
