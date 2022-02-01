@@ -1,2 +1,2 @@
-# calcofi1
+# calcofi
 Project description
