@@ -1,2 +1,2 @@
-# ERI
+# eri
 Project description
