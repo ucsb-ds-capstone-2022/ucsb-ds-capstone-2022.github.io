@@ -1,6 +1,6 @@
 ## Update 1 
 
-**Project: Combining computer vision and satellite imagery to map agricultural investment and water use in sub-saharan africa**
+**Project: Combining computer vision and satellite imagery to map agricultural investment and water use in Sub-Saharan Africa**
 
 ### Our sponsor
 
