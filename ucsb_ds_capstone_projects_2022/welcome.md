@@ -7,7 +7,7 @@ This [jupyter book](https://jupyterbook.org) will be the central place to find a
 ```{note}
 * [DS Capstone GitHub org](https://github.com/ucsb-ds-capstone-2021)
 * [DS Capstone Slack](http://ucsbdscapstone.slack.com)
-* [DS Capstone Google Drive Folder]()
+* [DS Capstone Google Drive Folder](https://drive.google.com/drive/folders/1K10vyIY7Xe57H3SKNcYadhdfTof957Fu?usp=sharing)
 ```
 
 ```{div} class-calendar
