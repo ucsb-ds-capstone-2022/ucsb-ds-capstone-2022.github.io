@@ -4,7 +4,7 @@
 
 ### Our sponsor
 
-The *[Earth Research Institute (ERI)](https://www.eri.ucsb.edu)* at UCSB spans areas covering natural hazards, human impacts, earth system science, and earth evolution by collaborating across interdisciplinary departments on campus. Under the guidance of Kelly Caylor (Director of ERI), we are undertaking a project to improve food security by making water and irrigation equipment more accessible.
+The **[Earth Research Institute (ERI)](https://www.eri.ucsb.edu)** at UCSB spans areas covering natural hazards, human impacts, earth system science, and earth evolution by collaborating across interdisciplinary departments on campus. Under the guidance of Kelly Caylor (Director of ERI), we are undertaking a project to improve food security by making water and irrigation equipment more accessible.
 
 ### Motivation & Background
 Irrigated agriculture is expanding rapidly across southern Africa. Because this expansion is occurring without much regulation or monitoring, it’s not exactly clear where and when expansion is happening, or the fate of expanded agriculture. In most expansionary cycles, there is a boom-and-bust dynamic, where many investments fail quickly and only a few persist. We’re interested in mapping these dynamics over the past 5-10 years across southern Africa and monitoring them going forward.
