@@ -12,11 +12,12 @@ Our goal is to have two scripts shared via Github for the Big-Bee project to use
 ## Progress 
 ### Week 1
 The first meeting (1/12) was spent learning about the Big-Bee project. For instance, Cheadle Center houses the [Natural History Collection](https://www.ccber.ucsb.edu/collections), which is composed of images as well as the physical, preserved specimen. 
+
 Our task moving forward for the next few weeks:
 
-(T1)Reading barcodes from bee images in a folder and renaming the images with the decoded barcode
-(T2)Extract exif data from each image and transferring the data into a tab delimited or comma delimited file (csv)
-(T3)Share the scripts via Github for the Big-Bee project to use
+  (T1)Reading barcodes from bee images in a folder and renaming the images with the decoded barcode
+  (T2)Extract exif data from each image and transferring the data into a tab delimited or comma delimited file (csv)
+  (T3)Share the scripts via Github for the Big-Bee project to use
 
 
 ### Week 2
