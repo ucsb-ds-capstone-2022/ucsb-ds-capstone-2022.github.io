@@ -2,7 +2,7 @@
 ## Overview
 For the first four weeks, we will be split into 2 groups to work on (T1) Reading barcodes from bee images in a folder and renaming the images with the decoded barcode and (T2) Extract exif data from each image and transferring the data into a tab delimited or comma delimited file (csv)
 We will be using a sample size of bee images provided by Dr.Seltman. Each image contains a scale bar, information on locality date, a specimen, and a barcode(unique identifier for the specimen)
-![image](./14.JPG)
+![image](./14.JPG =250x250)
 
 Our weekly meeting consist of updating everyone on the respective group progress, receiving feedback for improvement, and what to-do for next time. 
 Our goal is to have two scripts shared via Github for the Big-Bee project to use, draw feedback, and improve scripts if necessary.
