@@ -1,6 +1,6 @@
 # Project Update 1 (2/4/2022)
 
-### **Domain Background**
+#### **Domain Background**
 
 Allthenticate is a cybersecurity company founded in Santa Barbara, CA by UCSB alumni that aims to transform the way that people will interact with their devices. Their products enable the use of a smartphone to unlock everything, from doors to your office, to logging into a website, and even unlocking your car. 
 
