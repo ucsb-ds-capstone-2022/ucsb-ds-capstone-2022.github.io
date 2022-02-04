@@ -32,4 +32,6 @@ Another concern I have is that we should make an agreement with what is our inpu
 Pearson Figure:
 ![](img/pearson_corr.png)
 
+### Questions and Objectives:
+For our project we are dealing with a massive amount of data. The short term goal is to find features and variables that are informative and associate with products.The long term goal is to use the features that are highly correlated or that we will feel is significant to build a model that will predict/forecast future product purchases.   
 
