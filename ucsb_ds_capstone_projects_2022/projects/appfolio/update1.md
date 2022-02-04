@@ -1,4 +1,4 @@
-% First Update
+%First Update
 
 # Introduction:
 
