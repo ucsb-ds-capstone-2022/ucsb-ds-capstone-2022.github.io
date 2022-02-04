@@ -20,11 +20,11 @@ In response to these concerns, our research project is launched by CITS to exami
 ## Data
 
 Our team will be web scraping various social media platform data such as Reddit, Twitter, and potentially Facebook user data. We will collect public comments about the movie "The Social Dilemma". We will look at the users' social media usage two months before and after viewing the movie and analyze possible behavior change. We may also run sentiment analysis models to gauge users' emotions towards various social media keywords regarding privacy, which will include clustering user data by certain age groups or “generations”. The main features may include the following:
-User Age - Given age by the user.
-Age of Account - length of time account has been active.
-User-submitted posts contents - posts from the users that we will run sentiment analysis on.
-Positive/Neutral/Negative - targets for the sentiment analysis models from the user-submitted posts.
-Location - if given from account information, could be something to look at in regards to are people in certain parts of the country more likely to not care about privacy than in other parts. Could speak on certain users' privacy literacy depending on where they are located.  
+- User Age - Given age by the user.
+- Age of Account - length of time account has been active.
+- User-submitted posts contents - posts from the users that we will run sentiment analysis on.
+- Positive/Neutral/Negative - targets for the sentiment analysis models from the user-submitted posts.
+- Location - if given from account information, could be something to look at in regards to are people in certain parts of the country more likely to not care about privacy than in other parts. Could speak on certain users' privacy literacy depending on where they are located.  
 
 
 ## Challenges 
