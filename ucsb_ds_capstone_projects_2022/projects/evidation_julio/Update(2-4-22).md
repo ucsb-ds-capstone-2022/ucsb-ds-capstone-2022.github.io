@@ -34,7 +34,7 @@ One example of a visualization we could try to recreate from the Kaggle notebook
 
 | ![Resting Heart Rate Comparison](Fig2_RHR_Comparison.png) |
 |:--:|
-| <b>Scatterplots comparing Average Resting Heart Rate with Sleep, Readiness, and Activity from [Oura Kaggle](Fig.2 - https://www.kaggle.com/eljailarisuhonen/oura-cloud-data-machine-learning-for-beginners)</b>|
+| <b>Fig.2 - Scatterplots comparing Average Resting Heart Rate with Sleep, Readiness, and Activity from [Oura Kaggle]( https://www.kaggle.com/eljailarisuhonen/oura-cloud-data-machine-learning-for-beginners)</b>|
 
 
 ## Data
