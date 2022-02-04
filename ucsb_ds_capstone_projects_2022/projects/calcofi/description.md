@@ -1,2 +1,4 @@
 # calcofi
 Project description
+  For our project we are working with California Cooperative Oceanic Fisheries Investigations (CalCOFI), a research organization studying and protecting the environment off the California Coast. The organization has been collecting data on oceanic properties (involving physical, chemical, and biological data) like temperature, salinity, oxygen, and pH down to a depth of about 500 meters for the past seventy four years. CalCOFI measures these properties by conducting cruises out to stations throughout 500 miles of the coastline and 360 miles offshore. 
+  CalCOFI has tasked us with building an interactive map, along with other visualizations that clearly and efficiently displays hypoxia zones off the California coast.
