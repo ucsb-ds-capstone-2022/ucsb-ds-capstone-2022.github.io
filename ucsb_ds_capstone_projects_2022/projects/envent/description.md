@@ -19,15 +19,21 @@ So far, our main accomplishment with our project has been understanding the diff
 
 `Example Survey Question from C`
 **Question Number:** Q93
-**Question:** Do you have an electric connection to your home from the mains? [If yes] How often is the
-electricity actually available from this connection?
-**Variable Label:** Q93. Electric connection from mains
-**Values:** 0-5, 9, 8, -1
-**Value Labels:** 0=No mains electric supply or connection to the home, 1=Never, 2=Occasionally, 3=About
-half of the time, 4=Most of the time, 5=All of the time, 9=Don’t know, 8=Refused to answer, -1=Missing
-**Source:** Afrobarometer Round 5
-**Note:** Interviewer was instructed to not ask this question if it was 100% clear that there was no electricity
-supply to the home, e.g., in an unserved rural area.
+
+**Question:** *Do you have an electric connection to your home from the mains? [If yes] How often is the
+electricity actually available from this connection?*
+
+**Variable Label:** *Q93. Electric connection from mains*
+
+**Values:** *0-5, 9, 8, -1*
+
+**Value Labels:** *0=No mains electric supply or connection to the home, 1=Never, 2=Occasionally, 3=About
+half of the time, 4=Most of the time, 5=All of the time, 9=Don’t know, 8=Refused to answer, -1=Missing*
+
+**Source:** *Afrobarometer Round 5*
+
+**Note:** *Interviewer was instructed to not ask this question if it was 100% clear that there was no electricity
+supply to the home, e.g., in an unserved rural area.*
 
 ## Next Steps
 
