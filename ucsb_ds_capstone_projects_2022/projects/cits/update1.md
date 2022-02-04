@@ -1,4 +1,4 @@
-# CITS - Update 1
+# Update 1
 February 4, 2022
 
 Eoin Hayes, Qiru Hu, Jasmine Kwok, Lucas Nguyen, Xavier Speropoulos
