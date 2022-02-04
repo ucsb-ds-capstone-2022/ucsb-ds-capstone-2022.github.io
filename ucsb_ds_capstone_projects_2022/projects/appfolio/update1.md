@@ -6,6 +6,10 @@ Appfolio is a tech company based in Santa Barbara that provides innovative softw
 
 ## About the Project ##
 
+The main purpose of this project is to create an app that recommends properties to users based on their interest clusters. In addition some of the goals that the team is focusing on are recommending properties to new customers and this can be done through capturing customer’s interests from data and generating predictions, analyzing inputs by data and ML algorithms, obtaining inputs from a new user and this can be done through search history or onboarding questions.
+
+We think our work on this project would benefit Appfolio since this project is driven by how their users interact on their management platform to properties. It will be useful for them to see our results from our recommender system to see the usefulness of interaction data to better their products.
+
 ## About the Data ##
 
 Our dataset is derived from a LISA AI chatbot that divides the data into three components: user ratings, item features, and images.
