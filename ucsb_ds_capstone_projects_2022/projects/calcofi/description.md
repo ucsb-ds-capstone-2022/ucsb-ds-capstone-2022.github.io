@@ -1,2 +1,3 @@
-# calcofi
-Project description
+# CalCOFI
+
+Best project ever!
