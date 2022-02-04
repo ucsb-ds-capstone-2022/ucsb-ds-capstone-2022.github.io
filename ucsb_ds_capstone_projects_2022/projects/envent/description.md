@@ -17,17 +17,17 @@ We are working with a broad range of datasets spanning regions across the world,
 
 So far, our main accomplishment with our project has been understanding the different data that is available to us. Since we are looking at so many different surveys, it took a while to parse through each one and understand the variables. For each survey, we have had to look at a corresponding public code book that contains the question number, question asked, answer choices, corresponding variable name, etc. Once we looked through the surveys/code books, we picked demographic variables that were present across all 140 surveys. We ended up choosing religion, gender, income, race, age, and education level. A challenge we have run into along the way is finding a way to standardize our demographic variables. For example, we have been discussing a way that we could standardize income when dealing with data from different countries with different currencies and different standards for income levels. Some potential ideas we have come up with have been using GDP, the gini index, or a classification of above/below the median income level for that country. We are currently working towards making a spreadsheet that serves as a key of all questions being asked that correspond to our chosen demographic variable.
 
-`Example Survey Question from C
-Question Number: Q93
-Question: Do you have an electric connection to your home from the mains? [If yes] How often is the
+`Example Survey Question from C`
+**Question Number:** Q93
+**Question:** Do you have an electric connection to your home from the mains? [If yes] How often is the
 electricity actually available from this connection?
-Variable Label: Q93. Electric connection from mains
-Values: 0-5, 9, 8, -1
-Value Labels: 0=No mains electric supply or connection to the home, 1=Never, 2=Occasionally, 3=About
+**Variable Label:** Q93. Electric connection from mains
+**Values:** 0-5, 9, 8, -1
+**Value Labels:** 0=No mains electric supply or connection to the home, 1=Never, 2=Occasionally, 3=About
 half of the time, 4=Most of the time, 5=All of the time, 9=Don’t know, 8=Refused to answer, -1=Missing
-Source: Afrobarometer Round 5
-Note: Interviewer was instructed to not ask this question if it was 100% clear that there was no electricity
-supply to the home, e.g., in an unserved rural area.`
+**Source:** Afrobarometer Round 5
+**Note:** Interviewer was instructed to not ask this question if it was 100% clear that there was no electricity
+supply to the home, e.g., in an unserved rural area.
 
 ## Next Steps
 
