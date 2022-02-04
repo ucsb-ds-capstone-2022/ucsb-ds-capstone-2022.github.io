@@ -16,7 +16,9 @@ The first meeting (1/12) was spent learning about the Big-Bee project. For insta
 Our task moving forward for the next few weeks:
 
   (T1)Reading barcodes from bee images in a folder and renaming the images with the decoded barcode
+  
   (T2)Extract exif data from each image and transferring the data into a tab delimited or comma delimited file (csv)
+  
   (T3)Share the scripts via Github for the Big-Bee project to use
 
 
@@ -25,7 +27,9 @@ Our task moving forward for the next few weeks:
 This week was spent trying to extract the data contained in the QR/Datamatrix codes. We will be using [OpenCV], a library of programming functions primarily used for computer vision. (https://docs.opencv.org/4.x/d9/df8/tutorial_root.html)
 
 Two main packages to read the codes from the images:
+
 [QR Code Reader](https://pypi.org/project/pyzbar/) 
+
 [Data Matrix Reader](https://pypi.org/project/pylibdmtx/)
 
 Two problems when using these packages:
