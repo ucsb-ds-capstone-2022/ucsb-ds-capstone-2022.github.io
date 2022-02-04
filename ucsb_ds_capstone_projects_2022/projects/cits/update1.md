@@ -13,7 +13,7 @@ The CITS lab is described as, “ being dedicated to research and education abou
 
 In 2020, the social media documentary The Social Dilemma has once become the most popular show on Nextflix. This documentary reveals the downsides of the major social media platforms. The popularity of The Social Dilemma reflects the public’s general concerns about the information they shared on social media. 
 
-![] (https://usustatesman.com/wp-content/uploads/2020/11/the-social-dilemma-1050x700.png)
+![](https://usustatesman.com/wp-content/uploads/2020/11/the-social-dilemma-1050x700.png)
 
 In response to these concerns, our research project is launched by CITS to examine these technology and society dilemmas from a well-balanced and research-based view with empirical data: how social media platforms, the digital devices that host them, and the algorithms that enable them, produce both beneficial and potentially harmful effects for their users; and how different generations of users share and manage their private information on social media platforms.
 
