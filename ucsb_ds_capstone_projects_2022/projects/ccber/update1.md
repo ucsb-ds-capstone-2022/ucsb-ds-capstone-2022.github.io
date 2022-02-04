@@ -33,7 +33,9 @@ Two main packages to read the codes from the images:
 [Data Matrix Reader](https://pypi.org/project/pylibdmtx/)
 
 Two problems when using these packages:
+
   1.Not every image is able to be read 
+  
   2.In the case where the code is able to be read, the runtime is quite long 
 
 Using the code readers alone, only 17/29 images could be read. Upon further research, we learned that some preprocessing is necessary to ensure the QR codes can be read consistently and faster. One example of preprocessing is binarization, which is converting a grayscale image into a black and white image. The [Kraken] (https://github.com/mittagessen/kraken) package includes a binarization function. While the Kraken function did improve the accuracy and speed at which the QR/Datamatrix codes were decoded, it still took a little over 30 minutes to decode the 21/29 images provided. 
@@ -43,13 +45,12 @@ For next week, we will try improving the runtime and accuracy by writing a code 
 #### T2
 This week, we research different python modules that would be able to extract specific EXIF data from a folder of images. The Pillow ExifTag module proved to be the most efficient as well as the CSV python module.
 
-[Exif Documentation](https://pillow.readthedocs.io/en/stable/reference/ExifTags.html)
-
-Using this module we were able to construct a rough python script that iterated through a folder of images and produced a .csv file that contained specific EXIF data. 
+[Exif Documentation](https://pillow.readthedocs.io/en/stable/reference/ExifTags.html). Using this module we were able to construct a rough python script that iterated through a folder of images and produced a .csv file that contained specific EXIF data. 
 
 We ran into a couple of problems:
+
 1.     The ExifTags module only worked for ‘.JPG’ and not ‘.jpg’ files. So, exif data from only 17/29 images was able to be extracted
-2.     The produced csv file contained some data that was not human readable.
+2.     The produced csv file contained some data that was not human readable.  
 3.     It did not include the corresponding filenames for each image
 Despite these issues, the runtime for this code was much faster than other modules that were tested. 
 
