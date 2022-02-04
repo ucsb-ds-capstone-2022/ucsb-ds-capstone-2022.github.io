@@ -13,6 +13,10 @@ Carpe Data is an insurance technology company whose headquarters is located in S
 
 In terms of the data, Carpe Data was able to provide us with two different datasets. The first had a size of 5.17 GB and the second was about 400 MB. These original datasets each contained 5 columns: Search Transaction ID, Search Subject ID, Original URL, Raw HTML text from the website, and Type of Fraud. We decided to drop the first three columns as they are not relevant to the building of our model, which left us with the HTML text along with the type of fraud associated with it as our labels. As a preprocessing step, we looked into the value counts for each unique label so that we could decide how to consolidate groups with lower frequencies. Originally there were 12 unique labels. We decided to remove all the types of fraud that had under 10 observations and then mapped the remaining ones that had under 100 observations to fraud labeled as “potentially relevant information.” This left us with 6 unique labels: N/A: No relevant content, Possible Fatality, Potentially unlawful activity, Physical Activity, Information related to the claim, and Potentially relevant information. 
 
+<p align="center">
+    <img src=label_counts.png/ width="400" height="400"> <br> <em>Figure 1. HTML feature labels with their respective counts.</em>
+</p> 
+
 This is something that we may need to potentially revisit and regroup the labels as our sponsors may want us to include some of the labels that had under 100 observations instead of simply combining them into one label. After consolidating the labels, we concatenated the two different datasets into one, resulting in us having one large dataset containing 42,485 rows and 2 columns. From there we were able to begin the cleaning process of the raw HTML text.  
 
 ******
@@ -32,6 +36,10 @@ The first model that we attempted was created from multinomial logistic regressi
 The second model that we attempted was created from a Naive Bayes classifier. Overall, the Naive Bayes models (for the dataset with the lemmatized words and the dataset with the stemmed words) performed poorly. The confusion matrices for this type of model revealed that many labels were incorrectly classified.
 
 The third model that we attempted to create was from a support-vector machine (SVM). The SVM models (for the dataset with the lemmatized words and the dataset with the stemmed words) did not show great performance either. The confusion matrices revealed that although many of the labels were classified with high accuracy, there were some labels that were misclassified. For the SVM model that was created with the dataset with stemmed words, we see several commission errors (false positives).
+
+<p align="center">
+    <img src=svm_matrix.png/ width="600" height="600"> <br> <em>Figure 2. Confusion matrix of the results of the SVM model using stemming and the tf-idf vectorizer.</em>
+</p> 
 
 ******
 
