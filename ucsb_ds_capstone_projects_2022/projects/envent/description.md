@@ -23,4 +23,4 @@ So far, our main accomplishment with our project has been understanding the diff
 
 The beginning of this project is a large effort of data cleaning, organizing and processing which we are just now getting into the flow of. As outlined above, our eventual goal is to develop predictive models to understand how the demographic attributes of gender, income, race, age, education level, religion, housing type, and number of children are differentially predictive of climate opinion in different countries, continents, time periods. Below is an image of a similar display of the descriptive values that we may obtain when comparing a demographic variable to a measure of climate opinion. In the example below, the researchers show the responses in the United States for a few questions related to belief in climate change along the demographic lines of party preference. Ultimately we will be able to compare answers to similar climate opinion variables with our demographic data to both produce similar displays as well as create predictive models.
 
-![](image_url)
+![](https://www.finereport.com/en/wp-content/uploads/2019/10/tableau2.png)
