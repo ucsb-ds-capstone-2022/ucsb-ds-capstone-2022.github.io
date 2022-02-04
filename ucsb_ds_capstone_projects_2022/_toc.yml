@@ -25,7 +25,7 @@ parts:
     - file: projects/appfolio/update1
   - file: projects/calcofi/description
     sections:
-    - file: projects/calcofi/update1
+    - file: projects/calcofi/mock_update
   - file: projects/carpedata/description
     sections:
     - file: projects/carpedata/update1
