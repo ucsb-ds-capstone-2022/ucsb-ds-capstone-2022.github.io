@@ -51,22 +51,7 @@ CalCOFI is a project that has been runing for a long time, and as a result their
 
 ## Data definitions
 We also cut down on the parameters used partly for development purposes, partly because we are only interested in certain parameters as of right now. The table below represents the parameters we use, and what they represent:
-| **Field Name** | **Units**                | **Description**                                                                                                                                                          |   || **Field Name** | **Units**       | **Description**                                                                                  |
-|----------------|-----------------|--------------------------------------------------------------------------------------------------|
-| Cst_Cnt        | n.a.            | "Cast Count - All CalCOFI casts ever conducted, consecutively numbered"                          |
-| Cruise_ID      | n.a.            | Cruise identifier [Year]-[Month]-[Day]-C-[Ship Code]                                             |
-| Cruise         | n.a.            | Cruise Name [Year][Month]                                                                        |
-| Cruz_Sta       | n.a.            | Cruise Name and Station [Year][Month][Line][Station]                                             |
-| Cast_ID        | n.a.            | Cast Identifier [Century] - [YY][MM][ShipCode] - [CastType][Julian Day] - [CastTime]-[Line][Sta] |
-| Sta_ID         | n.a.            | Line and Station                                                                                 |
-| Quarter        | n.a.            | Quarter of the year                                                                              |
-| Date           | time            | Date (Month Day Year)                                                                            |
-| Year           | n.a.            | Year                                                                                             |
-| Month          | n.a.            | Month                                                                                            |
-| Lat_Dec        | decimal degrees | Observed Latitude in decimal degrees                                                             |
-| Lon_Dec        | decimal degrees | Observed Longitude in decimal degrees                                                            |
-| St_Line        | n.a.            | Nearest Standard Line                                                                            |
-
+| **Field Name** | **Units**                | **Description**                                                                                                                                                          |   |
 |----------------|--------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
 | Cst_Cnt        | n.a.                     | Cast Count - All CalCOFI casts ever conducted, consecutively numbered                                                                                                    |   |
 | Btl_Cnt        | n.a.                     | "Bottle Count - All CalCOFI bottles ever sampled, consecutively numbered"                                                                                                |   |
@@ -79,5 +64,18 @@ We also cut down on the parameters used partly for development purposes, partly 
 | R_Depth        | meters                   | Reported Depth (from pressure) in meters                                                                                                                                 |   |
 | pH1            | pH scale                 | pH (the degree of acidity/alkalinity of a solution)                                                                                                                      |   |
 | pH2            | pH scale                 | pH (the degree of acidity/alkalinity of a solution) on a replicate sample                                                                                                |   |
+| Cst_Cnt    | n.a.            | "Cast Count - All CalCOFI casts ever conducted, consecutively numbered"                          |
+| Cruise_ID  | n.a.            | Cruise identifier [Year]-[Month]-[Day]-C-[Ship Code]                                             |
+| Cruise     | n.a.            | Cruise Name [Year][Month]                                                                        |
+| Cruz_Sta   | n.a.            | Cruise Name and Station [Year][Month][Line][Station]                                             |
+| Cast_ID    | n.a.            | Cast Identifier [Century] - [YY][MM][ShipCode] - [CastType][Julian Day] - [CastTime]-[Line][Sta] |
+| Sta_ID     | n.a.            | Line and Station                                                                                 |
+| Quarter    | n.a.            | Quarter of the year                                                                              |
+| Date       | time            | Date (Month Day Year)                                                                            |
+| Year       | n.a.            | Year                                                                                             |
+| Month      | n.a.            | Month                                                                                            |
+| Lat_Dec    | decimal degrees | Observed Latitude in decimal degrees                                                             |
+| Lon_Dec    | decimal degrees | Observed Longitude in decimal degrees                                                            |
+| St_Line    | n.a.            | Nearest Standard Line                                                                            |
 
 
