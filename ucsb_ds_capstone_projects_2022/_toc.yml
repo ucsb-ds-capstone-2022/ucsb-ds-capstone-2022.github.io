@@ -46,7 +46,7 @@ parts:
     - file: projects/evidation_eric/update1
   - file: projects/evidation_julio/description
     sections:
-    - file: projects/evidation2/Update(2-4-22)
+    - file: projects/evidation_julio/Update(2-4-22)
   - file: projects/hg_insights/description
   - file: projects/nri/description
     sections:
