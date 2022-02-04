@@ -35,7 +35,7 @@ Our data consisted of uninformative labels and unintuitive names for values whic
 
 ### Model Complexity
 
-![](https://discordapp.com/channels/927701734791458816/927701734791458819/938995959961100378)
+![](https://cdn.discordapp.com/attachments/927701734791458819/938995959747198986/Screen_Shot_2022-01-27_at_7.27.47_PM.png)
 
 It has been a learning curve to understand how recommender systems work. Our chosen model consists of four encoders and one decoder to make item recommendations. It has been a puzzle deciphering the research paper for our model and getting it working to train. Lots of data and a complex model makes training time increase tremendously. It currently takes over thirty minutes for one epoch and our model needs a considerable amount of epochs to be accurate. We talked with our sponsors and set up a notebook on Google cloud that enables us to use GPUs to train more efficiently.
 
@@ -50,7 +50,7 @@ It has been a learning curve to understand how recommender systems work. Our cho
 6. Figure out a way to map between our dataset and the CS capstone team’s dataset
 7. Implement our prediction model to the CS capstone team’s website (see image of CS team’s website below)
 
-![](https://discordapp.com/channels/927701734791458816/927701734791458819/938995930890375198)
+![](https://cdn.discordapp.com/attachments/927701734791458819/938995930642915408/Screen_Shot_2022-02-03_at_6.10.44_PM.png)
 
 For next quarter:
 
