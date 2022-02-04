@@ -2,20 +2,21 @@
 
 ### **Domain Background**
 
-Allthenticate is a cybersecurity company founded in Santa Barbara, CA by UCSB alumni that aims to transform the way that people will interact with their devices. Their products enable the use of a smartphone to unlock everything, from doors to your office, to logging into a website, and even unlocking your car. 
+Founded in Santa Barbara, CA by UCSB alumni, Allthenticate is a cybersecurity company that aims to revolutionize the way that people will interact with their devices. Their products enable the use of a smartphone to unlock everything, from doors to your office, to logging into a website, and even unlocking your car. 
 
 The company has broad goals to simplify yet bolster modern network security, where anyone can be authenticated and be able to communicate securely yet easily. With ambitions set high, it’s important to be able to quantify and provide evidence of a superior product, which leads to the need for a team of data science students. 
 
-The capstone team, which consists of undergraduates Akshat Ataliwala, Calvin Jenkins, Bosco De Enrique Romeu, and Yuki Yamazki, as well as graduate advisor Leron Reznikov aims to accomplish 2 goals in this project.
+Our capstone team consists of undergraduates Akshat Ataliwala, Calvin Jenkins, Bosco De Enrique Romeu, and Yuki Yamazki, as well as graduate advisor Leron Reznikov. We are working directly with Founder and CEO of Allthenticate, Chad Spensky, which is incredibly exciting as we have the opportunity to shape the analytics processes of the company. 
+
 
 ### **Motivation**
 
-Why are we doing Data Science at Allthenticate?
-As you already know, Allthenticate is a cybersecurity company which allows users to, using their phone and the application; combine any kind of authentication (doors, passwords, cars) into a single action. So, as you can imagine, the amount of (very sensitive) data Allthenticate generates is huge. Curently that data is not being exploited for any business purposes, therefore: Why not join forces with a talented and passionate group of students and give Data Science a try? Though having data available for analysis is not the only motivation behind this project, it is an important one.
+As you already know, Allthenticate is a cybersecurity company which allows users to simply authenticate using their phones. As you can imagine, the amount of (very sensitive) data Allthenticate generates is huge. Currently that data is not being exploited for any business purposes, therefore: Why not join forces with a talented and passionate group of Data Science students? Though having data available for analysis is not the only motivation behind this project, it is an important one.
 
 Allthenticate was founded in 2019, so it is a relatively young and fast growing company. Although the members of Allthenticate are in close contact with most of their clients; the company lacks an understanding of how the general user interacts with the product. How many times are users typing their passwords? How many times do they need to open the app? What settings are they using? 
 
 We believe this exciting data-centric project will be able to quantify and shed a light on the role Allthenticate occupies in its customers day-to-day, and much more.
+
  
 ### **Data**
 
@@ -59,5 +60,8 @@ Phone | Time | Device Type | Connected | Connectable | Locked | Connecting | UUI
 ### **Objectives**
 
 The primary objective of this project is to improve the Allthenticate app by analyzing the user data provided by the logs from doors, computers, and phones. To achieve this, we have two goals we aim to accomplish.
-First, we want to quantify how much of an improvement Allthenticate’s security solution provides as opposed to existing solutions. Second, we intend to determine how well the product is working, and use that data to build the product into catering the best experience for the user. In order to reach these goals, we must collect and analyze the user data (such as the number of times the app was used in a day, the amount of time saved by using the app, the app status throughout the day, etc.) through using ELK (Elasticsearch, Logstash, Kibana).
-Another objective we would like to achieve through tracking the growth of this young company is to publish at least one academic publication at a top-tier conference. There are sure to be a lot of surprises in our data and we believe it would be fun and interesting to track.
+
+First, we want to quantify how much of an improvement Allthenticate’s security solution provides as opposed to existing solutions. This includes things like measuring time saved, predicting a user’s app behaviors, and security benefits compared to not having the app. Second, we intend to determine how well the product is working. Allthenticate is constantly improving and with  user-happiness being at the core of the company’s values, we want to cater the best experience for the user. 
+
+As a final goal for the team, we would like to publish an academic publication at a top tier conference focused on user-happiness and usability of the app. The company is serious about being a simple solution for all and we hope to prove ourselves by analyzing user-data in an academic context. 
+
