@@ -1,4 +1,4 @@
-# envent
+# ENVENT Lab
 
 # Project Introduction
 Founded in 2016, the Energy and Environment Transitions (ENVENT) Lab at the University of California, Santa Barbara (UCSB) is a hub for climate policy advocacy, climate communication, and environmental politics research. The lab is co-directed by Prof. Leah Stokes and Prof. Matto Mildenberger.
