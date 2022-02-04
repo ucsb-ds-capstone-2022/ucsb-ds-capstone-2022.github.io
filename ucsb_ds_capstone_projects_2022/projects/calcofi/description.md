@@ -64,7 +64,6 @@ We also cut down on the parameters used partly for development purposes, partly 
 | R_Depth        | meters                   | Reported Depth (from pressure) in meters                                                                                                                                 |   |
 | pH1            | pH scale                 | pH (the degree of acidity/alkalinity of a solution)                                                                                                                      |   |
 | pH2            | pH scale                 | pH (the degree of acidity/alkalinity of a solution) on a replicate sample                                                                                                |   |
-| Cst_Cnt    | n.a.            | "Cast Count - All CalCOFI casts ever conducted, consecutively numbered"                          |
 | Cruise_ID  | n.a.            | Cruise identifier [Year]-[Month]-[Day]-C-[Ship Code]                                             |
 | Cruise     | n.a.            | Cruise Name [Year][Month]                                                                        |
 | Cruz_Sta   | n.a.            | Cruise Name and Station [Year][Month][Line][Station]                                             |
