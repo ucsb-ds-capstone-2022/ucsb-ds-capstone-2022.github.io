@@ -26,9 +26,9 @@ Before we tackle this overall goal, there are various steps we are taking along 
 
 Furthermore, we do not have access to the data that the project will be based upon. Fortunately, we are able to prepare for the transition to our project dataset by working with sample data; currently, we are exploring Garmin and Oura datasets found on Kaggle to get familiarized with the type of data we will be working with later on. This includes:
     
-    * Creating and re-creating visualizations (primarily from the Kaggle notebooks correlated with the datasets)
-    * Learning how to work with time series data
-    * Analyzing and taking note of any relationships among variables
+* Creating and re-creating visualizations (primarily from the Kaggle notebooks correlated with the datasets)
+* Learning how to work with time series data
+* Analyzing and taking note of any relationships among variables
 
 One example of a visualization we could try to recreate from the Kaggle notebook for the Oura Ring dataset is pictured in Figure 2.
 
