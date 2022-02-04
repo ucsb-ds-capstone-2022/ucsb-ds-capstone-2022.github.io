@@ -20,7 +20,7 @@ This project's long-term goal is to utilize wearable device data coupled with su
 Before we tackle this overall goal, there are various steps we are taking along the way. For instance, our group studied the article cited above in order to gain background information on the data collection and experimental process. The article focused on gauging participant retainment in the study, which is visualized in the article (Figure 1).
 
 
-| ![Participant Retention](\images\Fig1_Study_Retention.png) |
+| ![Participant Retention](/images/Fig1_Study_Retention.png) |
 |:--:|
 | <b>Participant Retention with Light Touch Techniques - Fig.1</b>|
 
@@ -32,7 +32,7 @@ Furthermore, we do not have access to the data that the project will be based up
 
 One example of a visualization we could try to recreate from the Kaggle notebook for the Oura Ring dataset is pictured in Figure 2.
 
-| ![Resting Heart Rate Comparison](\images\Fig2_RHR_Comparison.png) |
+| ![Resting Heart Rate Comparison](/images/Fig2_RHR_Comparison.png) |
 |:--:|
 | <b>Scatterplots comparing Average Resting Heart Rate with Sleep, Readiness, and Activity from [Oura Kaggle](https://www.kaggle.com/eljailarisuhonen/oura-cloud-data-machine-learning-for-beginners) - Fig.1</b>|
 
