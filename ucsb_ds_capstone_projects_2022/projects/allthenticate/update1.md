@@ -50,7 +50,7 @@ Phone | Action | Time
 7564cf90-5d27-423b-caddb46 | lock | 2022-01-28 04:47:23.957818
 7564cf90-5d27-423b-caddb46 | ble enabled | 2022-01-28 00:12:31.482374
  
-The second type of data is information that the phone stores about all of the door readers and computer that it connects to. This data is updated whenever the information for this device changes from the phone’s perspective. This data contains fields for the phone’s unique ID, the time, and then the device info of the device. This device info includes fields for the type of device it is (1 for door, 2 for computer), whether it is locked, whether it is connected, whether it is processing a command, whether it is connectable, whether it is communicating, the unique ID for the device, and the strength of the signal from the device. This data is shown below in its raw form since it is hard to fit in a table on this page.
+The second type of data is information that the phone stores about all of the door readers and computer that it connects to. This data is updated whenever the information for this device changes from the phone’s perspective. This data contains fields for the phone’s unique ID, the time, and then the device info of the device. This device info includes fields for the type of device it is (1 for door, 2 for computer), whether it is locked, whether it is connected, whether it is processing a command, whether it is connectable, whether it is communicating, the unique ID for the device, and the strength of the signal from the device. This data is shown below.
 
 Phone | Time | Device Type | Connected | Connectable | Locked | Connecting | UUID | RSSI
 ---|---|---|---|---|---|---|---|---
