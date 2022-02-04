@@ -22,7 +22,7 @@ Before we tackle this overall goal, there are various steps we are taking along 
 
 | ![Participant Retention](Fig1_Study_Retention.png) |
 |:--:|
-| <b>Participant Retention with Light Touch Techniques - Fig.1</b>|
+| <b>Fig.1 - Participant Retention with Light Touch Techniques</b>|
 
 Furthermore, we do not have access to the data that the project will be based upon. Fortunately, we are able to prepare for the transition to our project dataset by working with sample data; currently, we are exploring Garmin and Oura datasets found on Kaggle to get familiarized with the type of data we will be working with later on. This includes:
     
@@ -34,7 +34,7 @@ One example of a visualization we could try to recreate from the Kaggle notebook
 
 | ![Resting Heart Rate Comparison](Fig2_RHR_Comparison.png) |
 |:--:|
-| <b>Scatterplots comparing Average Resting Heart Rate with Sleep, Readiness, and Activity from [Oura Kaggle](https://www.kaggle.com/eljailarisuhonen/oura-cloud-data-machine-learning-for-beginners) - Fig.1</b>|
+| <b>Scatterplots comparing Average Resting Heart Rate with Sleep, Readiness, and Activity from [Oura Kaggle](Fig.2 - https://www.kaggle.com/eljailarisuhonen/oura-cloud-data-machine-learning-for-beginners)</b>|
 
 
 ## Data
