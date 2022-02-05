@@ -58,4 +58,4 @@ parts:
     - file: projects/pwc/update1
   - file: projects/sprague/description
     sections:
-    - file: projects/sprague/update1
+    - file: projects/sprague/Sprague_group_update_01
