@@ -56,7 +56,7 @@ Deep image reconstruction methods can be placed into two categories:
 
 Generative methods such as [3] or [4] make use of GANs and/or Variational Autoencoders to map from fMRI data to pixel-space. Non-generative methods such as [5] or [6] provide either iterative algorithms or encoder-decoder style networks which map the fMRI data to a latent space which is then decoded into pixel-space.
 
-| <img src="encode_decode.jpg">| 
+| ![Encoder-Decoder](encode_decode.jpg)| 
 |:--:| 
 | *Figure 3. Sample encoder-decoder network.* [6]|
 
