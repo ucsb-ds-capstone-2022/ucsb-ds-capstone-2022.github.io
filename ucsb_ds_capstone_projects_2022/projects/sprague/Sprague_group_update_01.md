@@ -1,5 +1,5 @@
 ![dataset_compare.png](sprague_lab.png)
-# Objective 
+# Update 1
 Currently, we are studying the effects different visual stimuli produce in activity in different regions of the brain. Doing so will allow us to understand which regions are responsible for which recognition tasks, and ultimately how specific activation patterns are produced from specific types of images seen.
 
 ******
