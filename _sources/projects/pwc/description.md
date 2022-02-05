@@ -1,2 +1,3 @@
-# pwc
-Project description
+# PwC
+
+PwC(PricewaterhouseCoopers) is an accounting firm that deals primarily with tax consulting and tax planning. In terms of machine learning, they are focused mainly on OCR (optical character recognition) and NLP-related machine learning tasks. Many domains have began investing and implementing machine learning/AI + IoT “internet of things” devices. Edge processing allows data processing closer to an IoT device compared to the cloud. Latency, bandwidth, and reliability issues are minimized. In order to perform data processing/ ML computations, many of these edge devices need to be able to run compact models. The size of the trained model can be large for some of these complex tasks, which makes it difficult to deploy on resource-constrained devices. We are working with PwC data science specialists in researching and implementing compression methods of machine learning models. **The primary task** is to create adequate models as a benchmark and apply the compression methods with the goal of maintaining robustness of the original.  
