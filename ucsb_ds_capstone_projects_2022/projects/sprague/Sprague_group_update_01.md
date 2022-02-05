@@ -1,4 +1,4 @@
-![dataset_compare.png](figs/sprague_lab.png)
+![dataset_compare.png](sprague_lab.png)
 # Objective 
 Currently, we are studying the effects different visual stimuli produce in activity in different regions of the brain. Doing so will allow us to understand which regions are responsible for which recognition tasks, and ultimately how specific activation patterns are produced from specific types of images seen.
 
@@ -37,7 +37,7 @@ For our project, we are using the Natural Scenes Dataset (NSD), which is a large
 
 In total, NSD includes responses to 70,566 distinct natural scene images, and also includes a variety of anatomical neuroimaging measures, functional neuroimaging measures, and behavioral measures. In addition, a large amount of auxiliary measures were included such as resting-state data, external physiological measures during the resting-state scan sessions, diffusion data and associated derivatives, and a collection of manually defined regions of interest (ROIs).
 
-| ![example.gif](figs/T1T2EPI.gif) | 
+| ![example.gif](T1T2EPI.gif) | 
 |:--:| 
 | *Figure 1. Example data from Natural Scenes Dataset.* [1]|
 
@@ -46,7 +46,7 @@ In total, NSD includes responses to 70,566 distinct natural scene images, and al
 ## Deep Image Reconstruction
 Deep image reconstruction is the task of fully reconstructing a visual stimulus given just a patient’s fMRI data. Though many works have recently developed deep learning methods for this task [SURVEY], no methods to our knowledge have made use of a dataset as large as provided in [NSD].
 
-| ![dataset_compare.png](figs/dataset_compare.png)| 
+| ![dataset_compare.png](dataset_compare.png)| 
 |:--:| 
 | *Figure 2. Comparison of datasets that have been used for Deep Image Reconstruction (DIR). Natural Scenes Dataset has not yet been used for this task.* [2]|
 
@@ -56,13 +56,13 @@ Deep image reconstruction methods can be placed into two categories:
 
 Generative methods such as [3] or [4] make use of GANs and/or Variational Autoencoders to map from fMRI data to pixel-space. Non-generative methods such as [5] or [6] provide either iterative algorithms or encoder-decoder style networks which map the fMRI data to a latent space which is then decoded into pixel-space.
 
-| <img src="figs/encode_decode.jpg">| 
+| <img src="encode_decode.jpg">| 
 |:--:| 
 | *Figure 3. Sample encoder-decoder network.* [6]|
 
 One noticeable difference between the two approaches is the “naturalness vs fidelity” tradeoff [SURVEY]. The methods which use generative models pre-trained on natural images tend to produce images which are clearer but lack the correct objectness of the stimulus. Non-generative methods will often reproduce the correct high-level features of the stimulus, but will be very blurry.
 
-| ![model_compare.png](figs/model_compare.png) | 
+| ![model_compare.png](model_compare.png) | 
 |:--:| 
 | *Figure 4. Results highlighted in blue represents  non-generative method. Results highlighted in red represents generative method.* [2]|
 
