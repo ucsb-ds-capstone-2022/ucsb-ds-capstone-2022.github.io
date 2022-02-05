@@ -32,7 +32,7 @@ We did some additional preprocessing by changing the 27 emotion labels into 6 ba
 
 ## Objectives
 
-Our goal by the end of next week is to have a model built and find a metric to gauge its performance. If everything goes according to plan we will have a benchmark model for comparision with models that we will be applying compression methods on.
+Our goal by the end of next week is to have a model built and find a metric to gauge its performance. If everything goes according to plan we will have a benchmark model for comparison with models that we will be applying compression methods on.
 
 [^1]: https://en.wikipedia.org/wiki/Emotion_classification
 
