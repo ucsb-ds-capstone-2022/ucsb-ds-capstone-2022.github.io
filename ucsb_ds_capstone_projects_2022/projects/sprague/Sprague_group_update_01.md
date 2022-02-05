@@ -44,7 +44,7 @@ In total, NSD includes responses to 70,566 distinct natural scene images, and al
 ******
 
 ## Deep Image Reconstruction
-Deep image reconstruction is the task of fully reconstructing a visual stimulus given just a patient’s fMRI data. Though many works have recently developed deep learning methods for this task [SURVEY], no methods to our knowledge have made use of a dataset as large as provided in [NSD].
+Deep image reconstruction is the task of fully reconstructing a visual stimulus given just a patient’s fMRI data. Though many works have recently developed deep learning methods for this task [2], no methods to our knowledge have made use of a dataset as large as provided in [1].
 
 | ![dataset_compare.png](dataset_compare.png)| 
 |:--:| 
@@ -60,7 +60,7 @@ Generative methods such as [3] or [4] make use of GANs and/or Variational Autoen
 |:--:| 
 | *Figure 3. Sample encoder-decoder network.* [6]|
 
-One noticeable difference between the two approaches is the “naturalness vs fidelity” tradeoff [SURVEY]. The methods which use generative models pre-trained on natural images tend to produce images which are clearer but lack the correct objectness of the stimulus. Non-generative methods will often reproduce the correct high-level features of the stimulus, but will be very blurry.
+One noticeable difference between the two approaches is the “naturalness vs fidelity” tradeoff [2]. The methods which use generative models pre-trained on natural images tend to produce images which are clearer but lack the correct objectness of the stimulus. Non-generative methods will often reproduce the correct high-level features of the stimulus, but will be very blurry.
 
 | ![model_compare.png](model_compare.png) | 
 |:--:| 
