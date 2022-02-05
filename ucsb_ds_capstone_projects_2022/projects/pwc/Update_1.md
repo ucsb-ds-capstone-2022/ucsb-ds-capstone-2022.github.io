@@ -1,4 +1,4 @@
-# Update 1: Benchmark
+# Update 1: Preliminaries
 
 ## Preperation
 **What is model compression?**
@@ -11,9 +11,9 @@ The first three weeks were primarily used to research and get familiar with meth
 
 We will discuss and provide analysis in more detail on the methods we will be using once our initial model is built. 
 
-## Preliminaries
+## Initial Model Consideration
 
-### First model
+### The Plan
 Our sponsor Rob Bernard and his colleagues from PwC were interested in working with a language-based dataset and gave us the lead on finding a reasonably clean dataset and the task the model would learn. The focus of the project is primarily on compression methods so it was in our best interest to be modest with the task. Our group decided that emotion classification[^1] would be achievable without becoming a time constraint. 
 
 ### The Dataset 
