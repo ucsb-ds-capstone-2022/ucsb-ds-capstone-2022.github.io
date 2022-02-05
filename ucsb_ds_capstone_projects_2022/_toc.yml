@@ -55,7 +55,7 @@ parts:
     - file: projects/nri/update3
   - file: projects/pwc/description
     sections:
-    - file: projects/pwc/update1
+    - file: projects/pwc/Update_1 
   - file: projects/sprague/description
     sections:
     - file: projects/sprague/update1
