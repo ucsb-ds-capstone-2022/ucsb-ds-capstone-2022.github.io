@@ -1,0 +1,61 @@
+format: jb-book
+root: welcome
+parts:
+- caption: Class Logistics
+  chapters:
+  - file: class/syllabus
+    sections:
+    - file: class/syllabus_readings
+    - file: class/syllabus_participation
+    - file: class/syllabus_deliverables
+    - file: class/syllabus_policies
+  - file: class/contacts
+  - file: class/software-tools
+  - file: class/progress-update-guidelines
+    sections:
+    - file: class/progress-update-initial-post-guidelines
+    - file: class/progress-update-posting-instructions
+- caption: Projects
+  chapters:
+  - file: projects/allthenticate/description
+    sections:
+    - file: projects/allthenticate/update1
+  - file: projects/appfolio/description
+    sections:
+    - file: projects/appfolio/update1
+  - file: projects/calcofi/description
+    sections:
+    - file: projects/calcofi/update1
+  - file: projects/carpedata/description
+    sections:
+    - file: projects/carpedata/update1
+  - file: projects/ccber/description
+    sections:
+    - file: projects/ccber/update1
+  - file: projects/cits/description
+    sections:
+    - file: projects/cits/update1
+  - file: projects/envent/description
+    sections:
+    - file: projects/envent/update1
+  - file: projects/eri/description
+    sections:
+    - file: projects/eri/update1
+  - file: projects/evidation_eric/description
+    sections:
+    - file: projects/evidation_eric/update1
+  - file: projects/evidation_julio/description
+    sections:
+    - file: projects/evidation2/Update(2-4-22)
+  - file: projects/hg_insights/description
+  - file: projects/nri/description
+    sections:
+    - file: projects/nri/update1
+    - file: projects/nri/update2
+    - file: projects/nri/update3
+  - file: projects/pwc/description
+    sections:
+    - file: projects/pwc/update1
+  - file: projects/sprague/description
+    sections:
+    - file: projects/sprague/update1
