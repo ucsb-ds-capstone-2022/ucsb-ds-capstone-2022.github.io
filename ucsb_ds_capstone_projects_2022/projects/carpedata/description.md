@@ -5,9 +5,8 @@ output:
 ---
 # carpedata
 
-<p align="center">
-  ![](carpedatalogo.png)
-</p>
+
+![](carpedatalogo.png)
 
 Carpe Data is an insurance technology company whose headquarters is located in Santa Barbara, California. Carpe Data gathers and analyzes data from sources such as social media platforms and web content in order to provide insurance companies with data solutions. Insurance companies typically receive a significant amount of claims each year; Carpe Data helps to reduce the amount of manual inspection needed to verify these claims through the use of their algorithms. 
 
