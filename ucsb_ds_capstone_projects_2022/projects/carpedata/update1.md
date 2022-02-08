@@ -19,7 +19,7 @@ We decided to drop the first three columns as they are not relevant to the build
 
 
 <p align="center">
-    <img src="../../_images/label_counts.png" style="width: 400px; height: auto;"></img> <br>
+    <img src="https://i.imgur.com/v1tHNjN.png" style="width: 400px; height: auto;"></img> <br>
     <em>Figure 1. HTML feature labels with their respective counts.</em>
 </p> 
 
