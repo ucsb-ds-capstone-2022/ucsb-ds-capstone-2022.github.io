@@ -1,17 +1,18 @@
-# Update 1
+# Update 1 - (2/4/22)
 ******
 
-## INTRODUCTION/GOALS:
+## INTRODUCTION & GOALS
 
 Carpe Data is an insurance technology company whose headquarters is located in Santa Barbara, California. Carpe Data gathers and analyzes data from sources such as social media platforms and web content in order to provide insurance companies with data solutions. Insurance companies typically receive a significant amount of claims each year; Carpe Data helps to reduce the amount of manual inspection needed to verify these claims through the use of their algorithms. Our team’s project focuses on building machine learning models in Python that predict whether or not a web page contains evidence about a fraud claim and provide information about the specific type of fraudulent activity that is present.
 
 ******
 
-## SUMMARY OF THE DATA:
+## SUMMARY OF THE DATA
 
 In terms of the data, Carpe Data was able to provide us with two different datasets. The first had a size of 5.17 GB and the second was about 400 MB. These original datasets each contained 5 columns: 
 - Search Transaction ID
-- Search Subject ID, Original URL
+- Search Subject ID
+- Original URL
 - Raw HTML text from the website
 - Type of Fraud. 
 
@@ -29,7 +30,7 @@ This is something that we may need to potentially revisit and regroup the labels
 
 ******
 
-## PROGRESS:
+## PROGRESS
 
 Our team tried out a variety of cleaning methods for the raw HTML text data, but we were able to settle on one cleaning pipeline for now. First, we ran each observation through Beautiful Soup, pulling all the content data away from the HTML code formatting. Next, we removed all the links and non-breaking spaces (which were formatted as ‘&nbsp’ in the text data) from the text. Then, we normalized the unicode of the text, removed all non-alphanumeric symbols, and made the text all lowercase.
 
@@ -38,11 +39,14 @@ From there, we tokenized the text using spaCy and removed all punctuation, ‘st
 To set up our data so that it would be ready for modeling, we set up a train-test split with the testing set of 20% of our cleaned data. Then, we created a bag of words containing the vocabulary words and count measures of said words in our training data and created a count vectorizer. Using that vectorizer, we transformed the training set and testing set, allowing us to begin the model classification process.
 
 Due to the fact that our dataset contains observations labeled across at least 6 categories, we would be considering all the supervised multi-class classification models. In addition, our sponsors noted that our model accuracy should balance both precision and recall across all label categories (with a slight preference for recall), so that would be our criteria for selecting our best model.
-    
+
+### Logistic Regression
 The first model that we attempted was created from multinomial logistic regression. The multinomial logistic regression models (for the dataset with the lemmatized words and the dataset with the stemmed words) had poor performance overall; it correctly classified most of the labels with high accuracy, but since “Information related to the claim” and “Potentially relevant information” had low predictive accuracy and there is a high rate of false positives, this model is not the best.
 
+### Naive Bayes
 The second model that we attempted was created from a Naive Bayes classifier. Overall, the Naive Bayes models (for the dataset with the lemmatized words and the dataset with the stemmed words) performed poorly. The confusion matrices for this type of model revealed that many labels were incorrectly classified.
 
+### Support Vector Machine
 The third model that we attempted to create was from a support-vector machine (SVM). The SVM models (for the dataset with the lemmatized words and the dataset with the stemmed words) did not show great performance either. The confusion matrices revealed that although many of the labels were classified with high accuracy, there were some labels that were misclassified. For the SVM model that was created with the dataset with stemmed words, we see several commission errors (false positives).
 
 ![](svm_matrix.png)
@@ -52,7 +56,7 @@ The third model that we attempted to create was from a support-vector machine (S
 
 ******
 
-## CHALLENGES & FUTURE WORK:
+## CHALLENGES & FUTURE WORK
 
 Throughout our initial exploratory analysis, data cleaning, and modeling process, we encountered a couple potential challenges. For example, we first had difficulty determining what the best combination of methods would be for the ‘best’ cleaning pipeline. Through removing stop words, 2-character words, lemmatization and stemming, we were worried that we might be overfiltering the data from crucial information that the model needed.
 
