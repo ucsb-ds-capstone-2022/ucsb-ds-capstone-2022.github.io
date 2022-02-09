@@ -10,13 +10,17 @@ For our project we are working with California Cooperative Oceanic Fisheries Inv
 CalCOFI is a project that has been runing for a long time, and as a result their data collection methods follow closely with protocol to maintain consistency over the many years the project has been running. Data is taken 4 times a year (once a quarter). A ship takes scientists out to the same set of coordinates every year. At those coordinates, a CTD Rosette (pictured below) is lowered into the water, and at set discrete depths, ocean water samples are taken. Many parameters are measured with the samples taken such as Oxygen concentration, pH, salinity, temperature etc. Because of the size of the dataset, for development purposes we have cut down on the time range we are looking at to the years **2000-2021**.
 ![CTD Rosette Bottle being used in ocean water](https://wp.calcofi.org/wp/wp-content/uploads/2020/03/1904RL_sta93-50_CTDSurface-1024x770.jpg "CTD Rosette Bottles used to Sample Oceanwater")
 ![Visual representation of sampling method used by CalCOFI](https://user-images.githubusercontent.com/30590837/149233121-d5e2e83e-b72a-41e5-9e83-00ef40877b43.png "Visual representation of sampling methods")
+<figure>
+    <img src="http://placekitten.com/400/300" alt="A kitten">
+    <figcaption>Chesney the Kitten attempts a giant leap<figcaption>
+<figure>   
 
 ## Data definitions
 We also cut down on the parameters used partly for development purposes, partly because we are only interested in certain parameters as of right now. The table below represents the parameters we use, and what they represent:
 | **Field Name** | **Units**                | **Description**                                                                                                                                                          |   |
 |----------------|--------------------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------|---|
 | Cst_Cnt        | n.a.                     | Cast Count - All CalCOFI casts ever conducted, consecutively numbered                                                                                                    |   |
-| Btl_Cnt        | n.a.                     | "Bottle Count - All CalCOFI bottles ever sampled, consecutively numbered"                                                                                                |   |
+| Btl_Cnt        | n.a.                     | Bottle Count - All CalCOFI bottles ever sampled, consecutively numbered                                                                                                |   |
 | Sta_ID         | n.a.                     | Line and Station [Line] [Station]                                                                                                                                        |   |
 | Depth_ID       | n.a.                     | Uses the Cast_ID prefix ([Century]-[Year][Month][ShipCode]-[CastType][Julian Day]-[CastTime]-[Line][Sta]) but adds three additional variables: [Depth][Bottle]-[Rec_Ind] |   |
 | Depthm         | meters                   | Bottle depth in meters                                                                                                                                                   |   |
