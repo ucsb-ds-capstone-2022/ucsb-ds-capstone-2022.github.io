@@ -14,7 +14,7 @@ In terms of the data, Carpe Data was able to provide us with two different datas
 - Search Subject ID
 - Original URL
 - Raw HTML text from the website
-- Type of Fraud. 
+- Type of Fraud
 
 We decided to drop the first three columns as they are not relevant to the building of our model, which left us with the HTML text along with the type of fraud associated with it as our labels. As a preprocessing step, we looked into the value counts for each unique label so that we could decide how to consolidate groups with lower frequencies. Originally there were 12 unique labels. We decided to remove all the types of fraud that had under 10 observations and then mapped the remaining ones that had under 100 observations to fraud labeled as “potentially relevant information.” This left us with 6 unique labels: N/A: No relevant content, Possible Fatality, Potentially unlawful activity, Physical Activity, Information related to the claim, and Potentially relevant information. 
 
