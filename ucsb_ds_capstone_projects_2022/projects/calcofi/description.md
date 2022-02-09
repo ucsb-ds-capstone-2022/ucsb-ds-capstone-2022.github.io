@@ -8,11 +8,13 @@ For our project we are working with California Cooperative Oceanic Fisheries Inv
 
 ## Data Collection:
 CalCOFI is a project that has been runing for a long time, and as a result their data collection methods follow closely with protocol to maintain consistency over the many years the project has been running. Data is taken 4 times a year (once a quarter). A ship takes scientists out to the same set of coordinates every year. At those coordinates, a CTD Rosette (pictured below) is lowered into the water, and at set discrete depths, ocean water samples are taken. Many parameters are measured with the samples taken such as Oxygen concentration, pH, salinity, temperature etc. Because of the size of the dataset, for development purposes we have cut down on the time range we are looking at to the years **2000-2021**.
-![CTD Rosette Bottle being used in ocean water](https://wp.calcofi.org/wp/wp-content/uploads/2020/03/1904RL_sta93-50_CTDSurface-1024x770.jpg "CTD Rosette Bottles used to Sample Oceanwater")
-![Visual representation of sampling method used by CalCOFI](https://user-images.githubusercontent.com/30590837/149233121-d5e2e83e-b72a-41e5-9e83-00ef40877b43.png "Visual representation of sampling methods")
 <figure>
-    <img src="http://placekitten.com/400/300" alt="A kitten">
-    <figcaption>Chesney the Kitten attempts a giant leap<figcaption>
+    <img src="https://wp.calcofi.org/wp/wp-content/uploads/2020/03/1904RL_sta93-50_CTDSurface-1024x770.jpg" alt="CTD Rosette Bottle being used in ocean water">
+    <figcaption>CTD Rosette Bottles used to Sample Oceanwater<figcaption>
+<figure>
+<figure>
+    <img src="https://user-images.githubusercontent.com/30590837/149233121-d5e2e83e-b72a-41e5-9e83-00ef40877b43.png" alt="Visual representation of sampling method used by CalCOFI">
+    <figcaption>Visual representation of sampling method used by CalCOFI. We are working with the Bottle data samples shown with the dark blue dots.<figcaption>
 <figure>   
 
 ## Data definitions
