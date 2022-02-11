@@ -12,7 +12,7 @@ We think our work on this project would benefit Appfolio since this project is d
 
 ## About the Data ##
 
-Our dataset is derived from [LISA](https://www.appfolio.com/news/appFolio-launches-new-ai-leasing-assistant-and-utility-management-offerings&sa=D&source=docs&ust=1644542468101327&usg=AOvVaw0I_O2jmUD38PsniHSAt-e_), Appfolio’s Award Winning AI Leasing Assistant Chat Bot, which is designed for property companies to streamline the process of receiving inquiries about properties from users. Our data is divided into three components: user ratings, item features, and images.
+Our dataset is derived from [LISA](https://www.google.com/url?q=https://www.appfolio.com/news/appFolio-launches-new-ai-leasing-assistant-and-utility-management-offerings&sa=D&source=docs&ust=1644542468101327&usg=AOvVaw0I_O2jmUD38PsniHSAt-e_), Appfolio’s Award Winning AI Leasing Assistant Chat Bot, which is designed for property companies to streamline the process of receiving inquiries about properties from users. Our data is divided into three components: user ratings, item features, and images.
 
 In our ratings data, we have a unique identifier for the property and the user along with the leasing attribution source and the type of interaction. The interaction type can be one of four scenarios; a user can deny a property, inquire about a property, accept a showing for a property, or confirm the showing by making an appearance. We use these interaction types as our response variable to gauge levels of interest in user-property pairs.
 
