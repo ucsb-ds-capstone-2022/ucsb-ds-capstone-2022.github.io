@@ -4,7 +4,7 @@
 
 The main purpose of this project is to create a recommender system that recommends properties to users based on previous user iteractions and property features. In particular, our focus is recommendations to new users, in addition to existing users. We will explore and compare various approaches of recommender systems and apply them to our data. Our final goal is to integrate our model into the [Santa Barbara property website](https://realm-ucsb.herokuapp.com/) created by the UC Santa Barbara's AppFolio sponsored computer science capstone team. 
 
-This project showcases the power of machine learning on the user interaction data collected from AppFolio's property management software. AppFolio can analyze the results from our recommender system to assess the effect of utilizing interaction data to better their products.
+This project showcases the power of machine learning on the user interaction data collected from AppFolio's property management software. AppFolio will be able to analyze the results from our recommender system to assess the effect of utilizing interaction data to better their products.
 
 ## About the Data ##
 
