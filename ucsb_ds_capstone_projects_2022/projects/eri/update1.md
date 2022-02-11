@@ -24,7 +24,6 @@ Instance segmentation is a more difficult computer vision task that needs the pr
 ***Adapted from https://towardsdatascience.com/single-stage-instance-segmentation-a-review-1eeb66e0cc49*****
 ````
 - In addition, we want to know if fields are actively being used or not. This means we need to generate distinct labels for active and inactive center pivots. 
-- While models have been trained on coarse-resolution satellite data, there have been few attempts to use very high resolution imagery for mapping agriculture with computer vision 
 - Our project will set up the necessary infrastructure, generate appropriate label data, and disseminate/use that data for training cutting-edge computer vision models that can be used to monitor and map agricultural expansion and irrigated water use across southern Africa (and elsewhere!). 
 
 ### Our data
