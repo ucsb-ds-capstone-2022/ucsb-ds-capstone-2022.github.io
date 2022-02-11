@@ -4,7 +4,7 @@
 ### Motivation & Background
 Irrigated agriculture is expanding rapidly across southern Africa. Because this expansion is occurring without much regulation or monitoring, it’s not exactly clear where and when expansion is happening, or the fate of expanded agriculture. In most expansionary cycles, there is a boom-and-bust dynamic, where many investments fail quickly and only a few persist. We’re interested in mapping these dynamics over the past 5-10 years across southern Africa and monitoring them going forward.
 ### Project goals
-- In order to track this on-going ***agricultural gold rush***, we need to be able to resolve individual fields as objects. This means that instead of simply identifying pixels containing agriculture using **pixel-wise classification**, or finding all the areas containing agriculture using **semantic segmentation**, we want to segment individual fields within an image using instance segmentation.
+- In order to track this on-going *agricultural gold rush*, we need to be able to resolve individual fields as objects. This means that instead of simply identifying pixels containing agriculture using **pixel-wise classification**, or finding all the areas containing agriculture using **semantic segmentation**, we want to segment individual fields within an image using **instance segmentation**.
 
 ````{margin}
 ```{note}
