@@ -26,6 +26,7 @@ parts:
   - file: projects/calcofi/description
     sections:
     - file: projects/calcofi/update1
+    - file: projects/calcofi/calcofi-update1.md
   - file: projects/carpedata/description
     sections:
     - file: projects/carpedata/update1
