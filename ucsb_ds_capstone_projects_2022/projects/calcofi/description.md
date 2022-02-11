@@ -1,4 +1,4 @@
-#CalCOFI Project 
+# CalCOFI Project 
 <figure>
     <img src="Images/CalCOFI Banner.png" alt="CalCOFI banner">
 <figure>
