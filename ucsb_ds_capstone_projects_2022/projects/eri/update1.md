@@ -6,21 +6,38 @@ Irrigated agriculture is expanding rapidly across southern Africa. Because this 
 ### Project goals
 - In order to track this on-going ***agricultural gold rush***, we need to be able to resolve individual fields as objects. This means that instead of simply identifying pixels containing agriculture using **pixel-wise classification**, or finding all the areas containing agriculture using **semantic segmentation**, we want to segment individual fields within an image using instance segmentation.
 
-```{margin}
-**Pixel-wise classification** is a basic task that's used in remote sensing to assign a semantic class (vegetation, buildings, vehicles, roads) accurately to every individual pixel of an image. At low resolutions, cluster and classification methods are used, such as k-means, neural networks, support vector machines, random forest, and boosting. On the other hand, these methods cannot be used due to being sensitive to noise, the lack of semantic meaning of objects, and the difficulty of acquiring object-level information.
+````{margin}
+```{note}
+**Pixel-wise classification** 
+
+
+Pixel-wise classification is a basic task that's used in remote sensing to assign a semantic class (vegetation, buildings, vehicles, roads) accurately to every individual pixel of an image. At low resolutions, cluster and classification methods are used, such as k-means, neural networks, support vector machines, random forest, and boosting. On the other hand, these methods cannot be used due to being sensitive to noise, the lack of semantic meaning of objects, and the difficulty of acquiring object-level information.
 
 ***Adapted from https://www.mdpi.com/2220-9964/7/3/110***
 ```
+````
+
+````{margin}
 ```{note}
-**Semantic segmentation** is a computer vision task where we separate and label specific parts of an image according to what is shown. The goal of this task is to label each pixel of an image with a corresponding class of what's being shown. 
+**Semantic segmentation** 
+
+
+Semantic image segmentation is a computer vision task where we separate and label specific parts of an image according to what is shown. The goal of this task is to label each pixel of an image with a corresponding class of what's being shown. 
 
 ***Adapted from https://www.jeremyjordan.me/semantic-segmentation/***
 ```
+````
+````{margin}
 ```{note}
-**Instance segmentation**  is a more difficult computer vision task that needs the prediction of object instances and their per-pixel segmentation mask. This task is basically a mix of semantic segmentation and object detection. It first detects objects to create bounding boxes around each object instance, and then performs binary segmentation inside the bounding boxes to separate the foreground and the background.
+**Instance segmentation**  
+
+
+Instance segmentation is a more difficult computer vision task that needs the prediction of object instances and their per-pixel segmentation mask. This task is basically a mix of semantic segmentation and object detection. It first detects objects to create bounding boxes around each object instance, and then performs binary segmentation inside the bounding boxes to separate the foreground and the background.
 
 ***Adapted from https://towardsdatascience.com/single-stage-instance-segmentation-a-review-1eeb66e0cc49***
 ```
+````
+
 
 - In addition, we want to know if fields are actively being used or not. This means we need to generate distinct labels for active and inactive center pivots. 
 - Our project will set up the necessary infrastructure, generate appropriate label data, and disseminate/use that data for training cutting-edge computer vision models that can be used to monitor and map agricultural expansion and irrigated water use across southern Africa (and elsewhere!). 
