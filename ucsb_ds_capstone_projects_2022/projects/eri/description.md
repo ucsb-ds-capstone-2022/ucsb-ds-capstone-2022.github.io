@@ -1,8 +1,9 @@
 
+![earth research institute logo](images/eri_logo.png)
 # Earth Research Institute 
 ## ![WAVES logo](images/WAVES_logo.png) WAVES Lab
 
-![earth research institute logo](images/eri_logo.png)
+
 
 
 ### Our project:
