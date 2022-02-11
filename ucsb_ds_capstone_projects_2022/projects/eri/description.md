@@ -6,16 +6,13 @@
 
 ### Our project:
 The **[Earth Research Institute (ERI)](https://www.eri.ucsb.edu)** at UCSB spans areas covering natural hazards, human impacts, earth system science, and earth evolution by collaborating across interdisciplinary departments on campus. Under the guidance of Kelly Caylor (Director of ERI), we are undertaking a project to explore how central pivot-irrigated agriculture is expanding in southern Africa.
-
-### Sponsor:
+#### Sponsor:
 - Kelly Caylor
-
-### Mentors: 
+#### Mentors: 
 - Leron Reznikov
 - Anna Boser
 - Ryan Avery
-
-### Team: 
+#### Team: 
 - Ashley Grinstead
 - Evan Bui
 - Tiffany Hsu
