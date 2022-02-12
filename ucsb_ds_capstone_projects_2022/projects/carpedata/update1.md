@@ -49,6 +49,7 @@ Due to the fact that our dataset contains observations labeled across at least 6
 
 ### Logistic Regression
 The first model that we attempted was created from multinomial logistic regression. The multinomial logistic regression models (for the dataset with the lemmatized words and the dataset with the stemmed words) had decent performance overall; it correctly classified most of the labels with high accuracy, but since “Information related to the claim” and “Potentially relevant information” had low predictive accuracy and there is a high rate of false positives, this model is not the best.
+
 For both stemmed and lemmatized datasets:
 - Precision: 83%
 - Recall: 84%
@@ -56,6 +57,7 @@ For both stemmed and lemmatized datasets:
 
 ### Naive Bayes
 The second model that we attempted was created from a Naive Bayes classifier. Overall, the Naive Bayes models (for the dataset with the lemmatized words and the dataset with the stemmed words) performed poorly. The confusion matrices for this type of model revealed that many labels were incorrectly classified.
+
 For stemmed dataset:
 - Precision: 70%
 - Recall: 65%
@@ -68,6 +70,7 @@ For lemmatized dataset:
 
 ### Support Vector Machine
 The third model that we attempted to create was from a support-vector machine (SVM). The SVM models (for the dataset with the lemmatized words and the dataset with the stemmed words) showed the best performance out of the three models. The confusion matrices revealed that although many of the labels were classified with high accuracy, there were some labels that were misclassified. For the SVM model that was created with the dataset with stemmed words, we see several commission errors (false positives).
+
 For both stemmed and lemmatized datasets:
 - Precision: 85%
 - Recall: 85%
