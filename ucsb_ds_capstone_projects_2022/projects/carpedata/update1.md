@@ -16,7 +16,13 @@ In terms of the data, Carpe Data was able to provide us with two different datas
 - Raw HTML text from the website
 - Type of Fraud
 
-We decided to drop the first three columns as they are not relevant to the building of our model, which left us with the HTML text along with the type of fraud associated with it as our labels. As a preprocessing step, we looked into the value counts for each unique label so that we could decide how to consolidate groups with lower frequencies. Originally there were 12 unique labels. We decided to remove all the types of fraud that had under 10 observations and then mapped the remaining ones that had under 100 observations to fraud labeled as “potentially relevant information.” This left us with 6 unique labels: N/A: No relevant content, Possible Fatality, Potentially unlawful activity, Physical Activity, Information related to the claim, and Potentially relevant information. 
+We decided to drop the first three columns as they are not relevant to the building of our model, which left us with the HTML text along with the type of fraud associated with it as our labels. As a preprocessing step, we looked into the value counts for each unique label so that we could decide how to consolidate groups with lower frequencies. Originally there were 12 unique labels. We decided to remove all the types of fraud that had under 10 observations and then mapped the remaining ones that had under 100 observations to fraud labeled as “potentially relevant information.” This left us with 6 unique labels: 
+- N/A: No relevant content
+- Possible Fatality
+- Potentially unlawful activity
+- Physical Activity
+- Information related to the claim
+- Potentially relevant information
 
 
 <p align="center">
@@ -32,6 +38,7 @@ This is something that we may need to potentially revisit and regroup the labels
 
 ## PROGRESS
 
+### Cleaning
 Our team tried out a variety of cleaning methods for the raw HTML text data, but we were able to settle on one cleaning pipeline for now. First, we ran each observation through Beautiful Soup, pulling all the content data away from the HTML code formatting. Next, we removed all the links and non-breaking spaces (which were formatted as ‘&nbsp’ in the text data) from the text. Then, we normalized the unicode of the text, removed all non-alphanumeric symbols, and made the text all lowercase.
 
 From there, we tokenized the text using spaCy and removed all punctuation, ‘stopwords’ (words that don’t contain much meaningful content), and words that contained less than 2 letters. Finally, we lemmatized the words, reducing them to their non-inflected forms. Since we weren’t sure about the performance between lemmatization and stemming on this dataset, we created another dataset where we stemmed the words instead. At this point, our text data was clean and ready to be worked with.
@@ -41,13 +48,30 @@ To set up our data so that it would be ready for modeling, we set up a train-tes
 Due to the fact that our dataset contains observations labeled across at least 6 categories, we would be considering all the supervised multi-class classification models. In addition, our sponsors noted that our model accuracy should balance both precision and recall across all label categories (with a slight preference for recall), so that would be our criteria for selecting our best model.
 
 ### Logistic Regression
-The first model that we attempted was created from multinomial logistic regression. The multinomial logistic regression models (for the dataset with the lemmatized words and the dataset with the stemmed words) had poor performance overall; it correctly classified most of the labels with high accuracy, but since “Information related to the claim” and “Potentially relevant information” had low predictive accuracy and there is a high rate of false positives, this model is not the best.
+The first model that we attempted was created from multinomial logistic regression. The multinomial logistic regression models (for the dataset with the lemmatized words and the dataset with the stemmed words) had decent performance overall; it correctly classified most of the labels with high accuracy, but since “Information related to the claim” and “Potentially relevant information” had low predictive accuracy and there is a high rate of false positives, this model is not the best.
+For both stemmed and lemmatized datasets:
+- Precision: 83%
+- Recall: 84%
+- Total Accuracy: 84%
 
 ### Naive Bayes
 The second model that we attempted was created from a Naive Bayes classifier. Overall, the Naive Bayes models (for the dataset with the lemmatized words and the dataset with the stemmed words) performed poorly. The confusion matrices for this type of model revealed that many labels were incorrectly classified.
+For stemmed dataset:
+- Precision: 70%
+- Recall: 65%
+- Total Accuracy: 65%
+
+For lemmatized dataset:
+- Precision: 71%
+- Recall: 66%
+- Total Accuracy: 66%
 
 ### Support Vector Machine
-The third model that we attempted to create was from a support-vector machine (SVM). The SVM models (for the dataset with the lemmatized words and the dataset with the stemmed words) did not show great performance either. The confusion matrices revealed that although many of the labels were classified with high accuracy, there were some labels that were misclassified. For the SVM model that was created with the dataset with stemmed words, we see several commission errors (false positives).
+The third model that we attempted to create was from a support-vector machine (SVM). The SVM models (for the dataset with the lemmatized words and the dataset with the stemmed words) showed the best performance out of the three models. The confusion matrices revealed that although many of the labels were classified with high accuracy, there were some labels that were misclassified. For the SVM model that was created with the dataset with stemmed words, we see several commission errors (false positives).
+For both stemmed and lemmatized datasets:
+- Precision: 85%
+- Recall: 85%
+- Total Accuracy: 85%
 
 ![](svm_matrix.png)
 <p align="center">
@@ -62,7 +86,7 @@ Throughout our initial exploratory analysis, data cleaning, and modeling process
 
 Furthermore, we wanted to provide the model with bigrams instead of unigrams, but were concerned that the modeling pipeline would take too much processing time and power if there was too much information. For reference, unigrams refers to splitting the text based on each individual word while bigrams refers to splitting the text based on pairs of words. The benefit of using bigrams over unigrams is that bigrams often capture the meaning of the text better than unigrams do. For example the bigram “not happy” captures a different meaning than the two unigrams “not” and “happy.”
 
-As of now, we decided to stick with using unigrams when vectorizing the text after cleaning. Since we are just starting out with the building of our models, we have decided to not use bigrams just yet. However, this is something we eventually want to get around to attempting as utilizing bigrams could have a significant impact on the accuracy of our models. One issue with using bigrams that we can see is a computational one. Using unigrams in our vectorization, we have well over 70,000 columns. Switching to bigrams would drastically increase the number of columns and we are not sure that our computers have the power to run models over such a wide dataset.
+As of now, we decided to stick with using unigrams when vectorizing the text after cleaning. Since we are just starting out with the building of our models, we have decided to not use bigrams just yet. However, this is something we eventually want to get around to attempting as utilizing bigrams could have a significant impact on the accuracy of our models. One issue with using bigrams that we can see is a computational one. Using unigrams in our vectorization, we have well over 100,000 columns. Switching to bigrams would drastically increase the number of columns and we are not sure that our computers have the power to run models over such a wide dataset.
 
 However, after consulting with the instructors, we now know that there are different servers from the department in which we can run our models if our own computers can not handle the data. Furthermore, we can employ strategies of dimensionality reduction in order to make our dataset more manageable and efficient. Thus, we would like to try utilizing bigrams in a later stage of our analysis.
 
