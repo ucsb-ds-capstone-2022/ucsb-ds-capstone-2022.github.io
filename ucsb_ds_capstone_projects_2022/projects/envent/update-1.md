@@ -1,4 +1,4 @@
-# Survey Pre-Process
+# Survey Pre-Processing
 ## Project Update 1
 
 ## Project Details
