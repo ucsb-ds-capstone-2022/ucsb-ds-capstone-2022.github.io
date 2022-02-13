@@ -5,27 +5,7 @@ Eoin Hayes, Qiru Hu, Jasmine Kwok, Lucas Nguyen, Xavier Speropoulos
 
 ## Overview 
 
-We are working with The Center for Information Technology and Society (CITS) at UC Santa Barbara for this research project. Our project sponsor is Qing Huang, a PhD student in the Department of Communication at UCSB. 
-
-The CITS lab is described as, “being dedicated to research and education about the cultural transitions and social innovations associated with technology, particularly in the highly dynamic environments that seem so pervasive in organizations and societies today. There is also work to improve engineering through infusing social insights into the innovative process.”
-
-## Project Description
-
-In 2020, the social media documentary The Social Dilemma has once become the most popular show on Netflix. This documentary reveals the downsides of the major social media platforms. The popularity of The Social Dilemma reflects the public’s general concerns about the information they shared on social media. 
-
-![](https://usustatesman.com/wp-content/uploads/2020/11/the-social-dilemma-1050x700.png)
-
-In response to these concerns, our research project is launched by CITS to examine these technology and society dilemmas from a well-balanced and research-based view with empirical data: how social media platforms, the digital devices that host them, and the algorithms that enable them, produce both beneficial and potentially harmful effects for their users; and how different generations of users share and manage their private information on social media platforms.
-
-## Data
-# Update 1
-February 4, 2022
-
-Eoin Hayes, Qiru Hu, Jasmine Kwok, Lucas Nguyen, Xavier Speropoulos
-
-## Overview 
-
-We are working with The Center for Information Technology and Society (CITS) at UC Santa Barbara for this research project. Our project sponsor is Qing Huang, a PhD student in the Department of Communication at UCSB. 
+We are working with The Center for Information Technology and Society (CITS) at UC Santa Barbara for this research project. Our project sponsor is Qing Huang, a Ph.D. student in the Department of Communication at UCSB. 
 
 The CITS lab is described as, “being dedicated to research and education about the cultural transitions and social innovations associated with technology, particularly in the highly dynamic environments that seem so pervasive in organizations and societies today. There is also work to improve engineering through infusing social insights into the innovative process.”
 
@@ -116,6 +96,6 @@ Figure 1. Analyzing comment sentiments with keyword “privacy” across differe
 
 
 ## Next Step
-We will mine various platforms (Twitter, Reddit, etc.) for data about the movie The Social Dilemma. We aim at analyze the hypothesis about whether this movie has changed audience's attitude towards social media and increased/decreased people's social media usage. Specifically, to verify the hypothesis, we want to see people's social media usage frequency change one month before and after watching the movie and compute continuous correlation between the usage frequency and users' attitude towards the movie. 
+We will mine various platforms (Twitter, Reddit, etc.) for data about the movie The Social Dilemma. We aim at analyze the hypothesis about whether this movie has changed audience’s attitude towards social media and increased/decreased people’s social media usage. Specifically, to verify the hypothesis, we want to see people’s social media usage frequency change one month before and after watching the movie and compute the continuous correlation between the usage frequency and users’ attitudes towards the movie.
 
 
