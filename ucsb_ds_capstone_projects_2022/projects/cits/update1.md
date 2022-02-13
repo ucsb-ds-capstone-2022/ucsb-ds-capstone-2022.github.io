@@ -96,6 +96,6 @@ Figure 1. Analyzing comment sentiments with keyword “privacy” across differe
 
 
 ## Next Step
-We will mine various platforms (Twitter, Reddit, etc.) for data about the movie The Social Dilemma. We aim at analyze the hypothesis about whether this movie has changed audience’s attitude towards social media and increased/decreased people’s social media usage. Specifically, to verify the hypothesis, we want to see people’s social media usage frequency change one month before and after watching the movie and compute the continuous correlation between the usage frequency and users’ attitudes towards the movie.
+We will mine various platforms (Twitter, Reddit, etc.) for data about the movie The Social Dilemma. We aim to analyze the hypothesis about whether this movie has changed audience’s attitude towards social media and increased/decreased people’s social media usage. Specifically, to verify the hypothesis, we want to see people’s social media usage frequency change one month before and after watching the movie and compute the continuous correlation between the usage frequency and users’ attitudes towards the movie.
 
 
