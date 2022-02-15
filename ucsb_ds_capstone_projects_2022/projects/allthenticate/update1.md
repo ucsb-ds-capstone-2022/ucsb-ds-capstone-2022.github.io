@@ -55,6 +55,6 @@ Phone | Time | Device Type | Connected | Connectable | Locked | Connecting | UUI
 ---|---|---|---|---|---|---|---|---
 471bf5ea-887b-4eaf-8324 | 2022-01-28 00:01:40.798130 | 1 | true | true | false | false | 10f9ef4-14fc-42a7 | -51
 
-### Current Progress 
+### **Current Progress**
 
 At the current moment, we are still setting up our workflow with the datasets being able to reliably access the data. The company is implementing a logging system from the ground up for the first time in order to generate our data, resulting in a slow start to getting the ball rolling on tangible datasets so that we can start exploratory analysis. Still, we are keeping busy by brainstorming trends/insights we can measure with our data, as well as writing documentation to properly interpret the features in our datasets.
