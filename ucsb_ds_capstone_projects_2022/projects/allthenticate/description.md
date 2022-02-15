@@ -7,6 +7,6 @@ The company has broad goals to simplify yet bolster modern network security, whe
 Our capstone team consists of undergraduates Akshat Ataliwala, Calvin Jenkins, Bosco De Enrique Romeu, and Yuki Yamazaki, as well as graduate advisor Leron Reznikov. We are working directly with Founder and CEO of Allthenticate, Chad Spensky, which is incredibly exciting as we have the opportunity to shape the analytics processes of the company.
 
 
-![](images/maxresdefault.png)
+![](images/maxresdefault.jpg)
 <p align="center">
 </p> 
