@@ -37,9 +37,12 @@
     <script src="../../_static/jquery.js"></script>
     <script src="../../_static/underscore.js"></script>
     <script src="../../_static/doctools.js"></script>
-    <script src="../../_static/togglebutton.js"></script>
     <script src="../../_static/clipboard.min.js"></script>
     <script src="../../_static/copybutton.js"></script>
+    <script>let toggleHintShow = 'Click to show';</script>
+    <script>let toggleHintHide = 'Click to hide';</script>
+    <script>let toggleOpenOnPrint = 'true';</script>
+    <script src="../../_static/togglebutton.js"></script>
     <script>var togglebuttonSelector = '.toggle, .admonition.dropdown, .tag_hide_input div.cell_input, .tag_hide-input div.cell_input, .tag_hide_output div.cell_output, .tag_hide-output div.cell_output, .tag_hide_cell.cell, .tag_hide-cell.cell';</script>
     <script src="../../_static/sphinx-book-theme.d59cb220de22ca1c485ebbdc042f0030.js"></script>
     <script async="async" src="https://unpkg.com/thebe@0.5.1/lib/index.js"></script>
@@ -52,7 +55,7 @@
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
     <link rel="next" title="hg_insights" href="../hg_insights/description.html" />
-    <link rel="prev" title="evidation (Julio’s team)" href="description.html" />
+    <link rel="prev" title="Our Sponsor" href="description.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -326,22 +329,10 @@
    </li>
   </ul>
  </li>
- <li class="toctree-l1 current active has-children">
+ <li class="toctree-l1">
   <a class="reference internal" href="description.html">
-   evidation (Julio’s team)
+   Our Sponsor
   </a>
-  <input checked="" class="toctree-checkbox" id="toctree-checkbox-12" name="toctree-checkbox-12" type="checkbox"/>
-  <label for="toctree-checkbox-12">
-   <i class="fas fa-chevron-down">
-   </i>
-  </label>
-  <ul class="current">
-   <li class="toctree-l2 current active">
-    <a class="current reference internal" href="#">
-     Evidation Update (Julio’s team)
-    </a>
-   </li>
-  </ul>
  </li>
  <li class="toctree-l1">
   <a class="reference internal" href="../hg_insights/description.html">
@@ -352,8 +343,8 @@
   <a class="reference internal" href="../nri/description.html">
    nri
   </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-13" name="toctree-checkbox-13" type="checkbox"/>
-  <label for="toctree-checkbox-13">
+  <input class="toctree-checkbox" id="toctree-checkbox-12" name="toctree-checkbox-12" type="checkbox"/>
+  <label for="toctree-checkbox-12">
    <i class="fas fa-chevron-down">
    </i>
   </label>
@@ -369,8 +360,8 @@
   <a class="reference internal" href="../pwc/description.html">
    PwC
   </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-14" name="toctree-checkbox-14" type="checkbox"/>
-  <label for="toctree-checkbox-14">
+  <input class="toctree-checkbox" id="toctree-checkbox-13" name="toctree-checkbox-13" type="checkbox"/>
+  <label for="toctree-checkbox-13">
    <i class="fas fa-chevron-down">
    </i>
   </label>
@@ -386,8 +377,8 @@
   <a class="reference internal" href="../sprague/description.html">
    sprague
   </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-15" name="toctree-checkbox-15" type="checkbox"/>
-  <label for="toctree-checkbox-15">
+  <input class="toctree-checkbox" id="toctree-checkbox-14" name="toctree-checkbox-14" type="checkbox"/>
+  <label for="toctree-checkbox-14">
    <i class="fas fa-chevron-down">
    </i>
   </label>
@@ -492,18 +483,11 @@
   <a class="reference internal nav-link" href="#background-and-introduction">
    Background and Introduction
   </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#who-is-evidation-health">
-     Who is Evidation Health?
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#project-goals">
-     Project Goals
-    </a>
-   </li>
-  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#project-goals">
+   Project Goals
+  </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#progress">
@@ -518,6 +502,11 @@
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#ethical-concerns">
    Ethical Concerns
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#technology">
+   Technology
   </a>
  </li>
 </ul>
@@ -544,18 +533,11 @@
   <a class="reference internal nav-link" href="#background-and-introduction">
    Background and Introduction
   </a>
-  <ul class="nav section-nav flex-column">
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#who-is-evidation-health">
-     Who is Evidation Health?
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#project-goals">
-     Project Goals
-    </a>
-   </li>
-  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#project-goals">
+   Project Goals
+  </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#progress">
@@ -572,6 +554,11 @@
    Ethical Concerns
   </a>
  </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#technology">
+   Technology
+  </a>
+ </li>
 </ul>
 
                         </nav>
@@ -586,19 +573,15 @@
 <div class="section" id="background-and-introduction">
 <h2>Background and Introduction<a class="headerlink" href="#background-and-introduction" title="Permalink to this headline">¶</a></h2>
 <p>We will be referencing the following study throughout our project: <a class="reference external" href="https://pubmed.ncbi.nlm.nih.gov/34726607/">An Alternative to the Light Touch Digital Health Remote Study: The Stress and Recovery in Frontline COVID-19 Health Care Workers Study</a></p>
-<div class="section" id="who-is-evidation-health">
-<h3>Who is Evidation Health?<a class="headerlink" href="#who-is-evidation-health" title="Permalink to this headline">¶</a></h3>
-<p>Evidation Health is a company that helps connect individual participants to research studies. Their privacy-centered health tracking application helps facilitate this connection while keeping user information secure and confidential. Evidation Health partners with leading healthcare companies to analyze the collected clinical data and publish rigorous studies.</p>
 </div>
 <div class="section" id="project-goals">
-<h3>Project Goals<a class="headerlink" href="#project-goals" title="Permalink to this headline">¶</a></h3>
-<p>Our team is working with Evidation Health to study how shifts in mood, energy, cough, and stress among frontline COVID-19 workers can be measured using data from Garmin watch and Oura ring. These factors were also self-reported everyday through surveys using a 5 point scale. As of now, we are splitting our teams into groups of 2 and 3 to explore and familiarize ourselves with Garmin and Oura sample datasets. The main data will be collected from frontline COVID-19 workers and will be provided by Evidation Health.</p>
+<h2>Project Goals<a class="headerlink" href="#project-goals" title="Permalink to this headline">¶</a></h2>
+<p>Our team is working with Evidation Health to study how shifts in mood, energy, cough, and stress among frontline COVID-19 workers can be measured using data from <a class="reference external" href="https://www.garmin.com/en-US/p/643382">Garmin watch</a> and <a class="reference external" href="https://ouraring.com/product/heritage-silver">Oura ring</a>. These factors were also self-reported everyday through surveys using a 5 point scale. As of now, we are splitting our teams into groups of 2 and 3 to explore and familiarize ourselves with Garmin and Oura sample datasets. The main data will be collected from frontline COVID-19 workers and will be provided by Evidation Health.</p>
 <p>This project’s long-term goal is to utilize wearable device data coupled with survey data to fit a model that would predict stress. Ultimately, we hope that these analyses can lead to a way to detect stress and deliver interventions when one is in a stressful situation.</p>
-</div>
 </div>
 <div class="section" id="progress">
 <h2>Progress:<a class="headerlink" href="#progress" title="Permalink to this headline">¶</a></h2>
-<p>Before we tackle this overall goal, there are various steps we are taking along the way. For instance, our group studied the article cited above in order to gain background information on the data collection and experimental process. The article focused on gauging participant retainment in the study, which is visualized in the article (Figure 1).</p>
+<p>Before we tackle this overall goal, there are various steps we are taking along the way. For instance, our group studied the article cited above in order to gain background information on the data collection and experimental process. The article focused on gauging participant retainment in the study, which is visualized in the article (Figure 1). This plot reveals that the data collection methods (i.e. wearable devices, surveys) used in this study (“Stress and Recovery”) were significantly more effective in maintaining a high participant retention, especially compared to previous studies around similar topics.</p>
 <table class="colwidths-auto table">
 <thead>
 <tr class="row-odd"><th class="text-align:center head"><p><img alt="Participant Retention" src="../../_images/Fig1_Study_Retention.png" /></p></th>
@@ -637,6 +620,16 @@
 <p>As part of the process to access the data, all members of the group had to register and qualify through Synapse. The data also has multiple conditions of use, including but not limited to: no attempts at re-identifying participants, agreeing to keep the data confidential and secure, and data cannot be used for commercial advertisement.</p>
 <p>Fundamentally the main purpose of our work is to improve the health and wellbeing of others. However, because of the data’s demographics, our research might be overly focused on a small subset of the general population. The demographic of our data is overwhelmingly Caucasian, over 90% of respondents. On top of that, the data focuses on health care professionals, which we can assume are more health-conscious than the general population. Wearable devices also have a higher cost of entry, upward of 500$. Although we are confident that our work will still provide valuable insight, these ethical limitations are worth noting.</p>
 </div>
+<div class="section" id="technology">
+<h2>Technology<a class="headerlink" href="#technology" title="Permalink to this headline">¶</a></h2>
+<ul class="simple">
+<li><p>Python</p>
+<ul>
+<li><p>Packages: NumPy, pandas, matplotlib, seaborn</p></li>
+</ul>
+</li>
+</ul>
+</div>
 </div>
 
     <script type="text/x-thebe-config">
@@ -668,7 +661,7 @@
         <i class="fas fa-angle-left"></i>
         <div class="prev-next-info">
             <p class="prev-next-subtitle">previous</p>
-            <p class="prev-next-title">evidation (Julio’s team)</p>
+            <p class="prev-next-title">Our Sponsor</p>
         </div>
     </a>
     <a class='right-next' id="next-link" href="../hg_insights/description.html" title="next page">
