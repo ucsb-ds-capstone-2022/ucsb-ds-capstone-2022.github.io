@@ -6,14 +6,9 @@ We will be referencing the following study throughout our project: [An Alternati
 
 ## Project Goals
 
-Our team is working with Evidation Health to study how shifts in mood, energy, cough, and stress among frontline COVID-19 workers can be measured using data from Garmin watch and Oura ring. These factors were also self-reported everyday through surveys using a 5 point scale. As of now, we are splitting our teams into groups of 2 and 3 to explore and familiarize ourselves with Garmin and Oura sample datasets. The main data will be collected from frontline COVID-19 workers and will be provided by Evidation Health.
+Our team is working with Evidation Health to study how shifts in mood, energy, cough, and stress among frontline COVID-19 workers can be measured using data from [Garmin watch](https://www.garmin.com/en-US/p/643382) and [Oura ring](https://ouraring.com/product/heritage-silver). These factors were also self-reported everyday through surveys using a 5 point scale. As of now, we are splitting our teams into groups of 2 and 3 to explore and familiarize ourselves with Garmin and Oura sample datasets. The main data will be collected from frontline COVID-19 workers and will be provided by Evidation Health.
 
 This project’s long-term goal is to utilize wearable device data coupled with survey data to fit a model that would predict stress. Ultimately, we hope that these analyses can lead to a way to detect stress and deliver interventions when one is in a stressful situation. 
-
-## Who is Evidation Health?
-
-Evidation Health helps connect individual participants to research studies. Their privacy-centered health tracking application helps facilitate this connection while keeping user information secure and confidential. Evidation Health partners with leading healthcare companies to analyze the collected clinical data and publish rigorous studies.
-
 
 
 ## Progress:
