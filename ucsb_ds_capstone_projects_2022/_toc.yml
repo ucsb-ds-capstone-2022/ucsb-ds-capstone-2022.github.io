@@ -49,6 +49,8 @@ parts:
     sections:
     - file: projects/evidation_julio/Update(2-4-22)
   - file: projects/hg_insights/description
+  	sections:
+	- file: projects/hg_insights/HG_Update1_Feb7
   - file: projects/nri/description
     sections:
     - file: projects/nri/update1
