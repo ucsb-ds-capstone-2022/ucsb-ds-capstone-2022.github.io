@@ -71,19 +71,23 @@ Single-cell data is generally high-dimensional: there are more unique genes meas
 - Do achieve this, we will:
     - Identify groupings of similar cells in brain organoids: use preprocessing, dimensionality reduction, clustering and visualization to find cell groupings from high dimensional gene expression data
     - Determine group identities by comparing group gene expression to literature and databases
-    - Using single-cell data from brain organoids with MAPT mutations vs mutation-removed controls, we want to do two main things: 
-        - Find differences in total gene expression, potentially present in all cells
-        - Compare differences in number and features of cell-type clusters
+    - Using single-cell data from brain organoids with MAPT mutations vs mutation-removed controls, we want to compare differences in the population and features of the cell-type clusters
 
 - All of this requires data integration techniques to account for differences between batches and experiments to account for technical covariates
 
 **References:**
-1. Drop-seq technique: [Macosko et al. (2015). Highly Parallel Genome-wide Expression Profiling of Individual Cells Using Nanoliter Droplets. Cell, 161(5), 1202-1214.](https://doi.org/10.1016/j.cell.2015.05.002.)
+1. Drop-seq technique: [Macosko et al. (2015). Highly Parallel Genome-wide Expression Profiling of Individual Cells Using Nanoliter Droplets. Cell, 161(5), 1202-1214.](https://www.cell.com/fulltext/S0092-8674(15)00549-8)
 2. Pasca method: 
 [Pasca et al. (2015). Functional cortical neurons and astrocytes from human pluripotent stem cells in 3D culture. Nature Methods, 12, 671–678.](https://doi.org/10.1038/nmeth.3415) <br />
 [Yoon et al. (2019).Reliability of human cortical organoid generation. Nature Methods, 16, 75-78.](https://www.nature.com/articles/s41592-018-0255-0) 
 3. [Current best practices in single-cell RNA-seq analysis: a tutorial](https://www.embopress.org/doi/full/10.15252/msb.20188746)
 4. [A Comprehensive Resource for Induced Pluripotent Stem Cells from Patients with Primary Tauopathies](https://pubmed.ncbi.nlm.nih.gov/31631020/)
+
+## Ethics
+
+Regarding ethics, our project has some unique considerations. Cell samples are taken from patients with disorders such as Alzheimer's, which are then used to generate stem cell lines that are used to create brain organoids. Relevant diagnoses as well as patient gender are recorded, but location and other information is completely anonymized. The patient's entire genome is preserved in the stem cell line, but we are only interested in mutations to one gene, so our digital dataset doesn't include all their genetic information.
+
+Some have also called into question the ethics of generating brain organoids. They are sometimes thought of as "brains in a vat" and people wonder if they could gain conciousness. At this stage, it seems like these fears are unfounded. Synapse formation is limited, and we are seeking to study cell development, not the action potentials that actually make a brain function. Brain organoids today are lower in complexity than mice brains and also receive no sensory input. However, looking into the future as the technology develops it's important to keep ethics in mind.
 
 
 ## Technology

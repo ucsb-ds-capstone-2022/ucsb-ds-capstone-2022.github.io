@@ -55,7 +55,7 @@
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
     <link rel="next" title="PwC" href="../pwc/description.html" />
-    <link rel="prev" title="nri" href="description.html" />
+    <link rel="prev" title="NRI" href="description.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -341,7 +341,7 @@
  </li>
  <li class="toctree-l1 current active has-children">
   <a class="reference internal" href="description.html">
-   nri
+   NRI
   </a>
   <input checked="" class="toctree-checkbox" id="toctree-checkbox-12" name="toctree-checkbox-12" type="checkbox"/>
   <label for="toctree-checkbox-12">
@@ -510,6 +510,11 @@
   </a>
  </li>
  <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#ethics">
+   Ethics
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
   <a class="reference internal nav-link" href="#technology">
    Technology
   </a>
@@ -562,6 +567,11 @@
  <li class="toc-h1 nav-item toc-entry">
   <a class="reference internal nav-link" href="#goals">
    Goals
+  </a>
+ </li>
+ <li class="toc-h1 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#ethics">
+   Ethics
   </a>
  </li>
  <li class="toc-h1 nav-item toc-entry">
@@ -678,25 +688,25 @@ The main variables of our data set are MAPT mutant and control organoids derived
 <ul>
 <li><p>Identify groupings of similar cells in brain organoids: use preprocessing, dimensionality reduction, clustering and visualization to find cell groupings from high dimensional gene expression data</p></li>
 <li><p>Determine group identities by comparing group gene expression to literature and databases</p></li>
-<li><p>Using single-cell data from brain organoids with MAPT mutations vs mutation-removed controls, we want to do two main things:</p>
-<ul>
-<li><p>Find differences in total gene expression, potentially present in all cells</p></li>
-<li><p>Compare differences in number and features of cell-type clusters</p></li>
-</ul>
-</li>
+<li><p>Using single-cell data from brain organoids with MAPT mutations vs mutation-removed controls, we want to compare differences in the population and features of the cell-type clusters</p></li>
 </ul>
 </li>
 <li><p>All of this requires data integration techniques to account for differences between batches and experiments to account for technical covariates</p></li>
 </ul>
 <p><strong>References:</strong></p>
 <ol class="simple">
-<li><p>Drop-seq technique: <a class="reference external" href="https://doi.org/10.1016/j.cell.2015.05.002.">Macosko et al. (2015). Highly Parallel Genome-wide Expression Profiling of Individual Cells Using Nanoliter Droplets. Cell, 161(5), 1202-1214.</a></p></li>
+<li><p>Drop-seq technique: <a class="reference external" href="https://www.cell.com/fulltext/S0092-8674(15)00549-8">Macosko et al. (2015). Highly Parallel Genome-wide Expression Profiling of Individual Cells Using Nanoliter Droplets. Cell, 161(5), 1202-1214.</a></p></li>
 <li><p>Pasca method:
 <a class="reference external" href="https://doi.org/10.1038/nmeth.3415">Pasca et al. (2015). Functional cortical neurons and astrocytes from human pluripotent stem cells in 3D culture. Nature Methods, 12, 671–678.</a> <br />
 <a class="reference external" href="https://www.nature.com/articles/s41592-018-0255-0">Yoon et al. (2019).Reliability of human cortical organoid generation. Nature Methods, 16, 75-78.</a></p></li>
 <li><p><a class="reference external" href="https://www.embopress.org/doi/full/10.15252/msb.20188746">Current best practices in single-cell RNA-seq analysis: a tutorial</a></p></li>
 <li><p><a class="reference external" href="https://pubmed.ncbi.nlm.nih.gov/31631020/">A Comprehensive Resource for Induced Pluripotent Stem Cells from Patients with Primary Tauopathies</a></p></li>
 </ol>
+</div>
+<div class="section" id="ethics">
+<h1>Ethics<a class="headerlink" href="#ethics" title="Permalink to this headline">¶</a></h1>
+<p>Regarding ethics, our project has some unique considerations. Cell samples are taken from patients with disorders such as Alzheimer’s, which are then used to generate stem cell lines that are used to create brain organoids. Relevant diagnoses as well as patient gender are recorded, but location and other information is completely anonymized. The patient’s entire genome is preserved in the stem cell line, but we are only interested in mutations to one gene, so our digital dataset doesn’t include all their genetic information.</p>
+<p>Some have also called into question the ethics of generating brain organoids. They are sometimes thought of as “brains in a vat” and people wonder if they could gain conciousness. At this stage, it seems like these fears are unfounded. Synapse formation is limited, and we are seeking to study cell development, not the action potentials that actually make a brain function. Brain organoids today are lower in complexity than mice brains and also receive no sensory input. However, looking into the future as the technology develops it’s important to keep ethics in mind.</p>
 </div>
 <div class="section" id="technology">
 <h1>Technology<a class="headerlink" href="#technology" title="Permalink to this headline">¶</a></h1>
@@ -736,7 +746,7 @@ The main variables of our data set are MAPT mutant and control organoids derived
         <i class="fas fa-angle-left"></i>
         <div class="prev-next-info">
             <p class="prev-next-subtitle">previous</p>
-            <p class="prev-next-title">nri</p>
+            <p class="prev-next-title">NRI</p>
         </div>
     </a>
     <a class='right-next' id="next-link" href="../pwc/description.html" title="next page">
