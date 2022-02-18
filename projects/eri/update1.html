@@ -485,11 +485,6 @@
             <nav id="bd-toc-nav" aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#our-sponsor">
-   Our sponsor
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#motivation-background">
    Motivation &amp; Background
   </a>
@@ -530,11 +525,6 @@
                         <nav aria-label="Page">
                             <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#our-sponsor">
-   Our sponsor
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
   <a class="reference internal nav-link" href="#motivation-background">
    Motivation &amp; Background
   </a>
@@ -566,10 +556,6 @@
   <div class="section" id="update-1">
 <h1>Update 1<a class="headerlink" href="#update-1" title="Permalink to this headline">¶</a></h1>
 <p><strong>Project: Combining computer vision and satellite imagery to map agricultural investment and water use in Sub-Saharan Africa</strong></p>
-<div class="section" id="our-sponsor">
-<h2>Our sponsor<a class="headerlink" href="#our-sponsor" title="Permalink to this headline">¶</a></h2>
-<p>The <strong><a class="reference external" href="https://www.eri.ucsb.edu">Earth Research Institute (ERI)</a></strong> at UCSB spans areas covering natural hazards, human impacts, earth system science, and earth evolution by collaborating across interdisciplinary departments on campus. Under the guidance of Kelly Caylor (Director of ERI), we are undertaking a project to improve food security by making water and irrigation equipment more accessible.</p>
-</div>
 <div class="section" id="motivation-background">
 <h2>Motivation &amp; Background<a class="headerlink" href="#motivation-background" title="Permalink to this headline">¶</a></h2>
 <p>Irrigated agriculture is expanding rapidly across southern Africa. Because this expansion is occurring without much regulation or monitoring, it’s not exactly clear where and when expansion is happening, or the fate of expanded agriculture. In most expansionary cycles, there is a boom-and-bust dynamic, where many investments fail quickly and only a few persist. We’re interested in mapping these dynamics over the past 5-10 years across southern Africa and monitoring them going forward.</p>
@@ -577,21 +563,51 @@
 <div class="section" id="project-goals">
 <h2>Project goals<a class="headerlink" href="#project-goals" title="Permalink to this headline">¶</a></h2>
 <ul class="simple">
-<li><p>In order to track this on-going <em><strong>agricultural gold rush</strong></em>, we need to be able to resolve individual fields as objects. This means that instead of simply identifying pixels containing agriculture <a class="reference external" href="https://www.mdpi.com/2220-9964/7/3/110">pixel-wise classification</a>, or finding all the areas containing agriculture <a class="reference external" href="https://www.jeremyjordan.me/semantic-segmentation/">semantic segmentation</a> we want to segment individual fields within an image <a class="reference external" href="https://towardsdatascience.com/single-stage-instance-segmentation-a-review-1eeb66e0cc49">instance segmentation</a></p></li>
+<li><p>In order to track this on-going <em>agricultural gold rush</em>, we need to be able to resolve individual fields as objects. This means that instead of simply identifying pixels containing agriculture using <strong>pixel-wise classification</strong>, or finding all the areas containing agriculture using <strong>semantic segmentation</strong>, we want to segment individual fields within an image using <strong>instance segmentation</strong>.</p></li>
+</ul>
+<div class="margin sidebar">
+<p class="sidebar-title"></p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><strong>Pixel-wise classification</strong></p>
+<p>Pixel-wise classification is a basic task that’s used in remote sensing to assign a semantic class (vegetation, buildings, vehicles, roads) accurately to every individual pixel of an image. At low resolutions, cluster and classification methods are used, such as k-means, neural networks, support vector machines, random forest, and boosting. On the other hand, these methods cannot be used due to being sensitive to noise, the lack of semantic meaning of objects, and the difficulty of acquiring object-level information.</p>
+<p><em><strong>Adapted from <a class="reference external" href="https://www.mdpi.com/2220-9964/7/3/110">https://www.mdpi.com/2220-9964/7/3/110</a></strong></em></p>
+</div>
+</div>
+<div class="margin sidebar">
+<p class="sidebar-title"></p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><strong>Semantic segmentation</strong></p>
+<p>Semantic image segmentation is a computer vision task where we separate and label specific parts of an image according to what is shown. The goal of this task is to label each pixel of an image with a corresponding class of what’s being shown.</p>
+<p><em><strong>Adapted from <a class="reference external" href="https://www.jeremyjordan.me/semantic-segmentation/">https://www.jeremyjordan.me/semantic-segmentation/</a></strong></em></p>
+</div>
+</div>
+<div class="margin sidebar">
+<p class="sidebar-title"></p>
+<div class="admonition note">
+<p class="admonition-title">Note</p>
+<p><strong>Instance segmentation</strong></p>
+<p>Instance segmentation is a more difficult computer vision task that needs the prediction of object instances and their per-pixel segmentation mask. This task is basically a mix of semantic segmentation and object detection. It first detects objects to create bounding boxes around each object instance, and then performs binary segmentation inside the bounding boxes to separate the foreground and the background.</p>
+<p><em><strong>Adapted from <a class="reference external" href="https://towardsdatascience.com/single-stage-instance-segmentation-a-review-1eeb66e0cc49">https://towardsdatascience.com/single-stage-instance-segmentation-a-review-1eeb66e0cc49</a></strong></em></p>
+</div>
+</div>
+<ul class="simple">
 <li><p>In addition, we want to know if fields are actively being used or not. This means we need to generate distinct labels for active and inactive center pivots.</p></li>
-<li><p>While models have been trained on coarse-resolution satellite data, there have been few attempts to use very high resolution imagery for mapping agriculture with computer vision</p></li>
 <li><p>Our project will set up the necessary infrastructure, generate appropriate label data, and disseminate/use that data for training cutting-edge computer vision models that can be used to monitor and map agricultural expansion and irrigated water use across southern Africa (and elsewhere!).</p></li>
 </ul>
 </div>
 <div class="section" id="our-data">
 <h2>Our data<a class="headerlink" href="#our-data" title="Permalink to this headline">¶</a></h2>
 <p>We plan to use the labeling interface that we will implement to generate datasets of irrigated farmland in Zambia.
-The planned dataset will consist of labeled satellite images of central pivot irrigated farmland. One possible example of this data is below.</p>
-<p><img alt="active_inactive_irrigation_area" src="../../_images/irrigation_area.jpg" /></p>
+The raw data will be downloaded from Planet Labs, an Earth satellite imaging platform.  It will take the form of satellite images of farmland, both with and without central pivots.
+The planned dataset will consist of labeled satellite images of central pivot irrigated farmland.  To create this dataset, we will break up the images into smaller image chips, and then upload them to Label-Studio, a data annotation tool, to create the labels. One possible example of this data is below.<br />
+<img alt="active_inactive_irrigation_area" src="../../_images/irrigation_area.jpg" />
+Since Planet Labs data started in 2019, the data ranges from 2019 to present. We also want to avoid rainy seasons in our data, since rainy seasons include more clouds and therefore less visuals of the ground. Therefore, data will be selected in each area’s dry season. For example, June to September in southern Africa.</p>
 </div>
 <div class="section" id="current-work">
 <h2>Current work<a class="headerlink" href="#current-work" title="Permalink to this headline">¶</a></h2>
-<p>We are currently working on setting up an image annotator web service. The data that we have is currently <strong>unlabeled</strong>. We want to be able to identify <em>center-pivot irrigated farms</em>, therefore we need data that has these center-pivots clearly annotated. We want to be able to set up an instance of <a class="reference external" href="https://labelstud.io/guide/install.html">Label Studio</a> on an ERI server. Label Studio will enable us to efficiently label the image data. The service instance should have a port exposed to allow connecting to it externally. We will then work on annotating our data.</p>
+<p>We are currently working on setting up an image annotator web service. The data that we have is currently <strong>unlabeled</strong>. We want to be able to identify <em>center-pivot irrigated farms</em>. Therefore, we need data that has these center-pivots clearly annotated. Originally, we wanted to implement the CoCo Annotator tool along with datatorch, but we realized that neither were being updated.  We decided to set up an instance of <a class="reference external" href="https://labelstud.io/guide/install.html">Label Studio</a> on an ERI server. Label Studio will enable us to efficiently label the image data. The service instance should have a port exposed to allow connecting to it externally. We will then work on annotating our data.</p>
 <div class="admonition note">
 <p class="admonition-title">Note</p>
 <p><strong>Center-pivot irrigation</strong>
