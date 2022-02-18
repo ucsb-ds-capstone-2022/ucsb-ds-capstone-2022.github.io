@@ -584,24 +584,26 @@
 <p>Eoin Hayes, Qiru Hu, Jasmine Kwok, Lucas Nguyen, Xavier Speropoulos</p>
 <div class="section" id="overview">
 <h2>Overview<a class="headerlink" href="#overview" title="Permalink to this headline">¶</a></h2>
-<p>We are working with The Center for Information Technology and Society (CITS) at UC Santa Barbara for this research project. Our project sponsor is Qing Huang, a PhD student in the Department of Communication at UCSB.</p>
-<p>The CITS lab is described as, “ being dedicated to research and education about the cultural transitions and social innovations associated with technology, particularly in the highly dynamic environments that seem so pervasive in organizations and societies today. There is also work to improve engineering through infusing social insights into the innovative process.”</p>
+<p>We are working with The Center for Information Technology and Society (CITS) at UC Santa Barbara for this research project. Our project sponsor is Qing Huang, a Ph.D. student in the Department of Communication at UCSB.</p>
+<p>The CITS lab is described as, “being dedicated to research and education about the cultural transitions and social innovations associated with technology, particularly in the highly dynamic environments that seem so pervasive in organizations and societies today. There is also work to improve engineering through infusing social insights into the innovative process.”</p>
 </div>
 <div class="section" id="project-description">
 <h2>Project Description<a class="headerlink" href="#project-description" title="Permalink to this headline">¶</a></h2>
-<p>In 2020, the social media documentary The Social Dilemma has once become the most popular show on Nextflix. This documentary reveals the downsides of the major social media platforms. The popularity of The Social Dilemma reflects the public’s general concerns about the information they shared on social media.</p>
+<p>In 2020, the social media documentary The Social Dilemma has once become the most popular show on Netflix. This documentary reveals the downsides of the major social media platforms. The popularity of The Social Dilemma reflects the public’s general concerns about the information they shared on social media.</p>
 <p><img alt="" src="https://usustatesman.com/wp-content/uploads/2020/11/the-social-dilemma-1050x700.png" /></p>
 <p>In response to these concerns, our research project is launched by CITS to examine these technology and society dilemmas from a well-balanced and research-based view with empirical data: how social media platforms, the digital devices that host them, and the algorithms that enable them, produce both beneficial and potentially harmful effects for their users; and how different generations of users share and manage their private information on social media platforms.</p>
 </div>
 <div class="section" id="data">
 <h2>Data<a class="headerlink" href="#data" title="Permalink to this headline">¶</a></h2>
-<p>Our team will be web scraping various social media platform data such as Reddit, Twitter, and potentially Facebook user data. We will collect public comments about the movie “The Social Dilemma”. We will look at the users’ social media usage two months before and after viewing the movie and analyze possible behavior change. We may also run sentiment analysis models to gauge users’ emotions towards various social media keywords regarding privacy, which will include clustering user data by certain age groups or “generations”. The main features may include the following:</p>
+<p>Our team will be web scraping various social media platform data such as Reddit, Twitter, and potentially Facebook user data. We will collect public comments about the movie “The Social Dilemma”. We will look at the users’ social media usage one month before and after viewing the movie.</p>
+<p>Specifically, we are going to collect the data as described below:</p>
 <ul class="simple">
-<li><p>User Age - Given age by the user.</p></li>
-<li><p>Age of Account - length of time account has been active.</p></li>
-<li><p>User-submitted posts contents - posts from the users that we will run sentiment analysis on.</p></li>
-<li><p>Positive/Neutral/Negative - targets for the sentiment analysis models from the user-submitted posts.</p></li>
-<li><p>Location - if given from account information, could be something to look at in regards to are people in certain parts of the country more likely to not care about privacy than in other parts. Could speak on certain users’ privacy literacy depending on where they are located.</p></li>
+<li><p>All Twitter posts that include the phrase “the social dilemma” between Sep 9, 2020 - Oct 9, 2020 (the month when the movie became the top on Netflix);</p></li>
+<li><p>All Twitter posts that include this key words (case-sensitive)“&#64;SocialDilemma_” (the official account of the movie) between Sep 9, 2020 - Oct 9, 2020;</p></li>
+<li><p>The account information of all users who posted these posts OR participate in threads under these posts (minimal info: Twitter ID, verified or not);</p></li>
+<li><p>Randomly choose 1000 public accounts from this list after removing all verified accounts, and collect all their posts 30 days before and after they posted about either “the social dilemmas” or “&#64;SocialDilemma_“. For example, if one posted on Sep 10, we want to collect all their posts from Aug 11- Oct 10 (minimal info: the total amount of posts within 30 days before and after that post, e.g., Aug 11- Sep 10, Sep 10- Oct 10);</p></li>
+<li><p>All Reddit posts that include this phrase (not case-sensitive): “the social dilemma” between Sep 9, 2020 - Oct 9, 2020;</p></li>
+<li><p>All public posts (may limited to public figures) from the Social Dilemma Facebook homepage (<a class="reference external" href="https://www.facebook.com/TheSocialDilemma/">https://www.facebook.com/TheSocialDilemma/</a>);</p></li>
 </ul>
 </div>
 <div class="section" id="challenges">
@@ -616,10 +618,8 @@
 <div class="section" id="questions">
 <h2>Questions<a class="headerlink" href="#questions" title="Permalink to this headline">¶</a></h2>
 <ol class="simple">
-<li><p>How are we going to detect age information from user data so as to classify users into different age groups?</p></li>
 <li><p>How do we extract and analyze users’ private data without obtaining sensitive information such as age, gender, name, etc?</p></li>
-<li><p>What are some assumptions we have about social media platforms prior to our analysis?</p></li>
-<li><p>We assume that the text data would reveal and reflect the preferences and actual perspectives of the users.</p></li>
+<li><p>What are some assumptions we have about social media platforms prior to our analysis? We assume that the text data would reveal and reflect the preferences and actual perspectives of the users.</p></li>
 <li><p>What are some sentiment analysis techniques/tools or classification techniques that are suitable for the types of data we are working with? (possibly rank them - if we are looking to try and see which works best or a combination of different tools)</p></li>
 </ol>
 </div>
@@ -694,14 +694,7 @@ Herer’s an example of the sentiment analysis result we get:</p></li>
 </div>
 <div class="section" id="next-step">
 <h2>Next Step<a class="headerlink" href="#next-step" title="Permalink to this headline">¶</a></h2>
-<ul class="simple">
-<li><p>Mine various platforms (Twitter, Reddit, etc.) for data on popular trends/posts and identify patterns in different generations from collected data</p></li>
-<li><p>Clean and analyze the data</p></li>
-<li><p>Visually present our findings on a website</p></li>
-</ul>
-<!-- ## Current Tasks and Roadmap
-
-We currently don't have our main datasets yet. While waiting for access to our official data we have been testing out various sentiment analysis models such as __ -->
+<p>We will mine various platforms (Twitter, Reddit, etc.) for data about the movie The Social Dilemma. We aim to analyze the hypothesis about whether this movie has changed audience’s attitude towards social media and increased/decreased people’s social media usage. Specifically, to verify the hypothesis, we want to see people’s social media usage frequency change one month before and after watching the movie and compute the continuous correlation between the usage frequency and users’ attitudes towards the movie.</p>
 </div>
 </div>
 
