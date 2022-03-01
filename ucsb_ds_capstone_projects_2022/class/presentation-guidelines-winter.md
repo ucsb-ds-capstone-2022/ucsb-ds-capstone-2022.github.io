@@ -54,7 +54,7 @@ Here are some practical suggestions in preparing your presentations.
 
 **Materials.** To make transitions quickly from group to group in class, we'll put all materials in a single folder and control the presentations from one machine. When your slides are ready please upload them to this [drive folder](https://drive.google.com/drive/folders/1P1csdK8Yn_ZRkeSTzKaeGQzCve_u4HSW?usp=sharing) and use the following naming convention:
 
-\[ROOM\] + \_ + \[PRESENTATION WEEK \] + \[ TEAM NAME \]
+\[ROOM\] + \_ + \[PRESENTATION WEEK \] + \_ + \[ TEAM NAME \]
 
 For example, `nh1105_week10_eri.pdf`. Please upload slides in either PDF, HTML, or Google Slides format.
 
