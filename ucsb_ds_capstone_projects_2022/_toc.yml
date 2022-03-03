@@ -16,6 +16,7 @@ parts:
     - file: class/progress-update-initial-post-guidelines
     - file: class/progress-update-second-post-guidelines
     - file: class/progress-update-posting-instructions
+  - file: class/presentation-guidelines-winter
 - caption: Projects
   chapters:
   - file: projects/allthenticate/description
