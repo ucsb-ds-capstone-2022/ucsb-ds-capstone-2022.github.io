@@ -70,11 +70,11 @@ The hyperparameters we tuned are k = LATENT_DIM, encoder_structure = ENCODER_DIM
 
 ![](https://cdn.discordapp.com/attachments/927717200247275561/949423920602304552/Screen_Shot_2022-03-03_at_3.49.25_PM.png)
 
-| *Figure 1. Testing Results for the best model for no Constraint Adaptive Prior.* [1]|
+|*Testing Results for the best model for no Constraint Adaptive Prior.*|
 
 ![](https://cdn.discordapp.com/attachments/927717200247275561/949423768231608320/Screen_Shot_2022-03-03_at_3.51.02_PM.png)
 
-| *Figure 2. Testing Results for the best model with Constraint Adaptive Prior.* [2]|
+|*Figure 2. Testing Results for the best model with Constraint Adaptive Prior.*|
 
 Above are the results from running the experiment and applying the best models to the testing data. Since we are looking at comparing the models using the Mean Average Precision, we see that metric increasing slightly when we add features using Constraint Adaptive Priors. 
 
@@ -103,4 +103,4 @@ After meeting our goal for the end of this quarter, which was  implementing a si
 
 Although the CS Capstone website is showing only properties in Santa Barbara County, we would like to see if we can build a model that can be applied to a larger geographic area, like all of California or the entire country. 
 
-| ![example.gif](1_0_GIF_2.gif) | 
+![example.gif](1_0_GIF_2.gif)
