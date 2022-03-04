@@ -56,6 +56,10 @@ Variational autoencoders are limited in using either item rating vectors or user
 
 ![](https://media.discordapp.net/attachments/927717200247275561/949423455240077352/unknown.png?width=886&height=171)
 
+Another benefit of BiVAEs are their capability to incorporate user/item features in their recommendations by using constrained adaptive priors (CAP). CAPs are used by adding multimodality in by integrating user/item features information into the latent representations that are ultimately sampled from to use as input for the decoder. User/item features are encoded into the same dimensional space as the latent representations and then used as a constraint in a multivariate gaussian distribution with its mean being the sampled user/item latent representation.This final multivariate gaussian distribution is used as 
+CAPs allow us to incorporate various information about properties (e.g. price, location, sq. footage, etc) and users (e.g. family, location, etc.)  to make more informed recommendations. Another benefit is that new users/items with few interactions can also be given more accurate recommendations using their prior information. The capabilities and great tested performance of Bilateral Variational autoencoders make it a perfect model for our recommendation system goals.
+
+
 ## Hyperparameter Tuning ##
 
 For this project, we are implementing Grid Search and Random Search to help us determine the best hyperparameters to use in our model based on the training data. First, we hyperparameter tuned the data to include only Santa Barbara properties, which consists of only about 9500 observations. Because of this smaller dataset, we opted to use Grid Search since it searches through every possible combination of hyperparameters passed through the function into the model. When we move up to a larger dataset, and need to account for a larger region like all of Southern California or possibly the entire country, we would need to use Random Search to obtain a random sample of the possible combinations. This is purely because of the larger dataset and the lack of powerful computational power to iterate through all the possible combinations. 
