@@ -42,7 +42,7 @@ In the context of recommendation systems, user and/or item rating vectors can be
 
 An issue with regular autoencoders is that it is limited by the encoder network outputting a single value for each encoding dimension. Variational Autoencoders (VAE) solve this problem by representing each latent feature as a probability distribution. When decoding from the latent dimension, the VAE will randomly sample from each latent feature distribution to generate a vector as input for our decoder model.
 
-![](https://cdn.discordapp.com/attachments/927717200247275561/949423251128483890/unknown.png)
+![](https://media.discordapp.net/attachments/927717200247275561/949423344200077342/unknown.png?width=796&height=529)
 
 For recommender systems, this can be replicated by our encoders outputting one latent dimension vector of means and one latent dimension vector of standard deviations for each latent feature. These latent parameters can then be sampled from using a gaussian distribution. User or item rating vectors that are nearby to one another in their latent parameter space should correspond with similar reconstructions. This allows VAE to learn smooth latent state representations of our user/item rating interaction data which can be used generatively for recommendations.
 
