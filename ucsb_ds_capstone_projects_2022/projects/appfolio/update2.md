@@ -1,3 +1,3 @@
-## End of Winter Quarter Progress ##
+# End of Winter Quarter Progress #
 
-# Recap #
+## Recap ##
