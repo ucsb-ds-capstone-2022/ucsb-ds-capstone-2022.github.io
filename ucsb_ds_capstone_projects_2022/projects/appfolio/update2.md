@@ -106,7 +106,8 @@ Above are the results from running the experiment and applying the best models t
 
 ## Results ##
 
-**Baseline models**: We used a baseline model for comparison. In general we wanted to see if our model is actually performing well. So we compared the accuracy of our model with the accuracy of the baseline models to see if we improved upon it. The baseline models that we used in our projects are variational autoencoder for collaborative filtering, poisson factorization vs BPR,  generalized matrix factorization (GMF), and neural matrix factorization (NeuMF)/neural collaborative filtering (NCF).
+## Baseline models ##: 
+We used a baseline model for comparison. In general we wanted to see if our model is actually performing well. So we compared the accuracy of our model with the accuracy of the baseline models to see if we improved upon it. We chose a collection of various popular,recommender system algorithms (e.g. linear, non-linear, factorization based, neural network based, etc.) as our baseline models. The baseline models that we used in our projects are variational autoencoder (VAECF), poisson factorization (PF), hierarchical poisson factorization (HPF), Bayesian Personalized Ranking (BPR), Generalized Matrix Factorization (GMF), Multilayer Perceptron (MLP), and neural matrix factorization (NeuMF).
 
 ![](https://cdn.discordapp.com/attachments/927717200247275561/949423042260504597/unknown.png)
 
