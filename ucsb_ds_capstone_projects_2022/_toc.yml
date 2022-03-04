@@ -52,9 +52,9 @@ parts:
   - file: projects/evidation_julio/description
     sections:
     - file: projects/evidation_julio/Update2_4_22
-  - file: projects/hg_insights/
+  - file: projects/hg_insights
     sections:
-    -file: projects/hg_insights/update 2-2
+    - file: projects/hg_insights/update 2-2
   - file: projects/nri/description
     sections:
     - file: projects/nri/update1
