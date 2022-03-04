@@ -34,4 +34,5 @@ This is an effective method of crop irrigation in which crops are watered by a c
 
 ### Next Steps
 - We plan to continue pulling images out of PlanetLabs and labeling them in LabelStudio to create a dataset of a few thousand images. 
+- After creating our dataset, we plan to review neural networks and choose one to base our model on. We are currently leaning towards a convolutional neural network since the model allows for image classification.
 - We are also planning a literature review around articles that include center pivots and irrigation expansion to further advance our knowledge of the usefulness of our model.
