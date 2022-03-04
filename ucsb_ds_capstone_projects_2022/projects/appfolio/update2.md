@@ -64,3 +64,5 @@ Baseline models: We used a baseline model for comparison. In general we wanted t
 After meeting our goal for the end of this quarter, which was  implementing a simple recommendation model in the CS capstone, we look forward to improving our current model by incorporating multimodality. By incorporating multimodality, we would be looking at different features to use like latitude, longitude, property type, prices and images. In addition, we would still take time to test other models if we can achieve a better performance than the current model on the website. 
 
 Although the CS Capstone website is showing only properties in Santa Barbara County, we would like to see if we can build a model that can be applied to a larger geographic area, like all of California or the entire country. 
+
+![Alt Text](https://discord.com/channels/927701734791458816/927717200247275561/949101457716699137)
