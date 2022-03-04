@@ -48,13 +48,13 @@ For recommender systems, this can be replicated by our encoders outputting one l
 
 ### Bilateral Variational Autoencoder Architecture
 
-![](https://cdn.discordapp.com/attachments/927717200247275561/949423251128483890/unknown.png)
+![](https://media.discordapp.net/attachments/927717200247275561/949423395433492560/unknown.png?width=886&height=320)
 
 Variational autoencoders are limited in using either item rating vectors or user rating vectors for input. This results in loss of information of user-item affinities. Bilateral Variational Autoencoder Architecture (BiVAE) allows us to work with dyadic data and retain all information. The BiVAE architecture consists of two VAEs used conjointly, one using item rating vectors as input and the other using user rating vectors as input.   Each one is trained separately by encoding its input and outputting its latent feature distributions. Then both  its latent feature distribution for one input and  the other VAE’s resulting item/user latent representation for the entire user-item rating matrix are taken as an inner product for the decoder. In addition to no loss of user-item information, BiVAE allows us to make user and item based recommendations.
 
 ### Multimodality Using Constrained Adaptive Priors
 
-![](https://cdn.discordapp.com/attachments/927717200247275561/949423455240077352/unknown.png)
+![](https://media.discordapp.net/attachments/927717200247275561/949423455240077352/unknown.png?width=886&height=171)
 
 ## Hyperparameter Tuning ##
 
