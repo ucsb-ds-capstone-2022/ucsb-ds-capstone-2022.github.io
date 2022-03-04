@@ -18,7 +18,12 @@ The first datasets’ simulated stress scores ranged between 0 (not stressed) an
 
 The simulated stress scores were numeral values ranging from 140 to 280. Upon plotting the simulated stress scores and sleep scores they appeared to have a strong linear relationship. Therefore, we ran a linear regression model and the model performed very well. A plot of the data with the linear regression line is shown below. 
 
+<<<<<<< Updated upstream
 ![](https://ibb.co/x8chbtT)
+=======
+![](https://cdn.discordapp.com/attachments/841166503402405888/949437824132861972/Oura_plot.png)
+
+>>>>>>> Stashed changes
 ## Multiple Imputation for Kaggle Data
 While doing exploratory analysis on the Garmin data from Kaggle, we found that three variables had a significant proportion of missing values: awakeSleepSeconds, deepSleepSeconds, and lightSleepSeconds. These values were converted all to hours later on, but to deal with missing data we explored multiple imputation—which is a process of going through multiple iterations of imputation to reduce bias and errors. 
 
@@ -28,9 +33,16 @@ To perform a multiple imputation, we utilized the miceforest package on Python w
 
 After completing the imputation, we ran a linear regression model and also generated fake stress scores and compared it to our linear regression model which used data that was not imputed. We observed that the multiple imputation data had higher mean squared error and mean absolute error for predicting totalSleepHours. However, there was lower mean squared error and mean absolute error, compared to the non imputation data, when it came to predicting stress_scores. This may be because the more data that is available the more accurate the predictions of the stress_scores are. To visualize the differences in the multiple imputation (left) vs. no imputations (right) we created 3D graphs down below. 
 
+<<<<<<< Updated upstream
 ![](https://ibb.co/q0HbzDP) | ![](https://ibb.co/xL18FKR)
 
 ![](https://ibb.co/x5tzvnw) | ![](https://ibb.co/G5dN9Fv)
+=======
+Multiple Imputation        |  No Imputation
+:-------------------------:|:-------------------------:
+![](https://cdn.discordapp.com/attachments/841166503402405888/949437828918566962/3D_Imputation.png) | ![](https://cdn.discordapp.com/attachments/841166503402405888/949437828406865920/3D_Non_Imputation.png)
+![](https://cdn.discordapp.com/attachments/841166503402405888/949437829157634128/Imputated.png) | ![](https://cdn.discordapp.com/attachments/841166503402405888/949437828662693938/Non_Imputated.png)
+>>>>>>> Stashed changes
 
 ## Real Data Finding 
 The real dataset included a Demographic Survey that was submitted by participants in the study. In order to familiarize ourselves with the population, we wanted to take a closer look at the Demographic information. We created custom age ranges in which participants would fall under. Custom age ranges enabled us to interpret the data much more easily. Next, we separated the participants into Female and Male categories in order to take a closer look at the age distribution of the population. Participants had the following options for gender: Male, Female, Non-binary/Third Gender, Other, and Prefer Not To Say. However, all of the participants had submitted Male/Female as their gender. The following graphs are the results of our exploration of the ages of the study’s participants:
