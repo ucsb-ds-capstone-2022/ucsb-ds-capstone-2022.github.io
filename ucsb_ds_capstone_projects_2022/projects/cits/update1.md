@@ -5,13 +5,13 @@ Eoin Hayes, Qiru Hu, Jasmine Kwok, Lucas Nguyen, Xavier Speropoulos
 
 ## Overview 
 
-We are working with The Center for Information Technology and Society (CITS) at UC Santa Barbara for this research project. Our project sponsor is Qing Huang, a PhD student in the Department of Communication at UCSB. 
+We are working with The Center for Information Technology and Society (CITS) at UC Santa Barbara for this research project. Our project sponsor is Qing Huang, a Ph.D. student in the Department of Communication at UCSB. 
 
-The CITS lab is described as, “ being dedicated to research and education about the cultural transitions and social innovations associated with technology, particularly in the highly dynamic environments that seem so pervasive in organizations and societies today. There is also work to improve engineering through infusing social insights into the innovative process.”
+The CITS lab is described as, “being dedicated to research and education about the cultural transitions and social innovations associated with technology, particularly in the highly dynamic environments that seem so pervasive in organizations and societies today. There is also work to improve engineering through infusing social insights into the innovative process.”
 
 ## Project Description
 
-In 2020, the social media documentary The Social Dilemma has once become the most popular show on Nextflix. This documentary reveals the downsides of the major social media platforms. The popularity of The Social Dilemma reflects the public’s general concerns about the information they shared on social media. 
+In 2020, the social media documentary The Social Dilemma has once become the most popular show on Netflix. This documentary reveals the downsides of the major social media platforms. The popularity of The Social Dilemma reflects the public’s general concerns about the information they shared on social media. 
 
 ![](https://usustatesman.com/wp-content/uploads/2020/11/the-social-dilemma-1050x700.png)
 
@@ -19,12 +19,15 @@ In response to these concerns, our research project is launched by CITS to exami
 
 ## Data
 
-Our team will be web scraping various social media platform data such as Reddit, Twitter, and potentially Facebook user data. We will collect public comments about the movie "The Social Dilemma". We will look at the users' social media usage two months before and after viewing the movie and analyze possible behavior change. We may also run sentiment analysis models to gauge users' emotions towards various social media keywords regarding privacy, which will include clustering user data by certain age groups or “generations”. The main features may include the following:
-- User Age - Given age by the user.
-- Age of Account - length of time account has been active.
-- User-submitted posts contents - posts from the users that we will run sentiment analysis on.
-- Positive/Neutral/Negative - targets for the sentiment analysis models from the user-submitted posts.
-- Location - if given from account information, could be something to look at in regards to are people in certain parts of the country more likely to not care about privacy than in other parts. Could speak on certain users' privacy literacy depending on where they are located.  
+Our team will be web scraping various social media platform data such as Reddit, Twitter, and potentially Facebook user data. We will collect public comments about the movie "The Social Dilemma". We will look at the users' social media usage one month before and after viewing the movie. 
+
+Specifically, we are going to collect the data as described below: 
+- All Twitter posts that include the phrase “the social dilemma” between Sep 9, 2020 - Oct 9, 2020 (the month when the movie became the top on Netflix);
+- All Twitter posts that include this key words (case-sensitive)“@SocialDilemma_” (the official account of the movie) between Sep 9, 2020 - Oct 9, 2020;
+- The account information of all users who posted these posts OR participate in threads under these posts (minimal info: Twitter ID, verified or not);
+- Randomly choose 1000 public accounts from this list after removing all verified accounts, and collect all their posts 30 days before and after they posted about either “the social dilemmas” or “@SocialDilemma_“. For example, if one posted on Sep 10, we want to collect all their posts from Aug 11- Oct 10 (minimal info: the total amount of posts within 30 days before and after that post, e.g., Aug 11- Sep 10, Sep 10- Oct 10);
+- All Reddit posts that include this phrase (not case-sensitive): “the social dilemma” between Sep 9, 2020 - Oct 9, 2020;
+- All public posts (may limited to public figures) from the Social Dilemma Facebook homepage (https://www.facebook.com/TheSocialDilemma/);
 
 
 ## Challenges 
@@ -36,11 +39,9 @@ Our team will be web scraping various social media platform data such as Reddit,
 
 ## Questions 
 
-1. How are we going to detect age information from user data so as to classify users into different age groups?
-2. How do we extract and analyze users' private data without obtaining sensitive information such as age, gender, name, etc? 
-3. What are some assumptions we have about social media platforms prior to our analysis? 
-4. We assume that the text data would reveal and reflect the preferences and actual perspectives of the users. 
-5. What are some sentiment analysis techniques/tools or classification techniques that are suitable for the types of data we are working with? (possibly rank them - if we are looking to try and see which works best or a combination of different tools)
+1. How do we extract and analyze users' private data without obtaining sensitive information such as age, gender, name, etc? 
+2. What are some assumptions we have about social media platforms prior to our analysis? We assume that the text data would reveal and reflect the preferences and actual perspectives of the users. 
+3. What are some sentiment analysis techniques/tools or classification techniques that are suitable for the types of data we are working with? (possibly rank them - if we are looking to try and see which works best or a combination of different tools)
 
 ## What We Have Done
 
@@ -95,12 +96,6 @@ Figure 1. Analyzing comment sentiments with keyword “privacy” across differe
 
 
 ## Next Step
-- Mine various platforms (Twitter, Reddit, etc.) for data on popular trends/posts and identify patterns in different generations from collected data
-- Clean and analyze the data
-- Visually present our findings on a website
+We will mine various platforms (Twitter, Reddit, etc.) for data about the movie The Social Dilemma. We aim to analyze the hypothesis about whether this movie has changed audience’s attitude towards social media and increased/decreased people’s social media usage. Specifically, to verify the hypothesis, we want to see people’s social media usage frequency change one month before and after watching the movie and compute the continuous correlation between the usage frequency and users’ attitudes towards the movie.
 
 
-
-<!-- ## Current Tasks and Roadmap
-
-We currently don't have our main datasets yet. While waiting for access to our official data we have been testing out various sentiment analysis models such as __ -->

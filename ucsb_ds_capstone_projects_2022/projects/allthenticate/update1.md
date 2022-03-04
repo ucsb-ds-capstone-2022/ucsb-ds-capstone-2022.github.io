@@ -1,21 +1,19 @@
 # Project Update 1 (2/4/2022)
 
-### **Domain Background**
+### **Motivation and Goals**
 
-Founded in Santa Barbara, CA by UCSB alumni, Allthenticate is a cybersecurity company that aims to revolutionize the way that people will interact with their devices. Their products enable the use of a smartphone to unlock everything, from doors to your office, to logging into a website, and even unlocking your car. 
+As you already know, Allthenticate is a cybersecurity company which allows users to simply authenticate using their phones. As you can imagine, the amount of (very sensitive) user data Allthenticate generates is huge. However, that data is currently not being utilized for any business purposes. So, why not join forces with a talented and passionate group of Data Science students? Though having data available for analysis is not the only motivation behind this project, it is an important one.
 
-The company has broad goals to simplify yet bolster modern network security, where anyone can be authenticated and be able to communicate securely yet easily. With ambitions set high, it’s important to be able to quantify and provide evidence of a superior product, which leads to the need for a team of data science students. 
+Additionally, the company wants to truly understand its users to improve their experience with the app. Allthenticate was founded in 2019, so it is a fast growing, young company with a motivated team behind it. Although Allthenticate are in close contact with most of their clients, the company lacks a deeper understanding of how the general user interacts with the product. How many times are users typing their passwords? How many times do they need to open the app? What settings are they using most often? 
 
-Our capstone team consists of undergraduates Akshat Ataliwala, Calvin Jenkins, Bosco De Enrique Romeu, and Yuki Yamazki, as well as graduate advisor Leron Reznikov. We are working directly with Founder and CEO of Allthenticate, Chad Spensky, which is incredibly exciting as we have the opportunity to shape the analytics processes of the company. 
+The primary objectives of this project are being able to quantify the benefits that our security solution provides as well as improving the Allthenticate user experience. To achieve this, we have two main areas of focus.
 
+First, we want to quantify how much of an improvement Allthenticate’s security solution provides as opposed to existing solutions. This includes tasks like measuring time saved by using Allthenticate, tracking changes in bluetooth connection, and monitoring app status. This will all be done by analyzing the user data provided by the logs from readers, as well as the phone and computer apps.
 
-### **Motivation**
+Second, we intend to increase how well the product is working. Allthenticate is constantly improving and with user-happiness being at the core of the company’s values, we want to cater the best experience for the user. An example of this could be predicting a user’s app behaviors to personalize their UI to give them the most seamless experience for their particular needs. 
 
-As you already know, Allthenticate is a cybersecurity company which allows users to simply authenticate using their phones. As you can imagine, the amount of (very sensitive) data Allthenticate generates is huge. Currently that data is not being exploited for any business purposes, therefore: Why not join forces with a talented and passionate group of Data Science students? Though having data available for analysis is not the only motivation behind this project, it is an important one.
+As a final goal for the team, and extension of our second goal, we would like to publish an academic publication at a top tier conference focused on user-happiness and usability of the app. The company is serious about being a simple solution for all and we hope to prove ourselves by analyzing user-data in an academic context.
 
-Allthenticate was founded in 2019, so it is a relatively young and fast growing company. Although the members of Allthenticate are in close contact with most of their clients; the company lacks an understanding of how the general user interacts with the product. How many times are users typing their passwords? How many times do they need to open the app? What settings are they using? 
-
-We believe this exciting data-centric project will be able to quantify and shed a light on the role Allthenticate occupies in its customers day-to-day, and much more.
 
  
 ### **Data**
@@ -57,11 +55,6 @@ Phone | Time | Device Type | Connected | Connectable | Locked | Connecting | UUI
 ---|---|---|---|---|---|---|---|---
 471bf5ea-887b-4eaf-8324 | 2022-01-28 00:01:40.798130 | 1 | true | true | false | false | 10f9ef4-14fc-42a7 | -51
 
-### **Objectives**
+### **Current Progress**
 
-The primary objective of this project is to improve the Allthenticate app by analyzing the user data provided by the logs from doors, computers, and phones. To achieve this, we have two goals we aim to accomplish.
-
-First, we want to quantify how much of an improvement Allthenticate’s security solution provides as opposed to existing solutions. This includes things like measuring time saved, predicting a user’s app behaviors, and security benefits compared to not having the app. Second, we intend to determine how well the product is working. Allthenticate is constantly improving and with  user-happiness being at the core of the company’s values, we want to cater the best experience for the user. 
-
-As a final goal for the team, we would like to publish an academic publication at a top tier conference focused on user-happiness and usability of the app. The company is serious about being a simple solution for all and we hope to prove ourselves by analyzing user-data in an academic context. 
-
+At the current moment, we are still setting up our workflow with the datasets being able to reliably access the data. The company is implementing a logging system from the ground up for the first time in order to generate our data, resulting in a slow start to getting the ball rolling on tangible datasets so that we can start exploratory analysis. Still, we are keeping busy by brainstorming trends/insights we can measure with our data, as well as writing documentation to properly interpret the features in our datasets.
