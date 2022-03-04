@@ -16,6 +16,7 @@ parts:
     - file: class/progress-update-initial-post-guidelines
     - file: class/progress-update-second-post-guidelines
     - file: class/progress-update-posting-instructions
+  - file: class/presentation-guidelines-winter
 - caption: Projects
   chapters:
   - file: projects/allthenticate/description
@@ -31,12 +32,14 @@ parts:
   - file: projects/carpedata/description
     sections:
     - file: projects/carpedata/update1
+    - file: projects/carpedata/update2
   - file: projects/ccber/description
     sections:
     - file: projects/ccber/update1
   - file: projects/cits/description
     sections:
     - file: projects/cits/update1
+    - file: projects/cits/update2
   - file: projects/envent/description
     sections:
     - file: projects/envent/projectupdate1
