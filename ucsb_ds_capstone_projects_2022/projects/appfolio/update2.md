@@ -72,13 +72,27 @@ Another benefit of BiVAEs are their capability to incorporate user/item features
 
 CAPs allow us to incorporate various information about properties (e.g. price, location, sq. footage, etc) and users (e.g. family, location, etc.)  to make more informed recommendations. Another benefit is that new users/items with few interactions can also be given more accurate recommendations using their prior information. The capabilities and great tested performance of Bilateral Variational autoencoders make it a perfect model for our recommendation system goals.
 
+## Data Cleaning ##
+
+A major component to the BiVaE model is incorporation of item features. While the low dimensionality and completeness of our user dataset posed few obstacles, the higher dimensionality and various null observations in the items dataset is something that we continue to work around. Further, some of the data in our features is nested within JSON keys that include additional data, which is something we’ve worked to extract into separate columns. However, these extra features tend to have a high rate of null values, and part of our experimentation is based on how to incorporate or not incorporate the data we have.
+
+We have currently only implemented location as user/item features for our model’s CAPs. We anticipate that we will have to experiment with multiple options, whether it be including only subsets of the features or imputing the data we don’t have records for, to yield our most desirable results. 
+
+
+## Metrics ##
+
+Several approaches for evaluating model performance are demonstrated along with their respective metrics. Rating metrics, ranking metrics, classification metrics and non accuracy based metrics are some of the examples. In our projects we mostly focused on the ranking metrics. The use of the Ranking metrics in the model is that they evaluate how relevant and effective recommendations are for the users. In general the more relevant an item is, the more likely we’ll want to predict it. Precision and recall are some of the most simple and easy to interpret metrics available to us. For our purposes, we are dealing with a recommendation system model and will define these metrics under this consideration.
+
+We use precision to measure the proportion of recommended items that are relevant. And we used recall to measure the proportion of relevant items that are recommended. Another metric that we looked at is normalized discounted cumulative gain (NDCG) which evaluates how well the predicted items for a user are ranked based on relevance. Also we looked at mean average precision (MAP) which means it is the average precision for each user normalized over all users. The last thing that we looked at is the area under curve (AUC) which is the area under the receiver operating characteristic curve.
+
 ## Hyperparameter Tuning ##
 
 For this project, we are implementing Grid Search and Random Search to help us determine the best hyperparameters to use in our model based on the training data. First, we hyperparameter tuned the data to include only Santa Barbara properties, which consists of only about 9500 observations. Because of this smaller dataset, we opted to use Grid Search since it searches through every possible combination of hyperparameters passed through the function into the model. When we move up to a larger dataset, and need to account for a larger region like all of Southern California or possibly the entire country, we would need to use Random Search to obtain a random sample of the possible combinations. This is purely because of the larger dataset and the lack of powerful computational power to iterate through all the possible combinations. 
 
 For now, since we focused on preparing a better model for Appfolio’s CS Capstone which only contains Santa Barbara Counties, tuning on just the Santa Barbara Counties was our best bet. 
 
-The hyperparameters we tuned are latent dimension size, encoder architecture, activation function, likelihood, number of epochs, batch size, learning rate, and beta KL divergence term. The metric we want to look at is Mean Average Precision. Since we are experimenting with multimodality, we tune for two different models, one including Constraint Adaptive Priors and another without. At the moment, the only feature we’ve included for multimodality is geographic location by longitude and latitude. 
+The hyperparameters we tuned are latent dimension size, encoder architecture, activation function, likelihood, number of epochs, batch size, learning rate, and beta KL divergence term. The metric we want to look at is Mean Average Precision (MAP). MAP is a measure that takes in a ranked list of your recommendations and compares it to a list of the true set of relevant recommendations for that user. MAP rewards you for having many correct relevant recommendations in your list, and rewards you for putting the relevant recommendations at the top (you are also penalized more when incorrect guesses are higher up in the ranking). Therefore MAP is the best measure for overall recommendation system performance for our purposes. Since we are experimenting with multimodality, we tune for two different models, one including Constraint Adaptive Priors and another without. At the moment, the only feature we’ve included for multimodality is geographic location by longitude and latitude. 
+ 
 
 ![](https://cdn.discordapp.com/attachments/927717200247275561/949423920602304552/Screen_Shot_2022-03-03_at_3.49.25_PM.png)
 
@@ -90,23 +104,13 @@ The hyperparameters we tuned are latent dimension size, encoder architecture, ac
 
 Above are the results from running the experiment and applying the best models to the testing data. Since we are looking at comparing the models using the Mean Average Precision, we see that metric increasing slightly when we add features using Constraint Adaptive Priors. 
 
-## Data Cleaning ##
-
-A major component to the BiVaE model is incorporation of item features. While the low dimensionality and completeness of our user dataset posed few obstacles, the higher dimensionality and various null observations in the items dataset is something that we continue to work around. Further, some of the data in our features is nested within JSON keys that include additional data, which is something we’ve worked to extract into separate columns. However, these extra features tend to have a high rate of null values, and part of our experimentation is based on how to incorporate or not incorporate the data we have.
-
-We have not implemented the multi-modality component that encodes items into our model yet, but this is a problem that we foresee for next quarter. We anticipate that we will have to experiment with multiple options, whether it be including only subsets of the features or imputing the data we don’t have records for, to yield our most desirable results. 
-
-## Metrics and Basline Models ##
-
-**Metrics**: Several approaches for evaluating model performance are demonstrated along with their respective metrics. Rating metrics, ranking metrics, classification metrics and non accuracy based metrics are some of the examples. In our projects we mostly focused on the ranking metrics. The use of the Ranking metrics in the model is that they evaluate how relevant and effective recommendations are for the users. In general the more relevant an item is, the more likely we’ll want to predict it. Precision and recall are some of the most simple and easy to interpret metrics available to us. For our purposes, we are dealing with an imbalanced classification problem and will define these metrics under this consideration.
-
-We use precision to measure the proportion of recommended items that are relevant. And we used recall to measure the proportion of relevant items that are recommended. Another metric that we looked at is normalized discounted cumulative gain (NDCG) which evaluates how well the predicted items for a user are ranked based on relevance. Also we looked at mean average precision (MAP) which means it is the average precision for each user normalized over all users. The last thing that we looked at is the area under curve (AUC) which is the area under the receiver operating characteristic curve.
+## Results ##
 
 **Baseline models**: We used a baseline model for comparison. In general we wanted to see if our model is actually performing well. So we compared the accuracy of our model with the accuracy of the baseline models to see if we improved upon it. The baseline models that we used in our projects are variational autoencoder for collaborative filtering, poisson factorization vs BPR,  generalized matrix factorization (GMF), and neural matrix factorization (NeuMF)/neural collaborative filtering (NCF).
 
 ![](https://cdn.discordapp.com/attachments/927717200247275561/949423042260504597/unknown.png)
 
-*Figure 9. Resulting Metrics from Baseline Models.*
+*Figure 9. Resulting Metrics from Baseline Models and BiVae.*
 
 So according to the results that we have gotten we can see that the recall is lower than the BiVAE. Overall It’s much higher for BiVAE and that’s the reason why we chose BiVAE for our model.
 
