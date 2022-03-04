@@ -49,6 +49,7 @@ parts:
   - file: projects/evidation_eric/description
     sections:
     - file: projects/evidation_eric/update1
+    - file: projects/evidation_eric/update2
   - file: projects/evidation_julio/description
     sections:
     - file: projects/evidation_julio/Update2_4_22
