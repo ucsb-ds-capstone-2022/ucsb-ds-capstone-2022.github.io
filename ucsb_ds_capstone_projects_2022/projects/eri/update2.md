@@ -21,7 +21,7 @@ This is an effective method of crop irrigation in which crops are watered by a c
 ### Results of Efforts
 - The images that are pulled from the Planet API come in TIFF format (Tag Image File Format). Thus, we had to convert them into JPEG format before processing the rest of the image.
 - Resolutions of these satellite images are 3 meters per pixel. This range of resolutions would usually not be able to fit a single center pivot. Center pivots are commonly 400-500m, but could be very large at greater than 1km. 
-- We have to find a resolution that is able to capture a full center pivot. Larger images do come with a trade-off of smaller batch sizes during training neural networks due to not being able to fit too many large images into memory. Thus, since our goals do not require such precision, we will reduce the size of these images once we find a good resolution that captures a full center pivot.
+- We have to find a resolution that is able to capture a full center pivot. Larger images do come with a trade-off of smaller batch sizes during training neural networks due to not being able to fit too many large images into memory. Thus, since our goals do not require such precision, we will reduce the size of these images to 256 pixels x 256 pixels since it is able to capture a full center pivot.
 - We will have to deal with labeling partial center pivots since an image may contain cut-off center pivots. For now we are choosing to label these partial center pivots the same as the full center pivots.
 
 ![pivot_labeling](images/pivot_labeling.png)
@@ -30,7 +30,7 @@ This is an effective method of crop irrigation in which crops are watered by a c
 
 ![pivot_pixels](images/pivot_pixels.png)
 
-**Figure 2. Example of an image extracted from Planet Lab and split into 1024 pixel by 1024 pixel image sizes.**
+**Figure 2. Example of an image extracted from Planet Lab that is split into 1024 pixel by 1024 pixel image sizes. We will be using 256 pixels x 256 pixels instead for faster processing purposes.**
 
 ### Next Steps
 - We plan to continue pulling images out of PlanetLabs and labeling them in LabelStudio to create a dataset of a few thousand images. 
