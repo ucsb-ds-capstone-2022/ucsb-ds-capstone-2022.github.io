@@ -1,5 +1,7 @@
 # Creating a Simple Model #
 
+## A Concise Refresher ##
+
 ### About the Project
 
 Our project aims to create a recommender system that recommends properties to users based on previous user interactions and property features. Our final goal is to integrate our model into the [Santa Barbara property website](https://realm-ucsb.herokuapp.com/) created by UC Santa Barbara’s AppFolio sponsored computer science capstone team.
@@ -104,7 +106,7 @@ Above are the results from running the experiment and applying the best models t
 
 ## Results ##
 
-## Baseline models ##: 
+### Baseline models
 We used a baseline model for comparison. In general we wanted to see if our model is actually performing well. So we compared the accuracy of our model with the accuracy of the baseline models to see if we improved upon it. We chose a collection of various popular,recommender system algorithms (e.g. linear, non-linear, factorization based, neural network based, etc.) as our baseline models. The baseline models that we used in our projects are variational autoencoder (VAECF), poisson factorization (PF), hierarchical poisson factorization (HPF), Bayesian Personalized Ranking (BPR), Generalized Matrix Factorization (GMF), Multilayer Perceptron (MLP), and neural matrix factorization (NeuMF).
 
 ![](https://cdn.discordapp.com/attachments/927717200247275561/949423042260504597/unknown.png)
@@ -113,7 +115,7 @@ We used a baseline model for comparison. In general we wanted to see if our mode
 
 So according to the results that we have gotten we can see that the recall is lower than the BiVAE. Overall It’s much higher for BiVAE and that’s the reason why we chose BiVAE for our model.
 
-## Future Goals
+## Future Goals ##
 After meeting our goal for the end of this quarter, which was  implementing a simple recommendation model in the CS capstone, we look forward to improving our current model by incorporating multimodality. By incorporating multimodality, we would be looking at different features to use like latitude, longitude, property type, prices and images. In addition, we would still take time to test other models if we can achieve a better performance than the current model on the website. 
 
 Although the CS Capstone website is showing only properties in Santa Barbara County, we would like to see if we can build a model that can be applied to a larger geographic area, like all of California or the entire country. 
