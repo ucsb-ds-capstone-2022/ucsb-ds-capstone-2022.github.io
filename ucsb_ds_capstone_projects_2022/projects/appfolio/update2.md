@@ -65,4 +65,4 @@ After meeting our goal for the end of this quarter, which was  implementing a si
 
 Although the CS Capstone website is showing only properties in Santa Barbara County, we would like to see if we can build a model that can be applied to a larger geographic area, like all of California or the entire country. 
 
-![Alt Text](https://media.discordapp.net/attachments/927717200247275561/949101457871892511/1_0_GIF_2.gif)
+![](https://media.discordapp.net/attachments/927717200247275561/949101457871892511/1_0_GIF_2.gif)
