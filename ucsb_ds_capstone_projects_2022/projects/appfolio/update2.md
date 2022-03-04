@@ -4,12 +4,6 @@
 
 ### About the Project
 
-# Creating a Simple Model #
-
-## A Concise Refresher ##
-
-### About the Project
-
 Our project aims to create a recommender system that recommends properties to users based on previous user interactions and property features. Our final goal is to integrate our model into the [Santa Barbara property website](https://realm-ucsb.herokuapp.com/) created by UC Santa Barbara’s AppFolio sponsored computer science capstone team.
 
 ### Where we left off
