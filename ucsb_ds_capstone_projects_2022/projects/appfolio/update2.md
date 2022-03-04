@@ -19,7 +19,8 @@ In the following sections, we will go more in depth on the model we are using, h
 ## Our Model ##
 
 ![](https://cdn.discordapp.com/attachments/927717200247275561/949423148741300234/unknown.png)
-|*Figure 1. Recommender System Overview*|
+
+*Figure 1. Recommender System Overview*
 
 Recommender systems are algorithms aimed at suggesting relevant items to users. There are two main types of methods of recommendation, collaborative filtering methods and content based methods.
 
@@ -28,14 +29,16 @@ Content based methods build a model, based on features of user and/or items, tha
 Collaborative methods for recommender systems are methods that are based solely on the past interactions recorded between users and items in order to produce new recommendations. These interactions form the user-item rating matrix.
 
 ![](https://cdn.discordapp.com/attachments/927717200247275561/949423199551098890/unknown.png)
-|*Figure 2. Collaborative Filtering Using Interaction Matrices*|
+
+*Figure 2. Collaborative Filtering Using Interaction Matrices*
 
 The goal is to use these past user-item interactions to detect similar users and/or similar items and make predictions based on these similarities.
 
 ### Autoencoder Architecture ###
 
 ![](https://cdn.discordapp.com/attachments/927717200247275561/949423251128483890/unknown.png)
-|*Figure 3. Autoencoder Structure*|
+
+*Figure 3. Autoencoder Structure*
 
 A popular model used for collaborative filtering are autoencoders. Autoencoders are an unsupervised learning technique that leverages neural networks for the task of representation learning. It’s designed as a neural network architecture that imposes a bottleneck in the network which forces a compressed knowledge representation of the original input. This is done by creating a supervised learning problem tasked with outputting x’, a reconstruction of the original input x. The input x is fed into a neural network encoder that outputs z , a compressed lower dimensional representation of the input. Z is then used as input to the neural network decoder and attempts to reconstruct the original input x.
 
@@ -46,21 +49,24 @@ In the context of recommendation systems, user and/or item rating vectors can be
 An issue with regular autoencoders is that it is limited by the encoder network outputting a single value for each encoding dimension. Variational Autoencoders (VAE) solve this problem by representing each latent feature as a probability distribution. When decoding from the latent dimension, the VAE will randomly sample from each latent feature distribution to generate a vector as input for our decoder model.
 
 ![](https://media.discordapp.net/attachments/927717200247275561/949423344200077342/unknown.png?width=796&height=529)
-|*Figure 4. Variational Autoencoder Structure*|
+
+*Figure 4. Variational Autoencoder Structure*
 
 For recommender systems, this can be replicated by our encoders outputting one latent dimension vector of means and one latent dimension vector of standard deviations for each latent feature. These latent parameters can then be sampled from using a gaussian distribution. User or item rating vectors that are nearby to one another in their latent parameter space should correspond with similar reconstructions. This allows VAE to learn smooth latent state representations of our user/item rating interaction data which can be used generatively for recommendations.
 
 ### Bilateral Variational Autoencoder Architecture
 
 ![](https://media.discordapp.net/attachments/927717200247275561/949423395433492560/unknown.png?width=886&height=320)
-|*Figure 5. Bilateral Variational Autoencoder Structure*|
+
+*Figure 5. Bilateral Variational Autoencoder Structure*
 
 Variational autoencoders are limited in using either item rating vectors or user rating vectors for input. This results in loss of information of user-item affinities. Bilateral Variational Autoencoder Architecture (BiVAE) allows us to work with dyadic data and retain all information. The BiVAE architecture consists of two VAEs used conjointly, one using item rating vectors as input and the other using user rating vectors as input.   Each one is trained separately by encoding its input and outputting its latent feature distributions. Then both  its latent feature distribution for one input and  the other VAE’s resulting item/user latent representation for the entire user-item rating matrix are taken as an inner product for the decoder. In addition to no loss of user-item information, BiVAE allows us to make user and item based recommendations.
 
 ### Multimodality Using Constrained Adaptive Priors
 
 ![](https://media.discordapp.net/attachments/927717200247275561/949423455240077352/unknown.png?width=886&height=171)
-|*Figure 6. Constrained Adaptive Prior Implementation*|
+
+*Figure 6. Constrained Adaptive Prior Implementation*
 
 Another benefit of BiVAEs are their capability to incorporate user/item features in their recommendations by using constrained adaptive priors (CAP). CAPs are used by adding multimodality in by integrating user/item features information into the latent representations that are ultimately sampled from to use as input for the decoder. User/item features are encoded into the same dimensional space as the latent representations and then used as a constraint in a multivariate gaussian distribution with its mean being the sampled user/item latent representation.This final multivariate gaussian distribution is used for sampling for our input for the decoder.
 
@@ -76,11 +82,11 @@ The hyperparameters we tuned are latent dimension size, encoder architecture, ac
 
 ![](https://cdn.discordapp.com/attachments/927717200247275561/949423920602304552/Screen_Shot_2022-03-03_at_3.49.25_PM.png)
 
-|*Figure 7. Testing Results for the best model for no Constraint Adaptive Prior.*|
+*Figure 7. Testing Results for the best model for no Constraint Adaptive Prior.*
 
 ![](https://cdn.discordapp.com/attachments/927717200247275561/949423768231608320/Screen_Shot_2022-03-03_at_3.51.02_PM.png)
 
-|*Figure 8. Testing Results for the best model with Constraint Adaptive Prior.*|
+*Figure 8. Testing Results for the best model with Constraint Adaptive Prior.*
 
 Above are the results from running the experiment and applying the best models to the testing data. Since we are looking at comparing the models using the Mean Average Precision, we see that metric increasing slightly when we add features using Constraint Adaptive Priors. 
 
@@ -99,7 +105,8 @@ We use precision to measure the proportion of recommended items that are relevan
 **Baseline models**: We used a baseline model for comparison. In general we wanted to see if our model is actually performing well. So we compared the accuracy of our model with the accuracy of the baseline models to see if we improved upon it. The baseline models that we used in our projects are variational autoencoder for collaborative filtering, poisson factorization vs BPR,  generalized matrix factorization (GMF), and neural matrix factorization (NeuMF)/neural collaborative filtering (NCF).
 
 ![](https://cdn.discordapp.com/attachments/927717200247275561/949423042260504597/unknown.png)
-|*Figure 9. Resulting Metrics from Baseline Models.*|
+
+*Figure 9. Resulting Metrics from Baseline Models.*
 
 So according to the results that we have gotten we can see that the recall is lower than the BiVAE. Overall It’s much higher for BiVAE and that’s the reason why we chose BiVAE for our model.
 
@@ -109,4 +116,5 @@ After meeting our goal for the end of this quarter, which was  implementing a si
 Although the CS Capstone website is showing only properties in Santa Barbara County, we would like to see if we can build a model that can be applied to a larger geographic area, like all of California or the entire country. 
 
 ![example.gif](1_0_GIF_2.gif)
-|*Figure 10. How to Get Recommendations from the CS Capstone Website.*|
+
+*Figure 10. How to Get Recommendations from the CS Capstone Website.*
