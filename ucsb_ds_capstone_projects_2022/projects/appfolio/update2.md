@@ -1,6 +1,6 @@
 # End of Winter Quarter Progress #
 
-## Recap ##
+# Recap #
 
 We are working with AppFolio, a tech company based in Santa Barbara that provides innovative software, services, and data analytics to the real estate industry. More specifically, we are working with their most popular and successful platform, their Property Management Service.
 
