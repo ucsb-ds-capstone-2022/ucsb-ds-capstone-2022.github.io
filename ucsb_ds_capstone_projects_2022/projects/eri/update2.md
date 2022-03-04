@@ -1,9 +1,9 @@
 ## Update 2
 
-**Project: Combining computer vision and satellite imagery to map agricultural investment and water use in Sub-Saharan Africa.**
+**Project: Combining computer vision and satellite imagery to map agricultural investment and water use.**
 
 ### Refresher
-- As a refresher, our project aims to map agricultural expansion and irrigated water use across southern Africa by setting up necessary infrastructure, labeling images, and using that data to train computer vision models. 
+- As a refresher, our project aims to map agricultural expansion and irrigated water use by setting up necessary infrastructure, labeling images, and using that data to train computer vision models. 
 - Focusing on **center pivot irrigation**, we hope to develop a model that will be able to classify active/inactive irrigation areas from satellite images.
 ```{note}
 **Center-pivot irrigation**
