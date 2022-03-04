@@ -38,6 +38,7 @@ parts:
   - file: projects/cits/description
     sections:
     - file: projects/cits/update1
+    - file: projects/cits/update2
   - file: projects/envent/description
     sections:
     - file: projects/envent/projectupdate1
