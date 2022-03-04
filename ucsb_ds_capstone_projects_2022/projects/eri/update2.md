@@ -33,5 +33,5 @@ This is an effective method of crop irrigation in which crops are watered by a c
 **Figure 2. Example of an image extracted from Planet Lab and split into 1024 pixel by 1024 pixel image sizes.**
 
 ### Next Steps
-- We plan to continue pulling images out of PlanetLabs and labeling them in LabelStudio to create a dataset of a few thousand images.
+- We plan to continue pulling images out of PlanetLabs and labeling them in LabelStudio to create a dataset of a few thousand images. 
 - We are also planning a literature review around articles that include center pivots and irrigation expansion to further advance our knowledge of the usefulness of our model.
