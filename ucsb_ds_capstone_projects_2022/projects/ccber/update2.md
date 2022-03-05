@@ -20,4 +20,8 @@ Approach 1: Using a supervised learning technique, we may be able to train a ran
 
 Approach 2: Using methodologies presented in [Hairiness: the missing link between pollinators and pollination][https://peerj.com/articles/2779/], we could try quantifying bee hair using a measure of entropy. The approach is to use an image analysis method to segment the image and compute entropy values for each block.
 
+| ![sample](./fig-1-full.png) |
+|:--:|
+| <b>Image of a sample bee</b>|
+
 [Image credit](https://doi.org/10.7717/peerj.2779)
