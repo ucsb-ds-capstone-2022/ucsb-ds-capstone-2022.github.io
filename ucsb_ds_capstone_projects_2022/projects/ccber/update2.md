@@ -6,7 +6,7 @@ descriptions related to the specimen.
 
 | ![sample](./16.JPG) |
 |:--:|
-| <b>Image of a sample bee</b>|
+| <b>Sample Specimen</b>|
 
 The first 3-4 weeks consisted of developing Python scripts that can extract EXIF data from an image file [(MetaData Extractor)](https://github.com/harperklauke/Metadata-Extractor) and renaming the image corresponding to the readings from QR/Datamatrix code [(Universal QR/Datamatrix Rename)](https://github.com/booleank/bee-scanner) .We were able to release these tools as repositories on Github. These repositories are currently being used by two academic institutions. With the initial release, it was pointed out that some requirements may be different on MacOS and Windows so, we made sure to clarify this in the documentation. We hope to address any further issues and clean these tools as they are used throughout the project. 
 
@@ -22,6 +22,6 @@ Approach 2: Using methodologies presented in [Hairiness: the missing link betwee
 
 | ![sample](./fig-1-full.png) |
 |:--:|
-| <b>Image of a sample bee</b>|
+| <b>Entropy of Bee Face Image</b>|
 
 [Image credit](https://doi.org/10.7717/peerj.2779)
