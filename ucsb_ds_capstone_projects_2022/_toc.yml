@@ -67,3 +67,5 @@ parts:
   - file: projects/sprague/description
     sections:
     - file: projects/sprague/Sprague_group_update_01
+    - file: projects/sprague/Sprague_group_update_02
+
