@@ -22,7 +22,7 @@ Upon more research on computer vision tools, we found that there were several ap
 
 Approach 1: Using a supervised learning technique, we may be able to train a random forest classifier to return a binary pixel image, with the hair regions being white. This technique was inspired by the paper FIGARO, HAIR DETECTION AND SEGMENTATION IN THE WILD, where a combination of classic machine learning and computer vision techniques were utilized to get desired results for humans. One drawback to this method is we will be required to preprocess a lot of training images manually and design another model for detecting pixels on where the bee actually is. 
 
-Approach 2: Using methodologies presented in [Hairiness: the missing link between pollinators and pollination][https://peerj.com/articles/2779/], we could try quantifying bee hair using a measure of entropy. The approach is to use an image analysis method to segment the image and compute entropy values for each block.
+Approach 2: Using methodologies presented in [Hairiness: the missing link between pollinators and pollination](https://peerj.com/articles/2779/), we could try quantifying bee hair using a measure of entropy. The approach is to use an image analysis method to segment the image and compute entropy values for each block.
 
 | ![sample](./fig-1-full.png) |
 |:--:|
