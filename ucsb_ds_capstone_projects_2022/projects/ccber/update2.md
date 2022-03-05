@@ -13,7 +13,7 @@ The first 3-4 weeks consisted of developing Python scripts that can extract EXIF
 ## Moving Forward
 Our new focus is related to the bee itself. As such, we will be working with a different image dataset, which contains close-up, high quality images of bees. Our goal is to create different models that can quantify the number of hair on a given bee image. 
 
-| ![sample](./side-profile.JPG) |
+| ![sample](./side-profile.jpg) |
 |:--:|
 | <b></b>|
 
