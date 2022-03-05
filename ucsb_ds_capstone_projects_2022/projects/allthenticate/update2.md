@@ -4,8 +4,6 @@
 
 ### **Additional background**
 
-#### Field Definition
-
 As you may remember, Allthenticate is an app-based authenticator solution that allows users to use their phones as a central “password” for a number of different things they may need to authenticate (doors, computer, websites, etc). As a reminder, our goal in this capstone project is to 1) improve the user’s experience by determining when the app may not be functioning as intended and 2) to be able to quantify the ease of use, time saved, and security benefits compared to the traditional status quo. 
 
 Since the first update we’ve made a lot of tangible progress, and are determined to make up any lost time that we might have experienced when getting our project up and running. We’ve finally gained access to data, which has been evolving daily. Initially, we were getting data from 3 test phones being used at Allthenticate’s offices to set up the logging infrastructure and iron out any issues in formatting of our data. However, as of late February/early March, the logging system has been pushed out to all of Allthenticate’s customers, meaning that we are now getting constantly updating data every minute of every day, from real users using the Allthenticate app. Additionally, we’ve gotten a shared repository setup on GitLab, which has allowed us to speed up the collaboration process and streamline our development process now that we reliably have access to data. 
