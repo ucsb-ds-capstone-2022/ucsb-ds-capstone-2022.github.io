@@ -8,7 +8,7 @@ This project showcases the power of machine learning on the user interaction dat
 
 ## About the Data ##
 
-Our dataset is derived from [LISA](https://www.google.com/url?q=https://www.appfolio.com/news/appFolio-launches-new-ai-leasing-assistant-and-utility-management-offerings&sa=D&source=docs&ust=1644542468101327&usg=AOvVaw0I_O2jmUD38PsniHSAt-e_), Appfolio’s Award Winning AI Leasing Assistant Chat Bot, which is designed for property companies to streamline the process of receiving inquiries about properties from users. Our data is divided into three components: user ratings, item features, and images. It consists of over four million users, ten thousand properties, and five million user interactions.
+Our dataset is derived from [LISA](https://www.google.com/url?q=https://www.appfolio.com/news/appFolio-launches-new-ai-leasing-assistant-and-utility-management-offerings&sa=D&source=docs&ust=1644542468101327&usg=AOvVaw0I_O2jmUD38PsniHSAt-e_), Appfolio’s Award Winning AI Leasing Assistant Chat Bot, which is designed for property companies to streamline the process of receiving inquiries about properties from users. Our data is divided into three components: user ratings, item features, and images. It consists of over four million users, ten thousand properties, and five million user interactions. 
 
 ## What have we done so far ##
 
