@@ -22,6 +22,7 @@ parts:
   - file: projects/allthenticate/description
     sections:
     - file: projects/allthenticate/update1
+    - file: projects/allthenticate/update2
   - file: projects/appfolio/description
     sections:
     - file: projects/appfolio/update1
