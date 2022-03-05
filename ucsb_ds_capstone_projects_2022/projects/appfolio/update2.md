@@ -111,7 +111,7 @@ We used a baseline model for comparison. In general we wanted to see if our mode
 
 *Figure 9. Resulting Metrics from Baseline Models and BiVae.*
 
-So according to the results that we have gotten we can see that the recall is lower than the BiVAE. Overall It’s much higher for BiVAE and that’s the reason why we chose BiVAE for our model.
+From the results, we can see that our bilateral variational autoencoder with constrained adaptive priors outperformed all models in all metrics and specifically our most important metric, MAP.
 
 ## Future Goals ##
 After meeting our goal for the end of this quarter, which was  implementing a simple recommendation model in the CS capstone, we look forward to improving our current model by incorporating multimodality. By incorporating multimodality, we would be looking at different features to use like latitude, longitude, property type, prices and images. In addition, we would still take time to test other models if we can achieve a better performance than the current model on the website. 
