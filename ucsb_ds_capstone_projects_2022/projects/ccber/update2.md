@@ -15,7 +15,7 @@ Our new focus is related to the bee itself. As such, we will be working with a d
 
 | ![sample](./side-profile.jpg) |
 |:--:|
-| <b></b>|
+| <b>Lateral View</b>|
 
 ### Researching Different Methodologies
 Upon more research on computer vision tools, we found that there were several approaches that we can take to measure the hairiness of bees using raw 2D and 3D image data. Since our group is relatively new to these concepts, we determined that it was best to consult with professionals before taking any drastic steps in our project. Our team reached out to Prof. Yon Visell, an associate professor at UCSB with research in communications and signal processing. As part of our information gathering stage, we looked into the suggestions provided by Yon Visell, such as treating the problem as a block-based processing, using a convolutional neural-network approach, and quantifying bee hair using density. Since the problem will involve unsupervised learning, we sought to try different methods:
