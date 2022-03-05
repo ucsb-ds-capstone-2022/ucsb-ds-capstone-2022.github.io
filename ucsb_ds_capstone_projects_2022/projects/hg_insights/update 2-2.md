@@ -23,7 +23,7 @@ We focused on visualizing and performing statistics on the data to further under
 On the corporate side, we found that the vast majority of the data comes from US companies. Also, the correlation coefficient between company revenue and number of employees is 0.844 instead of 1. This indicates that some companies generate higher revenue with fewer employees, but some companies generate lower revenue with more employees. We also found that about 20% of the companies used almost 80% of the products, which is very much in line with the Pareto principle. Finally, we wanted to observe whether there was overlap in the same category of products in each company, and choosing verizon to observe, we found that there was overlap in the same category of products, but also that there were iterative updates to their products. Of course, because this is a large company, the number of products used is very large, and it is normal to see overlap.
 
 
-![unnamed.png](attachment:unnamed.png)
+![](img/unnamed.png)
 
 Figure 1. The number of companies in different countries.
 
@@ -31,7 +31,8 @@ Figure 1. The number of companies in different countries.
 Second, consider it in terms of time. We first divided the time interval into one month so that we could describe the data in more detail. We found that the first, second and third ranked products for each month have changed in the last 20 years. In the beginning decade, Database Management Software and Operating Systems & Computing Languages were the first and second products, and in the latter decade, Application Development & Management gradually increased, and even surpassed Database Management Software and Operating Systems & Computing Languages in the last few years.
 
 
-![unnamed-2.png](attachment:unnamed-2.png)
+![](img/unnamed-2.png)
+
 
 Figure 2. The number of common product categories over time.
 
