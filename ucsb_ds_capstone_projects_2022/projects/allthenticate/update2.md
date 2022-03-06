@@ -33,9 +33,9 @@ In the previous update, we got some feedback advising us to explain the definiti
 
 ### **Initial Efforts/findings**
 
-Since much of our logging infrastructure was still in development, we spent significant time finalizing log format and structure into something standard. This can be seen and explained by Table 1 and 2. These logs capture information about user actions in the phone app, communication between phones and devices over bluetooth, and communication between phones and computers over FCM.
+Since much of our logging infrastructure was still in development, we spent significant time finalizing log format and structure into something standard. This can be seen and explained by Table 1. These logs capture information about user actions in the phone app, communication between phones and devices over bluetooth, and communication between phones and computers over FCM.
 
-We have generated several real time visualizations in the Kibana dashboard on our Elastic instance running on AWS. The first set of visualizations (Figures 1-4) show relevant real time use data for identifying issues within the application. One can infer from a spike of users opening and closing an application, turning bluetooth on and off, or refreshing the app that there is an issue with the performance of the app. Additionally, if there is a spike in messages about the phone trying to connect to local devices, there is clearly an issue on the backend of the app or device infrastructure. Figures 5 and 6 show the distribution of lock and unlock times, and can be used to identify abnormally long unlock or lock times in real time, another method for identifying issues in the company infrastructure.
+We have generated several real time visualizations in the Kibana dashboard on our Elastic instance running on AWS. The first set of visualizations (Figures 1-4) show relevant real time use data for identifying issues within the application. One can infer from a spike of users opening and closing an application, turning bluetooth on and off, or refreshing the app that there is an issue with the performance of the app. Additionally, if there is a spike in messages about the phone trying to connect to local devices, there is clearly an issue on the backend of the app or device infrastructure.
   
 ![](images/app_launched_closed.png)
 <p align="center">
@@ -58,8 +58,8 @@ We have generated several real time visualizations in the Kibana dashboard on ou
 </p> 
 
 
-Beyond real-time visualization work, we have begun work towards generating meaningful static visualizations for deeper insights into the functionality of the company's products. This work has been somewhat slow as the updated app has yet to be deployed to all users, but we have worked to create a secure method for accessing data within a Python script using credentials that are ignored from Github commits. Additionally, we have created a script for cleaning and formatting the data in a structure that will allow for time series analysis, with logs divided by each unique phone ID and device ID in order of the log’s timestamp.
-  
+Beyond real-time visualization work, we have begun work towards generating meaningful static visualizations for deeper insights into the functionality of the company's products. This work has been somewhat slow as the updated app has yet to be deployed to all users, but we have worked to create a secure method for accessing data within a Python script using credentials that are ignored from Github commits. Figures 5 and 6 show the distribution of lock and unlock times, and can be used to identify abnormally long unlock or lock times in real time, another method for identifying issues in the company infrastructure.
+
   ![](images/lock_unlock_time.png)
 <p align="center">
 <em>Figures 5,6. Histogram on time taken to lock/unlock a device.</em>
