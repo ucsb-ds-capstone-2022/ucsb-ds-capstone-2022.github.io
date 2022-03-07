@@ -6,7 +6,7 @@ As briefly covered in the first update, A simple model is more desirable for the
 ### Key Metrics
 Because of the imbalance in classes, we choose the F1 score as our statistic among other metrics to measure the performance which is the usual convention for this type of task. 
 
-$F1$ Score $=2 \cdot \frac{\text { Precision } \cdot \text { Recall }}{\text { Precision }+\text { Recall }}$
+$$F1 Score =2 \cdot \frac{\text { Precision } \cdot \text { Recall }}{\text { Precision }+\text { Recall }}$$
 
 where
 
