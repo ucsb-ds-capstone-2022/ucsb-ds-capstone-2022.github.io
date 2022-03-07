@@ -65,6 +65,7 @@ parts:
   - file: projects/pwc/description
     sections:
     - file: projects/pwc/Update_1 
+    - file: projects/pwc/Update_2
   - file: projects/sprague/description
     sections:
     - file: projects/sprague/Sprague_group_update_01
