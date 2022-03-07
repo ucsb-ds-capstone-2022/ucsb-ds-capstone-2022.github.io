@@ -22,22 +22,27 @@ parts:
   - file: projects/allthenticate/description
     sections:
     - file: projects/allthenticate/update1
+    - file: projects/allthenticate/update2
   - file: projects/appfolio/description
     sections:
     - file: projects/appfolio/update1
+    - file: projects/appfolio/update2.md
   - file: projects/calcofi/description
     sections:
     - file: projects/calcofi/update1
     - file: projects/calcofi/calcofi-update1.md
+    - file: projects/calcofi/calcofi-update2.md
   - file: projects/carpedata/description
     sections:
     - file: projects/carpedata/update1
+    - file: projects/carpedata/update2
   - file: projects/ccber/description
     sections:
     - file: projects/ccber/update1
   - file: projects/cits/description
     sections:
     - file: projects/cits/update1
+    - file: projects/cits/update2
   - file: projects/envent/description
     sections:
     - file: projects/envent/projectupdate1
@@ -45,13 +50,19 @@ parts:
   - file: projects/eri/description
     sections:
     - file: projects/eri/update1
+    - file: projects/eri/update2
   - file: projects/evidation_eric/description
     sections:
     - file: projects/evidation_eric/update1
+    - file: projects/evidation_eric/update2
   - file: projects/evidation_julio/description
     sections:
     - file: projects/evidation_julio/Update2_4_22
+    - file: projects/evidation_julio/Update2
   - file: projects/hg_insights/description
+    sections:
+    - file: projects/hg_insights/HG_Update1_Feb7
+    - file: projects/hg_insights/update 2-2
   - file: projects/nri/description
     sections:
     - file: projects/nri/update1
@@ -60,6 +71,9 @@ parts:
   - file: projects/pwc/description
     sections:
     - file: projects/pwc/Update_1 
+    - file: projects/pwc/Update_2
   - file: projects/sprague/description
     sections:
     - file: projects/sprague/Sprague_group_update_01
+    - file: projects/sprague/Sprague_group_update_02
+
