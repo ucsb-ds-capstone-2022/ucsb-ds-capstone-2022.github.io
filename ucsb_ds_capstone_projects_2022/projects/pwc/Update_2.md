@@ -49,12 +49,13 @@ The two most common forms of *calibration* are Symmetric and Asymmetric.
 ---
 Symmetric quantization is incredibly quick to calculate, because we do not need to compute the zero point of reference, and we only consider the absolute maximum value. Asymmetric quantization is particularly useful for quantization when the distribution of weights/ activation outputs are are heavily asymmetric, but it comes with a higher cost. From our readings, **an efficient method is to use symmetric quantization for weights, asymmetric quantization for activation outputs with a subset of models weights.**
 
-A typical quantization function example:
+**Example**: A general quantization function:
 
 $$Q(w)=\operatorname{Int}\left(\left(\frac{w}{\beta-\alpha}\right) \cdot(2^{n}-1)\right)+z$$
 
 where $\alpha,\beta$. are clipping ranges to be chosen, $\mathrm{z}$ is a zero-point. Choosing
 $\alpha, \beta$ is what we referred to earlier as *calibration*. 
+
 ---
 
 ### Percentiles
@@ -70,7 +71,7 @@ and implement the same quantization functions. If a weight exceeds a particular 
 
 ---
 
-#### The 10-Week goal
+#### Week 10 goal
 
 1. Create a Quantization function that considers the distribution of weights across layers and implements quantization accordingly.
 2. Analyze the tradeoff between accuracy and compression versus benchmark model. 
