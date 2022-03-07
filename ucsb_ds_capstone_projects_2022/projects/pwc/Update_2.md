@@ -6,11 +6,11 @@ As briefly covered in the first update, A simple model is more desirable for the
 ### Key Metrics
 Because of the imbalance in classes, we choose the F1 score as our statistic among other metrics to measure the performance which is the usual convention for this type of task. 
 
-![](f1.png)
+![](f1.png|width=450)
 
 where
 
-![](pr.png)
+![](pr.png|width=450)
 
 
 Precision measures the percentage of true positives from all positive cases detected by the model, while Recall(sensitivity) measures the percentage of positive cases the model detects successfully. Notice that $\mathrm{F} 1$ score reflects both metrics: the $\mathrm{F} 1$ score is high only when both Precision and Recall are high.
@@ -39,7 +39,7 @@ The figure depicts the "best tradeoff" region and shows additional layers do not
 
 
 ## Compression
-Moving into the main objectivee of the project. Our first method is a form of model compression called Quantization. 
+Moving into the main objective of the project. Our first method is a form of model compression called Quantization. 
 
 ### Quantization 
 Quantization from a mathematical standpoint is the process of taking a set of larger floating point numbers and mapping them to a set of smaller ones. A simple example is converting FP32 (floating point 32 bits) to a smaller precision like INT8 (Integer 8 bit) which is commonly known as 8-bit quantization. 
