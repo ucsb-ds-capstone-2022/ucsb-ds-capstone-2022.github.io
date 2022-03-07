@@ -4,14 +4,13 @@
 As briefly covered in the first update, A simple model is more desirable for the initial trials with model compression methods. After some testing with different word embedding models we were able to achieve desirable results. The model is currently using Stanford's GloVe (Global Vectors for Word Representation)[^1] for the word embeddings. For the emotion classification we are using a standard Sequential Model[^2] which is constructed with Adam, Relu/Sigmoid activation, and a dropout layer.
 
 ### Key Metrics
-Because of the imbalance in classes, we choose the F1 score as our statistic among other metrics to measure the performance which is the usual convention for this type of task. 
+Because of the imbalance in classes, we choose the $\mathrm{F} 1$  score as our statistic among other metrics to measure the performance which is the usual convention for this type of task. 
 
-$$F1 Score =2 \cdot \frac{\text { Precision } \cdot \text { Recall }}{\text { Precision }+\text { Recall }}$$
+$$\text{$F1$ Score} =2 \cdot \frac{\text { Precision } \cdot \text { Recall }}{\text { Precision }+\text { Recall }}$$
 
 where
 
-$\begin{aligned} \text { Precision } &=\frac{T P}{T P+F P} \\ \text { Recall } &=\frac{T P}{T P+F N} \end{aligned}$
-
+$$\begin{aligned} \text { Precision } &=\frac{T P}{T P+F P} \\ \text { Recall } &=\frac{T P}{T P+F N} \end{aligned}$$
 
 Precision measures the percentage of true positives from all positive cases detected by the model, while Recall(sensitivity) measures the percentage of positive cases the model detects successfully. Notice that $\mathrm{F} 1$ score reflects both metrics: the $\mathrm{F} 1$ score is high only when both Precision and Recall are high.
 
@@ -35,7 +34,7 @@ Layer selection was chosen manually by running 30 epochs with 5 trials with an a
 
 
 
-The figure depicts the "best tradeoff" region and shows additional layers do not provide a more optimal model when we want to maximize F1. 
+The figure depicts the "best tradeoff" region and shows additional layers do not provide a more optimal model when we want to maximize \mathrm{F} 1$. 
 
 
 ## Compression
@@ -62,8 +61,7 @@ Symmetric quantization is incredibly quick to calculate, because we do not need 
 ---
 **Example**:
 For symmetric uniform quantizations: for 99th percentiles, we can can take
-$\beta=|w|_{0.99}, \alpha=-\beta$
-For asymmetric uniform quantizations: we can can take
+$\beta=|w|_{0.99}, \alpha=-\beta$. For asymmetric uniform quantizations: we can can take
 $\beta=w_{0.995}, \alpha=w_{0.05}$
 and implement the same quantization functions. If a weight exceeds a particular upperbound, we replace that weight with the upperbound/ lower bound percentile and transform it accordingly.
 
