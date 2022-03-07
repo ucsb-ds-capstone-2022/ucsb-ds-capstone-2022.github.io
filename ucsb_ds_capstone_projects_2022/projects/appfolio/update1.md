@@ -8,18 +8,7 @@ This project showcases the power of machine learning on the user interaction dat
 
 ## About the Data ##
 
-Our dataset is derived from [LISA](https://www.google.com/url?q=https://www.appfolio.com/news/appFolio-launches-new-ai-leasing-assistant-and-utility-management-offerings&sa=D&source=docs&ust=1644542468101327&usg=AOvVaw0I_O2jmUD38PsniHSAt-e_), Appfolio’s Award Winning AI Leasing Assistant Chat Bot, which is designed for property companies to streamline the process of receiving inquiries about properties from users. Our data is divided into three components: user ratings, item features, and images. It consists of over four million users, ten thousand properties, and five million user interactions.
-
-In our ratings data, we have a unique identifier for the property and the user along with the leasing attribution source and the type of interaction. The interaction type can be one of four scenarios; a user can deny a property, inquire about a property, accept a showing for a property, or confirm the showing by making an appearance. We use these interaction types as our response variable to gauge levels of interest in user-property pairs.
-
-![](https://cdn.discordapp.com/attachments/927701734791458819/941495489126350858/Screen_Shot_2022-02-10_at_4.46.47_PM.png)
-
-Our “item features” dataset is linked to the user matrix by the user ID. Within this set, we are given 15 unique features that comprise the makeup of a property and can be used to distinguish from other properties. An example of some of these features include property type (single family residence vs. multiple family residence), the number of rentable units, the date that it appears on the market, and the latitude and longitude.
-
-![](https://cdn.discordapp.com/attachments/927701734791458819/941487837692452924/Screen_Shot_2022-02-10_at_4.16.14_PM.png)
-
-The final partition of the data is the set of images that correspond to the properties within the other two segments of the data.
-
+Our dataset is derived from [LISA](https://www.google.com/url?q=https://www.appfolio.com/news/appFolio-launches-new-ai-leasing-assistant-and-utility-management-offerings&sa=D&source=docs&ust=1644542468101327&usg=AOvVaw0I_O2jmUD38PsniHSAt-e_), Appfolio’s Award Winning AI Leasing Assistant Chat Bot, which is designed for property companies to streamline the process of receiving inquiries about properties from users. Our data is divided into three components: user ratings, item features, and images. It consists of over four million users, ten thousand properties, and five million user interactions. 
 
 ## What have we done so far ##
 
