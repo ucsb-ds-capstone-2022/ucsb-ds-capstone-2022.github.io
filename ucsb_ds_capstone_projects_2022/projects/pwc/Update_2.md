@@ -6,18 +6,18 @@ As briefly covered in the first update, A simple model is more desirable for the
 ### Key Metrics
 Because of the imbalance in classes, we choose the F1 score as our statistic among other metrics to measure the performance which is the usual convention for this type of task. 
 
-![](f1.png | width=450)
+$F1$ Score $=2 \cdot \frac{\text { Precision } \cdot \text { Recall }}{\text { Precision }+\text { Recall }}$
 
 where
 
-![](pr.png | width=450)
+$\begin{aligned} \text { Precision } &=\frac{T P}{T P+F P} \\ \text { Recall } &=\frac{T P}{T P+F N} \end{aligned}$
 
 
 Precision measures the percentage of true positives from all positive cases detected by the model, while Recall(sensitivity) measures the percentage of positive cases the model detects successfully. Notice that $\mathrm{F} 1$ score reflects both metrics: the $\mathrm{F} 1$ score is high only when both Precision and Recall are high.
 
 
 ### Some Tuning
-We initially had some RAM issues running GloVe for vector representation of words of higher than dimension of 100. Thus testing was done with 50 and 100 and we achieved modest F1 scores in the high 40's range. Comparing to the GoEmotion[^3] paper that achieved a score of 62 for the Ekman style grouping left much to be sought after. Note that our model at this stage was 936KB relative to a standard BERT model which is substantially larger and more robust. 
+We initially had some RAM issues running GloVe for vector representation of words of higher than dimension of 100. Thus testing was done with 50 and 100 and we achieved modest $\mathrm{F} 1$ scores in the high 40's range. Comparing to the GoEmotion[^3] paper that achieved a score of 62 for the Ekman style grouping left much to be sought after. Note that our model at this stage was 936KB relative to a standard BERT model which is substantially larger and more robust. 
 
 ---
 **Note**: We are still fine-tuning the model as we move onto other tasks.
@@ -62,9 +62,9 @@ Symmetric quantization is incredibly quick to calculate, because we do not need 
 ---
 **Example**:
 For symmetric uniform quantizations: for 99th percentiles, we can can take
-![](p1.png)
+$\beta=|w|_{0.99}, \alpha=-\beta$
 For asymmetric uniform quantizations: we can can take
-![](p2.png)
+$\beta=w_{0.995}, \alpha=w_{0.05}$
 and implement the same quantization functions. If a weight exceeds a particular upperbound, we replace that weight with the upperbound/ lower bound percentile and transform it accordingly.
 
 ---
