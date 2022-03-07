@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Update 2 - (3/4/22) &#8212; Data Science Capstone 2022</title>
+    <title>Update 2: First Dive into Compression &#8212; Data Science Capstone 2022</title>
     
   <link href="../../_static/css/theme.css" rel="stylesheet">
   <link href="../../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
@@ -51,10 +51,12 @@ const thebe_selector_input = "pre"
 const thebe_selector_output = ".output, .cell_output"
 </script>
     <script async="async" src="../../_static/sphinx-thebe.js"></script>
+    <script>window.MathJax = {"options": {"processHtmlClass": "tex2jax_process|mathjax_process|math|output_area"}}</script>
+    <script defer="defer" src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="ccber" href="../ccber/description.html" />
-    <link rel="prev" title="Update 1 - (2/4/22)" href="update1.html" />
+    <link rel="next" title="sprague" href="../sprague/description.html" />
+    <link rel="prev" title="Update 1: Preliminaries" href="Update_1.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -246,23 +248,23 @@ const thebe_selector_output = ".output, .cell_output"
    </li>
   </ul>
  </li>
- <li class="toctree-l1 current active has-children">
-  <a class="reference internal" href="description.html">
+ <li class="toctree-l1 has-children">
+  <a class="reference internal" href="../carpedata/description.html">
    carpedata
   </a>
-  <input checked="" class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/>
+  <input class="toctree-checkbox" id="toctree-checkbox-6" name="toctree-checkbox-6" type="checkbox"/>
   <label for="toctree-checkbox-6">
    <i class="fas fa-chevron-down">
    </i>
   </label>
-  <ul class="current">
+  <ul>
    <li class="toctree-l2">
-    <a class="reference internal" href="update1.html">
+    <a class="reference internal" href="../carpedata/update1.html">
      Update 1 - (2/4/22)
     </a>
    </li>
-   <li class="toctree-l2 current active">
-    <a class="current reference internal" href="#">
+   <li class="toctree-l2">
+    <a class="reference internal" href="../carpedata/update2.html">
      Update 2 - (3/4/22)
     </a>
    </li>
@@ -419,23 +421,23 @@ const thebe_selector_output = ".output, .cell_output"
    </li>
   </ul>
  </li>
- <li class="toctree-l1 has-children">
-  <a class="reference internal" href="../pwc/description.html">
+ <li class="toctree-l1 current active has-children">
+  <a class="reference internal" href="description.html">
    PwC
   </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-15" name="toctree-checkbox-15" type="checkbox"/>
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-15" name="toctree-checkbox-15" type="checkbox"/>
   <label for="toctree-checkbox-15">
    <i class="fas fa-chevron-down">
    </i>
   </label>
-  <ul>
+  <ul class="current">
    <li class="toctree-l2">
-    <a class="reference internal" href="../pwc/Update_1.html">
+    <a class="reference internal" href="Update_1.html">
      Update 1: Preliminaries
     </a>
    </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="../pwc/Update_2.html">
+   <li class="toctree-l2 current active">
+    <a class="current reference internal" href="#">
      Update 2: First Dive into Compression
     </a>
    </li>
@@ -499,7 +501,7 @@ const thebe_selector_output = ".output, .cell_output"
         <!-- ipynb file if we had a myst markdown file -->
         
         <!-- Download raw file -->
-        <a class="dropdown-buttons" href="../../_sources/projects/carpedata/update2.md"><button type="button"
+        <a class="dropdown-buttons" href="../../_sources/projects/pwc/Update_2.md"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
                 data-placement="left">.md</button></a>
         <!-- Download PDF via print -->
@@ -519,10 +521,10 @@ const thebe_selector_output = ".output, .cell_output"
                 data-toggle="tooltip" data-placement="left" title="Source repository"><i
                     class="fab fa-github"></i>repository</button></a>
         <a class="issues-button"
-            href="https://github.com/ucsb-ds-capstone-2022/ucsb-ds-capstone-2022.github.io/issues/new?title=Issue%20on%20page%20%2Fprojects/carpedata/update2.html&body=Your%20issue%20content%20here."><button
+            href="https://github.com/ucsb-ds-capstone-2022/ucsb-ds-capstone-2022.github.io/issues/new?title=Issue%20on%20page%20%2Fprojects/pwc/Update_2.html&body=Your%20issue%20content%20here."><button
                 type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
                 title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
-        <a class="edit-button" href="https://github.com/ucsb-ds-capstone-2022/ucsb-ds-capstone-2022.github.io/edit/main/ucsb_ds_capstone_projects_2022/projects/carpedata/update2.md"><button
+        <a class="edit-button" href="https://github.com/ucsb-ds-capstone-2022/ucsb-ds-capstone-2022.github.io/edit/main/ucsb_ds_capstone_projects_2022/projects/pwc/Update_2.md"><button
                 type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
                 title="Edit this page"><i class="fas fa-pencil-alt"></i>suggest edit</button></a>
     </div>
@@ -548,45 +550,54 @@ const thebe_selector_output = ".output, .cell_output"
             <nav id="bd-toc-nav" aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#recap">
-   RECAP
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#progress">
-   PROGRESS
+  <a class="reference internal nav-link" href="#benchmark">
+   Benchmark
   </a>
   <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#preprocessing">
-     PREPROCESSING
+    <a class="reference internal nav-link" href="#key-metrics">
+     Key Metrics
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#modeling">
-     MODELING
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#validation">
-     VALIDATION
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#visualization">
-     VISUALIZATION
+    <a class="reference internal nav-link" href="#some-tuning">
+     Some Tuning
     </a>
    </li>
   </ul>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#conclusion">
-   CONCLUSION
+  <a class="reference internal nav-link" href="#compression">
+   Compression
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#quantization">
+     Quantization
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#symmetric-and-asymmetric">
+       Symmetric and Asymmetric
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#percentiles">
+       Percentiles
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#week-10-goal">
+   Week 10 goal
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#future-work">
-   FUTURE WORK
+  <a class="reference internal nav-link" href="#looking-ahead">
+   Looking Ahead
   </a>
  </li>
 </ul>
@@ -599,7 +610,7 @@ const thebe_selector_output = ".output, .cell_output"
         <div class="col-12 col-md-9 pl-md-3 pr-md-0">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
-                <h1>Update 2 - (3/4/22)</h1>
+                <h1>Update 2: First Dive into Compression</h1>
                 <!-- Table of contents -->
                 <div id="print-main-content">
                     <div id="jb-print-toc">
@@ -610,45 +621,54 @@ const thebe_selector_output = ".output, .cell_output"
                         <nav aria-label="Page">
                             <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#recap">
-   RECAP
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#progress">
-   PROGRESS
+  <a class="reference internal nav-link" href="#benchmark">
+   Benchmark
   </a>
   <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#preprocessing">
-     PREPROCESSING
+    <a class="reference internal nav-link" href="#key-metrics">
+     Key Metrics
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#modeling">
-     MODELING
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#validation">
-     VALIDATION
-    </a>
-   </li>
-   <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#visualization">
-     VISUALIZATION
+    <a class="reference internal nav-link" href="#some-tuning">
+     Some Tuning
     </a>
    </li>
   </ul>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#conclusion">
-   CONCLUSION
+  <a class="reference internal nav-link" href="#compression">
+   Compression
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#quantization">
+     Quantization
+    </a>
+    <ul class="nav section-nav flex-column">
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#symmetric-and-asymmetric">
+       Symmetric and Asymmetric
+      </a>
+     </li>
+     <li class="toc-h4 nav-item toc-entry">
+      <a class="reference internal nav-link" href="#percentiles">
+       Percentiles
+      </a>
+     </li>
+    </ul>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#week-10-goal">
+   Week 10 goal
   </a>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#future-work">
-   FUTURE WORK
+  <a class="reference internal nav-link" href="#looking-ahead">
+   Looking Ahead
   </a>
  </li>
 </ul>
@@ -660,192 +680,95 @@ const thebe_selector_output = ".output, .cell_output"
             
               <div>
                 
-  <div class="tex2jax_ignore mathjax_ignore section" id="update-2-3-4-22">
-<h1>Update 2 - (3/4/22)<a class="headerlink" href="#update-2-3-4-22" title="Permalink to this headline">¶</a></h1>
+  <div class="tex2jax_ignore mathjax_ignore section" id="update-2-first-dive-into-compression">
+<h1>Update 2: First Dive into Compression<a class="headerlink" href="#update-2-first-dive-into-compression" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="benchmark">
+<h2>Benchmark<a class="headerlink" href="#benchmark" title="Permalink to this headline">¶</a></h2>
+<p>As briefly covered in the first update, A simple model is more desirable for the initial trials with model compression methods. After some testing with different word embedding models we were able to achieve desirable results. The model is currently using Stanford’s GloVe (Global Vectors for Word Representation)<a class="footnote-reference brackets" href="#id4" id="id1">1</a> for the word embeddings. For the emotion classification we are using a standard Sequential Model<a class="footnote-reference brackets" href="#id5" id="id2">2</a> which is constructed with Adam, Relu/Sigmoid activation, and a dropout layer.</p>
+<div class="section" id="key-metrics">
+<h3>Key Metrics<a class="headerlink" href="#key-metrics" title="Permalink to this headline">¶</a></h3>
+<p>Because of the imbalance in classes, we choose the <span class="math notranslate nohighlight">\(\mathrm{F} 1\)</span>  score as our statistic among other metrics to measure the performance which is the usual convention for this type of task.</p>
+<div class="math notranslate nohighlight">
+\[\text{$F1$ Score} =2 \cdot \frac{\text { Precision } \cdot \text { Recall }}{\text { Precision }+\text { Recall }}\]</div>
+<p>where</p>
+<div class="math notranslate nohighlight">
+\[\begin{split}\begin{aligned} \text { Precision } &amp;=\frac{T P}{T P+F P} \\[2.5mm] \text { Recall } &amp;=\frac{T P}{T P+F N} \end{aligned}\end{split}\]</div>
+<p>Precision measures the percentage of true positives from all positive cases detected by the model, while Recall(sensitivity) measures the percentage of positive cases the model detects successfully. Notice that <span class="math notranslate nohighlight">\(\mathrm{F} 1\)</span> score reflects both metrics: the <span class="math notranslate nohighlight">\(\mathrm{F} 1\)</span> score is high only when both Precision and Recall are high.</p>
+</div>
+<div class="section" id="some-tuning">
+<h3>Some Tuning<a class="headerlink" href="#some-tuning" title="Permalink to this headline">¶</a></h3>
+<p>We initially had some RAM issues running GloVe for vector representation of words of higher than dimension of 100. Thus testing was done with 50 and 100 and we achieved modest <span class="math notranslate nohighlight">\(\mathrm{F} 1\)</span> scores in the high 40’s range. Comparing to the GoEmotion<a class="footnote-reference brackets" href="#id6" id="id3">3</a> paper that achieved a score of 62 for the Ekman style grouping left much to be sought after. Note that our model at this stage was 936KB relative to a standard BERT model which is substantially larger and more robust.</p>
 <hr class="docutils" />
-<div class="section" id="recap">
-<h2>RECAP<a class="headerlink" href="#recap" title="Permalink to this headline">¶</a></h2>
-<p>In our last progress report, we:</p>
-<ul class="simple">
-<li><p>Provided a summary of our dataset and stated the 6 unique labels:</p>
-<ul>
-<li><p>N/A: No Relevant Content, Possible Fatality, Potentially Unlawful Activity, Physical Activity, Information related to the claim, Potentially relevant information</p></li>
-</ul>
-</li>
-<li><p>Described our data cleaning process</p>
-<ul>
-<li><p>We have a cleaning pipeline. We used BeautifulSoup to remove links, make all of the text lowercase, remove non-alphanumeric symbols, etc. We used spaCy to tokenize the text.</p></li>
-</ul>
-</li>
-<li><p>Explained our train-test split, where our testing set is 20% of the cleaned data</p></li>
-<li><p>Summarized our three models: Logistic Regression, Naive Bayes, and SVM</p>
-<ul>
-<li><p>For each model, we used a stemmed dataset and lemmatized dataset with the intent to determine if stemming or lemmatization is better.</p></li>
-<li><p>For each model, we provided the precision, recall, and total accuracy scores.</p></li>
-<li><p>We determined that SVM was the best model so far because it had the highest precision, recall, and accuracy score (each one was 85%). However, this model is still not great due to the multiple commission errors (false positives) shown through our confusion matrix.</p></li>
-</ul>
-</li>
-<li><p>Proposed future work</p>
-<ul>
-<li><p>We dropped the three smallest classes which had a total of only six observations. We explained that we would try to recombine classes in a different manner.</p></li>
-<li><p>We stated that we might start tuning hyperparameters for SVM, since it is our best model so far.</p></li>
-<li><p>We said that we might try out even more models such as Decision Tree/Random Forest, Light Gradient Boosting Machine, and Neural Network.</p></li>
-</ul>
-</li>
-</ul>
-</div>
-<div class="section" id="progress">
-<h2>PROGRESS<a class="headerlink" href="#progress" title="Permalink to this headline">¶</a></h2>
-<div class="section" id="preprocessing">
-<h3>PREPROCESSING<a class="headerlink" href="#preprocessing" title="Permalink to this headline">¶</a></h3>
-<p>With regards to preprocessing, we:</p>
-<ul class="simple">
-<li><p>Attempted to drop the six lowest class labels that all had less than 100 observations from our training and validation.</p>
-<ul>
-<li><p>This would allow us to train our models without these small classes and then use the models to see what these small classes would be predicted as. After dropping the smallest classes, we trained both a logistic regression and a support vector machine with the default hyperparameters and used both models to predict over the text for the dropped classes. As a result, both models predicted most of the smaller classes to be N/A: No relevant content, which makes sense as that specific class has the most observations by far.</p></li>
-<li><p>We presented these findings to our sponsor who told us to just drop the six smallest classes from the dataset and to state in our final report that these classes exist in the real world, but are not worth keeping in our models as their frequencies are so low.</p></li>
-</ul>
-</li>
-<li><p>Decided to solely use lemmatization as opposed to creating models for both the lemmatized and stemmed forms of the text.</p></li>
-<li><p>Decided to add in bigrams within our preprocessing pipeline</p>
-<ul>
-<li><p>Instead of using solely using unigrams when vectorizing the text column, we decided to create models with only unigrams as well as models with both unigrams and bigrams.</p></li>
-<li><p>According to our sponsors and mentor, in most NLP related models, the addition of bigrams creates a significant improvement in terms of accuracy.</p></li>
-<li><p>This also created a challenge for us as the number of columns when using both unigrams and bigrams increases from about 400,000 to about 5 million. One solution that our sponsors provided us with is to use different forms of dimensionality reduction.</p></li>
-</ul>
-</li>
-<li><p>Attempted to reduce the dimensions of the vectorized dataframe through different methods.</p>
-<ul>
-<li><p>NMF: Non-Negative Matrix Factorization: Finds two non-negative matrices (W, H) whose product approximates the non-negative matrix X.</p>
-<ul>
-<li><p>Worked fine for logistic regression, naive bayes, and the support vector machine.</p></li>
-</ul>
-</li>
-<li><p>Truncated SVD: This transformer performs linear dimensionality reduction by means of truncated singular value decomposition (SVD).</p>
-<ul>
-<li><p>Produces negative values which does not work for the naive bayes model but worked fine for the logistic regression and the SVM.</p></li>
-</ul>
-</li>
-<li><p>We compared the use of each dimensionality reduction to the models where we do not use dimensionality reduction and while it reduces computation time, the reduction does not produce better results in terms of precision, recall or F1 score.</p></li>
-</ul>
-</li>
-<li><p>Removed uncommon words that appear in less than 5% of the documents.</p>
-<ul>
-<li><p>This allows us to speed up computation time by removing words that will have little effect on classifying the document into one of the types of fraud, solely due to the infrequency of the word.</p></li>
-</ul>
-</li>
-</ul>
-</div>
-<div class="section" id="modeling">
-<h3>MODELING<a class="headerlink" href="#modeling" title="Permalink to this headline">¶</a></h3>
-<p>Since our last progress report, we:</p>
-<ul class="simple">
-<li><p>Decided upon a modeling metric to look at in order to determine which models we prefer.</p>
-<ul>
-<li><p>The modeling metric we decided to use is Weighted Average Precision. We chose a weighted average over a macro average due to the imbalance in size between classes.</p></li>
-<li><p>Comparing this metric for all the models allows us to determine which models are “better” when doing cross validation to choose hyperparameters.</p></li>
-</ul>
-</li>
-<li><p>Opted to not use the balanced class weights parameter in our models.</p>
-<ul>
-<li><p>In our last progress update, we mentioned the possible use of the balanced class weights parameter which would allow the model to better capture smaller classes. However we showed our results to the sponsors who said that the decrease in total accuracy is not worth the increase in accuracy for the smaller classes.</p></li>
-</ul>
-</li>
-<li><p>Still have not moved on to other models as we are still working on cross-validating in order to tune hyperparameters for our existing models</p></li>
-</ul>
-</div>
-<div class="section" id="validation">
-<h3>VALIDATION<a class="headerlink" href="#validation" title="Permalink to this headline">¶</a></h3>
-<p>Since our last progress report, we implemented a grid search cross-validation for all of our models.</p>
-<ul class="simple">
-<li><p>For naive bayes, we consider the following hyperparameters:</p>
-<ul>
-<li><p>A smoothing parameter for additive smoothing or no smoothing</p></li>
-<li><p>A parameter whether to learn class prior probabilities or to assume a uniform prior</p></li>
-</ul>
-</li>
-<li><p>For linear regression, we consider the following hyperparameters:</p>
-<ul>
-<li><p>Regularization parameter</p></li>
-<li><p>ElasticNet ratio for Lasso regression, Ridge regression or a combination of both penalties</p></li>
-</ul>
-</li>
-<li><p>For our SVM classifier, we consider the following hyperparameters:</p>
-<ul>
-<li><p>Regularization parameter</p></li>
-<li><p>Kernel type</p></li>
-</ul>
-</li>
-</ul>
-</div>
-<div class="section" id="visualization">
-<h3>VISUALIZATION<a class="headerlink" href="#visualization" title="Permalink to this headline">¶</a></h3>
-<p>In terms of visualization, we:</p>
-<ul class="simple">
-<li><p>Created word clouds for the top token features for the naive bayes model using lemmatization, a TFIDF vectorizer, and unigrams.</p>
-<ul>
-<li><p>There is one word cloud for each of the top features for each class label. For example, we have one word cloud for the “possible fatality” class, one for the “physical activity” class, etc.</p></li>
-<li><p>Having one for each class allows us to see which tokens had the most importance in terms of classifying the documents as that specific class.</p></li>
-<li><p>Below displays the word clouds for the top 55 words for each class.</p></li>
-</ul>
-</li>
-</ul>
-<p align="center">
-    <img src="https://i.imgur.com/njWjZcS.png" style="height: auto;"></img> <br>
-</p> 
+<p><strong>Note</strong>: We are still fine-tuning the model as we move onto other tasks.</p>
+<hr class="docutils" />
+<p>Layer selection was chosen manually by running 30 epochs with 5 trials with an average taken across the trials.</p>
+<p><img alt="" src="../../_images/wordvector.png" /></p>
+<p>The figure depicts the “best tradeoff” region and shows additional layers do not provide a more optimal model when we want to maximize <span class="math notranslate nohighlight">\(\mathrm{F} 1\)</span>.</p>
 </div>
 </div>
-<div class="section" id="conclusion">
-<h2>CONCLUSION<a class="headerlink" href="#conclusion" title="Permalink to this headline">¶</a></h2>
-<p>All in all, in the last couple of weeks, we:</p>
-<ul class="simple">
-<li><p>Improved our data cleaning and preprocessing by</p>
-<ul>
-<li><p>excluding the data of the six lowest class labels in our whole dataset</p></li>
-<li><p>focusing solely on lemmatization instead of stemming due to higher accuracy</p></li>
-<li><p>adding bigrams	for higher accuracy</p></li>
-<li><p>testing dimension reductionality methods NMF and Truncated SVD for performance and accuracy</p></li>
-<li><p>filtering out low frequency words that were not improving model accuracy for the sake of performance</p></li>
-</ul>
-</li>
-<li><p>Tweaked our process for modeling by</p>
-<ul>
-<li><p>establishing our standard metric, Micro Average Precision</p></li>
-<li><p>removing the balanced weights class parameter in our model for the sake of accuracy</p></li>
-</ul>
-</li>
-<li><p>Began a grid search cross-validation for our naive bayes, linear regression and SVM models in order to test out hyperparameters</p></li>
-<li><p>Created exploratory word clouds for the top token features of our labels
-Ultimately, we improved the cleaning and modeling pipeline that we had previously established while also incorporating new exploratory plots and the start of cross-validation.</p></li>
-</ul>
+<div class="section" id="compression">
+<h2>Compression<a class="headerlink" href="#compression" title="Permalink to this headline">¶</a></h2>
+<p>Moving into the main objective of the project. Our first method is a form of model compression called Quantization.</p>
+<div class="section" id="quantization">
+<h3>Quantization<a class="headerlink" href="#quantization" title="Permalink to this headline">¶</a></h3>
+<p>Quantization from a mathematical standpoint is the process of taking a set of larger floating point numbers and mapping them to a set of smaller ones. A simple example is converting FP32 (floating point 32 bits) to a smaller precision like INT8 (Integer 8 bit) which is commonly known as 8-bit quantization.</p>
+<p>There are two forms of quantization: post-training quantization and quantization aware training. The tradeoff being post-training is easier to implement while the latter in practice provides better model accuracy.</p>
+<p><strong>Note</strong>: We are currently looking at implementing both forms.</p>
+<div class="section" id="symmetric-and-asymmetric">
+<h4>Symmetric and Asymmetric<a class="headerlink" href="#symmetric-and-asymmetric" title="Permalink to this headline">¶</a></h4>
+<p>The two most common forms of <em>calibration</em> are Symmetric and Asymmetric.</p>
+<ol class="simple">
+<li><p><strong>Asymmetric</strong> quantization, we map the min/max in the float range to the min/max of the integer range. This is done by using a <strong>zero-point</strong> in addition to the scale factor.</p></li>
+<li><p><strong>Symmetric</strong> quantization, instead of mapping the exact min/max of the float range to the quantized range, we choose the maximum absolute value between min/max. In addition, we don’t use a zero-point. So, the floating-point range we’re effectively quantizing is symmetric with respect to zero, and so is the quantized range.</p></li>
+</ol>
+<hr class="docutils" />
+<p>Symmetric quantization is incredibly quick to calculate, because we do not need to compute the zero point of reference, and we only consider the absolute maximum value. Asymmetric quantization is particularly useful for quantization when the distribution of weights/ activation outputs are are heavily asymmetric, but it comes with a higher cost. From our readings, <strong>an efficient method is to use symmetric quantization for weights, asymmetric quantization for activation outputs with a subset of models weights.</strong></p>
+<p><strong>Example</strong>: A general quantization function:</p>
+<div class="math notranslate nohighlight">
+\[Q(w)=\operatorname{Int}\left(\left(\frac{w}{\beta-\alpha}\right) \cdot(2^{n}-1)\right)+z\]</div>
+<p>where <span class="math notranslate nohighlight">\(\alpha,\beta\)</span>. are clipping ranges to be chosen, <span class="math notranslate nohighlight">\(\mathrm{z}\)</span> is a zero-point. Choosing
+<span class="math notranslate nohighlight">\(\alpha, \beta\)</span> is what we referred to earlier as <em>calibration</em>.</p>
 </div>
-<div class="section" id="future-work">
-<h2>FUTURE WORK<a class="headerlink" href="#future-work" title="Permalink to this headline">¶</a></h2>
-<p>Going forward, we plan to:</p>
-<ul class="simple">
-<li><p>Finish tuning our SVM model and begin experimenting with LightGBM models</p></li>
-<li><p>Look into training a neural network</p></li>
-<li><p>Use dimensionality reduction</p>
-<ul>
-<li><p>Computing time has increased drastically as we have began to cross-validate and delve into more complex modeling techniques</p></li>
-<li><p>However, NMF has not produced sufficient results, so we will attempt to use Truncated SVD going forward and measure the relevant performance</p></li>
-<li><p>Additionally, we plan to use the “min-df” and “max-df” hyperparameters in our TF-IDF Vectorizer to reduce the amount of tokens and cross-validate for the optimal values</p></li>
-</ul>
-</li>
-<li><p>Utilize our collated word cloud to:</p>
-<ul>
-<li><p>look into top tokens for different labels</p></li>
-<li><p>edit stop word list for redundant tokens to increase categorizing accuracy based on the visual cues from our word clouds</p></li>
-</ul>
-</li>
-<li><p>Work on finalizing model selection by:</p>
-<ul>
-<li><p>creating visualizations to compare model average precision and overall performance</p></li>
-<li><p>utilizing ROC curves and AUC more in model selection</p></li>
-<li><p>finding important features in our dataset through their Shapley values</p></li>
-</ul>
-</li>
-</ul>
+<hr class="docutils" />
+<div class="section" id="percentiles">
+<h4>Percentiles<a class="headerlink" href="#percentiles" title="Permalink to this headline">¶</a></h4>
+<p>The idea with percentiles Is to set the range to a percentile of the distribution of weights seen during calibration. In practice, many pre-built functions that perform quantization only take a look at the maximum and the minimum weights. We hypothesize that with the imbalance in classes there will be outliers in the distribution of weights across the layers.  Thus, the manual function will provide the better tradeoff between robustness and compression.</p>
+<p>–
+<strong>Example</strong>:
+For symmetric quantizations: for 99th percentiles, we can can take
+<span class="math notranslate nohighlight">\(\beta=|w|_{0.99}, \alpha=-\beta\)</span>. For asymmetric quantizations: we can can take
+<span class="math notranslate nohighlight">\(\beta=w_{0.995}, \alpha=w_{0.05}\)</span>
+and implement the same quantization functions. If a weight exceeds a particular upper bound, we replace that weight with the upper bound/ lower bound percentile and transform it accordingly.</p>
+</div>
+</div>
+</div>
+<hr class="docutils" />
+<div class="section" id="week-10-goal">
+<h2>Week 10 goal<a class="headerlink" href="#week-10-goal" title="Permalink to this headline">¶</a></h2>
+<ol class="simple">
+<li><p>Create a Quantization function that considers the distribution of weights across layers and implements quantization accordingly.</p></li>
+<li><p>Analyze the tradeoff between performance and compression of the custom method.</p></li>
+</ol>
+</div>
+<div class="section" id="looking-ahead">
+<h2>Looking Ahead<a class="headerlink" href="#looking-ahead" title="Permalink to this headline">¶</a></h2>
+<ol class="simple">
+<li><p>At this moment in time we were able to resolve the RAM issue and get the 300 dimension word vectors GloVe model functioning. We are working on optimizing the trial model before running some final tests. We hypothesize that this model will produce the best results.</p></li>
+<li><p>We hope to create our own word embeddings which would give us more access to applying compression methods elsewhere besides the layers of the model.</p></li>
+<li><p>After our trials it is likely we might proceed with a more challenging task and a more robust framework to limit test our compression methods. A possible consideration would be working with audio/visual data.</p></li>
+</ol>
+<hr class="footnotes docutils" />
+<dl class="footnote brackets">
+<dt class="label" id="id4"><span class="brackets"><a class="fn-backref" href="#id1">1</a></span></dt>
+<dd><p><a class="reference external" href="https://nlp.stanford.edu/projects/glove/">https://nlp.stanford.edu/projects/glove/</a></p>
+</dd>
+<dt class="label" id="id5"><span class="brackets"><a class="fn-backref" href="#id2">2</a></span></dt>
+<dd><p><a class="reference external" href="https://keras.io/guides/sequential_model/">https://keras.io/guides/sequential_model/</a></p>
+</dd>
+<dt class="label" id="id6"><span class="brackets"><a class="fn-backref" href="#id3">3</a></span></dt>
+<dd><p><a class="reference external" href="https://arxiv.org/pdf/2005.00547.pdf">https://arxiv.org/pdf/2005.00547.pdf</a></p>
+</dd>
+</dl>
 </div>
 </div>
 
@@ -862,7 +785,7 @@ Ultimately, we improved the cleaning and modeling pipeline that we had previousl
         },
         kernelOptions: {
             kernelName: "python3",
-            path: "./projects/carpedata"
+            path: "./projects/pwc"
         },
         predefinedOutput: true
     }
@@ -874,17 +797,17 @@ Ultimately, we improved the cleaning and modeling pipeline that we had previousl
             
                 <!-- Previous / next buttons -->
 <div class='prev-next-area'> 
-    <a class='left-prev' id="prev-link" href="update1.html" title="previous page">
+    <a class='left-prev' id="prev-link" href="Update_1.html" title="previous page">
         <i class="fas fa-angle-left"></i>
         <div class="prev-next-info">
             <p class="prev-next-subtitle">previous</p>
-            <p class="prev-next-title">Update 1 - (2/4/22)</p>
+            <p class="prev-next-title">Update 1: Preliminaries</p>
         </div>
     </a>
-    <a class='right-next' id="next-link" href="../ccber/description.html" title="next page">
+    <a class='right-next' id="next-link" href="../sprague/description.html" title="next page">
     <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">ccber</p>
+        <p class="prev-next-title">sprague</p>
     </div>
     <i class="fas fa-angle-right"></i>
     </a>
