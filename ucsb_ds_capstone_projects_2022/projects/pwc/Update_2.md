@@ -74,7 +74,7 @@ and implement the same quantization functions. If a weight exceeds a particular 
 ## Week 10 goal
 
 1. Create a Quantization function that considers the distribution of weights across layers and implements quantization accordingly.
-2. Analyze the tradeoff between accuracy and compression versus benchmark model. 
+2. Analyze the tradeoff between performance and compression of the custom method.  
 
 ## Looking Ahead
 1. At this moment in time we were able to resolve the RAM issue and get the 300 dimension word vectors GloVe model functioning. We are working on optimizing the trial model before running some final tests. We hypothesize that this model will produce the best results. 
