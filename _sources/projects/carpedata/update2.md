@@ -29,6 +29,7 @@ With regards to preprocessing, we:
   * This would allow us to train our models without these small classes and then use the models to see what these small classes would be predicted as. After dropping the smallest classes, we trained both a logistic regression and a support vector machine with the default hyperparameters and used both models to predict over the text for the dropped classes. As a result, both models predicted most of the smaller classes to be N/A: No relevant content, which makes sense as that specific class has the most observations by far. 
   * We presented these findings to our sponsor who told us to just drop the six smallest classes from the dataset and to state in our final report that these classes exist in the real world, but are not worth keeping in our models as their frequencies are so low. 
 * Decided to solely use lemmatization as opposed to creating models for both the lemmatized and stemmed forms of the text.
+* Decided to use a TFIDF-vectorizer as opposed to both a TF-IDF and a CountVectorizer just for simplicity sake.
 * Decided to add in bigrams within our preprocessing pipeline
   * Instead of using solely using unigrams when vectorizing the text column, we decided to create models with only unigrams as well as models with both unigrams and bigrams.
   * According to our sponsors and mentor, in most NLP related models, the addition of bigrams creates a significant improvement in terms of accuracy.
@@ -90,7 +91,7 @@ All in all, in the last couple of weeks, we:
   * testing dimension reductionality methods NMF and Truncated SVD for performance and accuracy
   * filtering out low frequency words that were not improving model accuracy for the sake of performance
 * Tweaked our process for modeling by
-  * establishing our standard metric, Micro Average Precision
+  * establishing our standard metric, Weighted Average Precision
   * removing the balanced weights class parameter in our model for the sake of accuracy
 * Began a grid search cross-validation for our naive bayes, linear regression and SVM models in order to test out hyperparameters
 * Created exploratory word clouds for the top token features of our labels

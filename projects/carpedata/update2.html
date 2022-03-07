@@ -707,6 +707,7 @@ const thebe_selector_output = ".output, .cell_output"
 </ul>
 </li>
 <li><p>Decided to solely use lemmatization as opposed to creating models for both the lemmatized and stemmed forms of the text.</p></li>
+<li><p>Decided to use a TFIDF-vectorizer as opposed to both a TF-IDF and a CountVectorizer just for simplicity sake.</p></li>
 <li><p>Decided to add in bigrams within our preprocessing pipeline</p>
 <ul>
 <li><p>Instead of using solely using unigrams when vectorizing the text column, we decided to create models with only unigrams as well as models with both unigrams and bigrams.</p></li>
@@ -810,7 +811,7 @@ const thebe_selector_output = ".output, .cell_output"
 </li>
 <li><p>Tweaked our process for modeling by</p>
 <ul>
-<li><p>establishing our standard metric, Micro Average Precision</p></li>
+<li><p>establishing our standard metric, Weighted Average Precision</p></li>
 <li><p>removing the balanced weights class parameter in our model for the sake of accuracy</p></li>
 </ul>
 </li>
