@@ -6,7 +6,7 @@ As briefly covered in the first update, A simple model is more desirable for the
 ### Key Metrics
 Because of the imbalance in classes, we choose the F1 score as our statistic among other metrics to measure the performance which is the usual convention for this type of task. 
 
-![[f1.png|450]]
+![[f1.png|]]
 
 where
 
