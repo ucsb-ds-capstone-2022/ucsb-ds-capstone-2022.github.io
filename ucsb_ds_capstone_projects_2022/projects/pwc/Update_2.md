@@ -1,6 +1,6 @@
-#  First Dive into Compression
+#  Update 2: First Dive into Compression
 
-## Trial Model
+## Benchmark
 As briefly covered in the first update, A simple model is more desirable for the initial trials with model compression methods. After some testing with different word embedding models we were able to achieve desirable results. The model is currently using Stanford's GloVe (Global Vectors for Word Representation)[^1] for the word embeddings. For the emotion classification we are using a standard Sequential Model[^2] which is constructed with Adam, Relu/Sigmoid activation, and a dropout layer.
 
 ### Key Metrics
@@ -25,13 +25,7 @@ We initially had some RAM issues running GloVe for vector representation of word
 
 Layer selection was chosen manually by running 30 epochs with 5 trials with an average taken across the trials.
 
-
-
 ![](wordvector.png)
-
-
-
-
 
 
 The figure depicts the "best tradeoff" region and shows additional layers do not provide a more optimal model when we want to maximize $\mathrm{F} 1$. 
@@ -57,26 +51,31 @@ Symmetric quantization is incredibly quick to calculate, because we do not need 
 
 A typical quantization function example:
 
-$$
-Q(w)=\operatorname{Int}\left(\left(\frac{w}{\beta-\alpha}\right) \cdot\left(2^{n}-1\right)+z\right.
-$$
+$$Q(w)=\operatorname{Int}\left(\left(\frac{w}{\beta-\alpha}\right) \cdot(2^{n}-1)\right)+z$$
+
 where $\alpha,\beta$. are clipping ranges to be chosen, $\mathrm{z}$ is a zero-point. Choosing
-$\alpha, \beta$
-is what we referred to earlier as *calibration*. 
+$\alpha, \beta$ is what we referred to earlier as *calibration*. 
 ---
 
 ### Percentiles
----
+
+The idea with percentiles Is to set the range to a percentile of the distribution of weights seen during calibration. In practice many pre-built functions that perform quantization only take a look at the maximum and the minimum weights. We hypothesize that with the imbalance in classes there will be outliers in the distribution of weights across the layers.  Thus, the manual function will provide the better tradeoff between robustness and compression.  
+
+--
 **Example**:
-For symmetric uniform quantizations: for 99th percentiles, we can can take
-$\beta=|w|_{0.99}, \alpha=-\beta$. For asymmetric uniform quantizations: we can can take
+For symmetric quantizations: for 99th percentiles, we can can take
+$\beta=|w|_{0.99}, \alpha=-\beta$. For asymmetric quantizations: we can can take
 $\beta=w_{0.995}, \alpha=w_{0.05}$
-and implement the same quantization functions. If a weight exceeds a particular upperbound, we replace that weight with the upperbound/ lower bound percentile and transform it accordingly.
+and implement the same quantization functions. If a weight exceeds a particular upper bound, we replace that weight with the upper bound/ lower bound percentile and transform it accordingly.
 
 ---
 
+#### The 10-Week goal
 
-### Future Considerations
+1. Create a Quantization function that considers the distribution of weights across layers and implements quantization accordingly.
+2. Analyze the tradeoff between accuracy and compression versus benchmark model. 
+
+### Looking Ahead
 1. At this moment in time we were able to resolve the RAM issue and get the 300 dimension word vectors GloVe model functioning. We are working on optimizing the trial model before running some final tests. We hypothesize that this model will produce the best results. 
 2. We hope to create our own word embeddings which would give us more access to applying compression methods elsewhere besides the layers of the model. 
 3. After our trials it is likely we might proceed with a more challenging task and a more robust framework to limit test our compression methods. A possible consideration would be working with audio/visual data. 
