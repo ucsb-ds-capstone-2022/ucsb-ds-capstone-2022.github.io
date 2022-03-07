@@ -5,7 +5,7 @@
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Starting the Project &#8212; Data Science Capstone 2022</title>
+    <title>Creating a Simple Model &#8212; Data Science Capstone 2022</title>
     
   <link href="../../_static/css/theme.css" rel="stylesheet">
   <link href="../../_static/css/index.ff1ffe594081f20da1ef19478df9384b.css" rel="stylesheet">
@@ -53,8 +53,8 @@ const thebe_selector_output = ".output, .cell_output"
     <script async="async" src="../../_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="Creating a Simple Model" href="update2.html" />
-    <link rel="prev" title="AppFolio" href="description.html" />
+    <link rel="next" title="CalCOFI Project" href="../calcofi/description.html" />
+    <link rel="prev" title="Starting the Project" href="update1.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -227,13 +227,13 @@ const thebe_selector_output = ".output, .cell_output"
    </i>
   </label>
   <ul class="current">
-   <li class="toctree-l2 current active">
-    <a class="current reference internal" href="#">
+   <li class="toctree-l2">
+    <a class="reference internal" href="update1.html">
      Starting the Project
     </a>
    </li>
-   <li class="toctree-l2">
-    <a class="reference internal" href="update2.html">
+   <li class="toctree-l2 current active">
+    <a class="current reference internal" href="#">
      Creating a Simple Model
     </a>
    </li>
@@ -519,7 +519,7 @@ const thebe_selector_output = ".output, .cell_output"
         <!-- ipynb file if we had a myst markdown file -->
         
         <!-- Download raw file -->
-        <a class="dropdown-buttons" href="../../_sources/projects/appfolio/update1.md"><button type="button"
+        <a class="dropdown-buttons" href="../../_sources/projects/appfolio/update2.md"><button type="button"
                 class="btn btn-secondary topbarbtn" title="Download source file" data-toggle="tooltip"
                 data-placement="left">.md</button></a>
         <!-- Download PDF via print -->
@@ -539,10 +539,10 @@ const thebe_selector_output = ".output, .cell_output"
                 data-toggle="tooltip" data-placement="left" title="Source repository"><i
                     class="fab fa-github"></i>repository</button></a>
         <a class="issues-button"
-            href="https://github.com/ucsb-ds-capstone-2022/ucsb-ds-capstone-2022.github.io/issues/new?title=Issue%20on%20page%20%2Fprojects/appfolio/update1.html&body=Your%20issue%20content%20here."><button
+            href="https://github.com/ucsb-ds-capstone-2022/ucsb-ds-capstone-2022.github.io/issues/new?title=Issue%20on%20page%20%2Fprojects/appfolio/update2.html&body=Your%20issue%20content%20here."><button
                 type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
                 title="Open an issue"><i class="fas fa-lightbulb"></i>open issue</button></a>
-        <a class="edit-button" href="https://github.com/ucsb-ds-capstone-2022/ucsb-ds-capstone-2022.github.io/edit/main/ucsb_ds_capstone_projects_2022/projects/appfolio/update1.md"><button
+        <a class="edit-button" href="https://github.com/ucsb-ds-capstone-2022/ucsb-ds-capstone-2022.github.io/edit/main/ucsb_ds_capstone_projects_2022/projects/appfolio/update2.md"><button
                 type="button" class="btn btn-secondary topbarbtn" data-toggle="tooltip" data-placement="left"
                 title="Edit this page"><i class="fas fa-pencil-alt"></i>suggest edit</button></a>
     </div>
@@ -568,40 +568,72 @@ const thebe_selector_output = ".output, .cell_output"
             <nav id="bd-toc-nav" aria-label="Page">
                 <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#about-the-project">
-   About the Project
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#about-the-data">
-   About the Data
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#what-have-we-done-so-far">
-   What have we done so far
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#obstacles">
-   Obstacles
+  <a class="reference internal nav-link" href="#a-concise-refresher">
+   A Concise Refresher
   </a>
   <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#data-struggles">
-     Data Struggles
+    <a class="reference internal nav-link" href="#about-the-project">
+     About the Project
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#model-complexity">
-     Model Complexity
+    <a class="reference internal nav-link" href="#where-we-left-off">
+     Where we left off
     </a>
    </li>
   </ul>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#future-tasks">
-   Future Tasks
+  <a class="reference internal nav-link" href="#our-model">
+   Our Model
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#autoencoder-architecture">
+     Autoencoder Architecture
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#variational-autoencoder-architecture">
+     Variational Autoencoder Architecture
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#bilateral-variational-autoencoder-architecture">
+     Bilateral Variational Autoencoder Architecture
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#multimodality-using-constrained-adaptive-priors">
+     Multimodality Using Constrained Adaptive Priors
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#data-cleaning">
+   Data Cleaning
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#metrics">
+   Metrics
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#hyperparameter-tuning">
+   Hyperparameter Tuning
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#results">
+   Results
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#future-goals">
+   Future Goals
   </a>
  </li>
 </ul>
@@ -614,7 +646,7 @@ const thebe_selector_output = ".output, .cell_output"
         <div class="col-12 col-md-9 pl-md-3 pr-md-0">
             <!-- Table of contents that is only displayed when printing the page -->
             <div id="jb-print-docs-body" class="onlyprint">
-                <h1>Starting the Project</h1>
+                <h1>Creating a Simple Model</h1>
                 <!-- Table of contents -->
                 <div id="print-main-content">
                     <div id="jb-print-toc">
@@ -625,40 +657,72 @@ const thebe_selector_output = ".output, .cell_output"
                         <nav aria-label="Page">
                             <ul class="visible nav section-nav flex-column">
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#about-the-project">
-   About the Project
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#about-the-data">
-   About the Data
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#what-have-we-done-so-far">
-   What have we done so far
-  </a>
- </li>
- <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#obstacles">
-   Obstacles
+  <a class="reference internal nav-link" href="#a-concise-refresher">
+   A Concise Refresher
   </a>
   <ul class="nav section-nav flex-column">
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#data-struggles">
-     Data Struggles
+    <a class="reference internal nav-link" href="#about-the-project">
+     About the Project
     </a>
    </li>
    <li class="toc-h3 nav-item toc-entry">
-    <a class="reference internal nav-link" href="#model-complexity">
-     Model Complexity
+    <a class="reference internal nav-link" href="#where-we-left-off">
+     Where we left off
     </a>
    </li>
   </ul>
  </li>
  <li class="toc-h2 nav-item toc-entry">
-  <a class="reference internal nav-link" href="#future-tasks">
-   Future Tasks
+  <a class="reference internal nav-link" href="#our-model">
+   Our Model
+  </a>
+  <ul class="nav section-nav flex-column">
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#autoencoder-architecture">
+     Autoencoder Architecture
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#variational-autoencoder-architecture">
+     Variational Autoencoder Architecture
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#bilateral-variational-autoencoder-architecture">
+     Bilateral Variational Autoencoder Architecture
+    </a>
+   </li>
+   <li class="toc-h3 nav-item toc-entry">
+    <a class="reference internal nav-link" href="#multimodality-using-constrained-adaptive-priors">
+     Multimodality Using Constrained Adaptive Priors
+    </a>
+   </li>
+  </ul>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#data-cleaning">
+   Data Cleaning
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#metrics">
+   Metrics
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#hyperparameter-tuning">
+   Hyperparameter Tuning
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#results">
+   Results
+  </a>
+ </li>
+ <li class="toc-h2 nav-item toc-entry">
+  <a class="reference internal nav-link" href="#future-goals">
+   Future Goals
   </a>
  </li>
 </ul>
@@ -670,54 +734,94 @@ const thebe_selector_output = ".output, .cell_output"
             
               <div>
                 
-  <div class="tex2jax_ignore mathjax_ignore section" id="starting-the-project">
-<h1>Starting the Project<a class="headerlink" href="#starting-the-project" title="Permalink to this headline">¶</a></h1>
+  <div class="tex2jax_ignore mathjax_ignore section" id="creating-a-simple-model">
+<h1>Creating a Simple Model<a class="headerlink" href="#creating-a-simple-model" title="Permalink to this headline">¶</a></h1>
+<div class="section" id="a-concise-refresher">
+<h2>A Concise Refresher<a class="headerlink" href="#a-concise-refresher" title="Permalink to this headline">¶</a></h2>
 <div class="section" id="about-the-project">
-<h2>About the Project<a class="headerlink" href="#about-the-project" title="Permalink to this headline">¶</a></h2>
-<p>The main purpose of this project is to create a recommender system that recommends properties to users based on previous user iteractions and property features. In particular, our focus is recommendations to new users, in addition to existing users. We will explore and compare various approaches of recommender systems and apply them to our data. Our final goal is to integrate our model into the <a class="reference external" href="https://realm-ucsb.herokuapp.com/">Santa Barbara property website</a> created by the UC Santa Barbara’s AppFolio sponsored computer science capstone team.</p>
-<p>This project showcases the power of machine learning on the user interaction data collected from AppFolio’s property management software. AppFolio will be able to analyze the results from our recommender system to assess the effect of utilizing interaction data to better their products.</p>
+<h3>About the Project<a class="headerlink" href="#about-the-project" title="Permalink to this headline">¶</a></h3>
+<p>Our project aims to create a recommender system that recommends properties to users based on previous user interactions and property features. Our final goal is to integrate our model into the <a class="reference external" href="https://realm-ucsb.herokuapp.com/">Santa Barbara property website</a> created by UC Santa Barbara’s AppFolio sponsored computer science capstone team.</p>
 </div>
-<div class="section" id="about-the-data">
-<h2>About the Data<a class="headerlink" href="#about-the-data" title="Permalink to this headline">¶</a></h2>
-<p>Our dataset is derived from <a class="reference external" href="https://www.google.com/url?q=https://www.appfolio.com/news/appFolio-launches-new-ai-leasing-assistant-and-utility-management-offerings&amp;sa=D&amp;source=docs&amp;ust=1644542468101327&amp;usg=AOvVaw0I_O2jmUD38PsniHSAt-e_">LISA</a>, Appfolio’s Award Winning AI Leasing Assistant Chat Bot, which is designed for property companies to streamline the process of receiving inquiries about properties from users. Our data is divided into three components: user ratings, item features, and images. It consists of over four million users, ten thousand properties, and five million user interactions.</p>
-</div>
-<div class="section" id="what-have-we-done-so-far">
-<h2>What have we done so far<a class="headerlink" href="#what-have-we-done-so-far" title="Permalink to this headline">¶</a></h2>
-<p>Currently working in teams to clean the data and test out different recommender system models.</p>
-<p>For the data cleaning, we’ve communicated with the sponsor about what the different attributes in the data represent and how it can add as a feature in our model. We’ve changed the current INTERACTION_TYPE, or ratings to numbers so they can be used in the Experimental Library we are using. In addition, will will begin experimenting different rating ranges soon (i.e. using 1-4 or 0-3).</p>
-<p>For the Model Testing, we’ve taken the time to understand the libraries and recommender system concepts that we will be using. Our models are tested using Cornac which makes it easier to test and experiment with multiple different multimodal recommender systems. In addition, this team is focused on applying the BiLateral Variational Autoencoder recommender system to our final project. Right now, we are building a simple model with a smaller dataset with no images.</p>
-<p>We are currently meeting weekly with Appfolio’s CS Capstone to help them with their current recommendations on their website.</p>
-</div>
-<div class="section" id="obstacles">
-<h2>Obstacles<a class="headerlink" href="#obstacles" title="Permalink to this headline">¶</a></h2>
-<div class="section" id="data-struggles">
-<h3>Data Struggles<a class="headerlink" href="#data-struggles" title="Permalink to this headline">¶</a></h3>
-<p>Our data consisted of uninformative labels and unintuitive names for values which gave us questions to research and ask our sponsors about . We created a documentation page for our entire dataset so we can use it for quick reference and help future collaborators understand our data. The “item features” dataset includes many null observations which we are unsure on how best to deal with. Our options include dropping the observations that include null values and increasing our precision on the data that we do include, but we would miss out on valuable information regarding recommending the properties we left out. Our other option is to find a way to work around the null observations and perhaps figure out a way to derive default values for these observations.</p>
-</div>
-<div class="section" id="model-complexity">
-<h3>Model Complexity<a class="headerlink" href="#model-complexity" title="Permalink to this headline">¶</a></h3>
-<p><img alt="" src="https://cdn.discordapp.com/attachments/927701734791458819/938995959747198986/Screen_Shot_2022-01-27_at_7.27.47_PM.png" /></p>
-<p>It has been a learning curve to understand how recommender systems work. Our chosen model consists of four encoders and one decoder to make item recommendations. It has been a puzzle deciphering the research paper for our model and getting it working to train. Lots of data and a complex model makes training time increase tremendously. It currently takes over thirty minutes for one epoch and our model needs a considerable amount of epochs to be accurate. We talked with our sponsors and set up a notebook on Google cloud that enables us to use GPUs to train more efficiently.</p>
+<div class="section" id="where-we-left-off">
+<h3>Where we left off<a class="headerlink" href="#where-we-left-off" title="Permalink to this headline">¶</a></h3>
+<p>Our initial post gave a brief introduction of our project, the data we are working with, our obstacles, a brief overview of the model we were interested in using, and how we were working towards understanding the BiLateral Variational Autoencoder.</p>
+<p>Our main struggle with the data was working around the many null values in the item_features dataset. Since then, we have opted to focus on the ratings dataset for the simple model we created for the CS Capstone team, and plan to utilize the item_features dataset in future works.</p>
+<p>In terms of the model, we have been able to understand the complexity of the Variational Autoencoder and were able to create a model trained on user interaction data with Santa Barbara County properties to provide to the CS capstone team.</p>
+<p>In the following sections, we will go more in depth on the model we are using, hyperparameter tuning, baseline models that we used to compare to our chosen model, metrics we are using to measure the performance of our model, and our future plans to improve our model.</p>
 </div>
 </div>
-<div class="section" id="future-tasks">
-<h2>Future Tasks<a class="headerlink" href="#future-tasks" title="Permalink to this headline">¶</a></h2>
-<ol class="simple">
-<li><p>Continue learning about the Bilateral Variational Autoencoder</p></li>
-<li><p>Clean the larger dataset that includes the properties of the CS capstone team’s database</p></li>
-<li><p>Consider other ways to deal with missing data without removing it</p></li>
-<li><p>Find default values in replacement with missing data</p></li>
-<li><p>Update our model to suit the CS team capstone’s website</p></li>
-<li><p>Figure out a way to map between our dataset and the CS capstone team’s dataset</p></li>
-<li><p>Implement our prediction model to the CS capstone team’s website (see image of CS team’s website below)</p></li>
-</ol>
-<p><img alt="" src="https://cdn.discordapp.com/attachments/927701734791458819/938995930642915408/Screen_Shot_2022-02-03_at_6.10.44_PM.png" /></p>
-<p>For next quarter:</p>
-<p>Upgrade our model with complex features including:</p>
-<ul class="simple">
-<li><p>Images</p></li>
-<li><p>Latitude and longitude of property</p></li>
-</ul>
+<div class="section" id="our-model">
+<h2>Our Model<a class="headerlink" href="#our-model" title="Permalink to this headline">¶</a></h2>
+<p><img alt="" src="https://cdn.discordapp.com/attachments/927717200247275561/949423148741300234/unknown.png" /></p>
+<p><em>Figure 1. Recommender System Overview</em></p>
+<p>Recommender systems are algorithms aimed at suggesting relevant items to users. There are two main types of methods of recommendation, collaborative filtering methods and content based methods.</p>
+<p>Content based methods build a model, based on features of user and/or items, that explain the observed user-item interactions. Recommendations can therefore be done by knowing the features of a new user and/or item.</p>
+<p>Collaborative methods for recommender systems are methods that are based solely on the past interactions recorded between users and items in order to produce new recommendations. These interactions form the user-item rating matrix.</p>
+<p><img alt="" src="https://cdn.discordapp.com/attachments/927717200247275561/949423199551098890/unknown.png" /></p>
+<p><em>Figure 2. Collaborative Filtering Using Interaction Matrices</em></p>
+<p>The goal is to use these past user-item interactions to detect similar users and/or similar items and make predictions based on these similarities.</p>
+<div class="section" id="autoencoder-architecture">
+<h3>Autoencoder Architecture<a class="headerlink" href="#autoencoder-architecture" title="Permalink to this headline">¶</a></h3>
+<p><img alt="" src="https://cdn.discordapp.com/attachments/927717200247275561/949423251128483890/unknown.png" /></p>
+<p><em>Figure 3. Autoencoder Structure</em></p>
+<p>A popular model used for collaborative filtering are autoencoders. Autoencoders are an unsupervised learning technique that leverages neural networks for the task of representation learning. It’s designed as a neural network architecture that imposes a bottleneck in the network which forces a compressed knowledge representation of the original input. This is done by creating a supervised learning problem tasked with outputting x’, a reconstruction of the original input x. The input x is fed into a neural network encoder that outputs z , a compressed lower dimensional representation of the input. Z is then used as input to the neural network decoder and attempts to reconstruct the original input x.</p>
+<p>In the context of recommendation systems, user and/or item rating vectors can be used as input for an autoencoder and allows us to . Due to compression and reconstruction error, our reconstructed rating vectors can be used to give new recommendations based on the highest rated interactions that weren’t in our original input.</p>
+</div>
+<div class="section" id="variational-autoencoder-architecture">
+<h3>Variational Autoencoder Architecture<a class="headerlink" href="#variational-autoencoder-architecture" title="Permalink to this headline">¶</a></h3>
+<p>An issue with regular autoencoders is that it is limited by the encoder network outputting a single value for each encoding dimension. Variational Autoencoders (VAE) solve this problem by representing each latent feature as a probability distribution. When decoding from the latent dimension, the VAE will randomly sample from each latent feature distribution to generate a vector as input for our decoder model.</p>
+<p><img alt="" src="https://media.discordapp.net/attachments/927717200247275561/949423344200077342/unknown.png?width=796&amp;height=529" /></p>
+<p><em>Figure 4. Variational Autoencoder Structure</em></p>
+<p>For recommender systems, this can be replicated by our encoders outputting one latent dimension vector of means and one latent dimension vector of standard deviations for each latent feature. These latent parameters can then be sampled from using a gaussian distribution. User or item rating vectors that are nearby to one another in their latent parameter space should correspond with similar reconstructions. This allows VAE to learn smooth latent state representations of our user/item rating interaction data which can be used generatively for recommendations.</p>
+</div>
+<div class="section" id="bilateral-variational-autoencoder-architecture">
+<h3>Bilateral Variational Autoencoder Architecture<a class="headerlink" href="#bilateral-variational-autoencoder-architecture" title="Permalink to this headline">¶</a></h3>
+<p><img alt="" src="https://media.discordapp.net/attachments/927717200247275561/949423395433492560/unknown.png?width=886&amp;height=320" /></p>
+<p><em>Figure 5. Bilateral Variational Autoencoder Structure</em></p>
+<p>Variational autoencoders are limited in using either item rating vectors or user rating vectors for input. This results in loss of information of user-item affinities. Bilateral Variational Autoencoder Architecture (BiVAE) allows us to work with dyadic data and retain all information. The BiVAE architecture consists of two VAEs used conjointly, one using item rating vectors as input and the other using user rating vectors as input.   Each one is trained separately by encoding its input and outputting its latent feature distributions. Then both  its latent feature distribution for one input and  the other VAE’s resulting item/user latent representation for the entire user-item rating matrix are taken as an inner product for the decoder. In addition to no loss of user-item information, BiVAE allows us to make user and item based recommendations.</p>
+</div>
+<div class="section" id="multimodality-using-constrained-adaptive-priors">
+<h3>Multimodality Using Constrained Adaptive Priors<a class="headerlink" href="#multimodality-using-constrained-adaptive-priors" title="Permalink to this headline">¶</a></h3>
+<p><img alt="" src="https://media.discordapp.net/attachments/927717200247275561/949423455240077352/unknown.png?width=886&amp;height=171" /></p>
+<p><em>Figure 6. Constrained Adaptive Prior Implementation</em></p>
+<p>Another benefit of BiVAEs are their capability to incorporate user/item features in their recommendations by using constrained adaptive priors (CAP). CAPs are used by adding multimodality in by integrating user/item features information into the latent representations that are ultimately sampled from to use as input for the decoder. User/item features are encoded into the same dimensional space as the latent representations and then used as a constraint in a multivariate gaussian distribution with its mean being the sampled user/item latent representation.This final multivariate gaussian distribution is used for sampling for our input for the decoder.</p>
+<p>CAPs allow us to incorporate various information about properties (e.g. price, location, sq. footage, etc) and users (e.g. family, location, etc.)  to make more informed recommendations. Another benefit is that new users/items with few interactions can also be given more accurate recommendations using their prior information. The capabilities and great tested performance of Bilateral Variational autoencoders make it a perfect model for our recommendation system goals.</p>
+</div>
+</div>
+<div class="section" id="data-cleaning">
+<h2>Data Cleaning<a class="headerlink" href="#data-cleaning" title="Permalink to this headline">¶</a></h2>
+<p>A major component to the BiVaE model is incorporation of item features. While the low dimensionality and completeness of our user dataset posed few obstacles, the higher dimensionality and various null observations in the items dataset is something that we continue to work around. Further, some of the data in our features is nested within JSON keys that include additional data, which is something we’ve worked to extract into separate columns. However, these extra features tend to have a high rate of null values, and part of our experimentation is based on how to incorporate or not incorporate the data we have.</p>
+<p>We have currently only implemented location as user/item features for our model’s CAPs. We anticipate that we will have to experiment with multiple options, whether it be including only subsets of the features or imputing the data we don’t have records for, to yield our most desirable results.</p>
+</div>
+<div class="section" id="metrics">
+<h2>Metrics<a class="headerlink" href="#metrics" title="Permalink to this headline">¶</a></h2>
+<p>Several approaches for evaluating model performance are demonstrated along with their respective metrics. Rating metrics, ranking metrics, classification metrics and non accuracy based metrics are some of the examples. In our projects we mostly focused on the ranking metrics. The use of the Ranking metrics in the model is that they evaluate how relevant and effective recommendations are for the users. In general the more relevant an item is, the more likely we’ll want to predict it. Precision and recall are some of the most simple and easy to interpret metrics available to us. For our purposes, we are dealing with a recommendation system model and will define these metrics under this consideration.</p>
+<p>We use precision to measure the proportion of recommended items that are relevant. And we used recall to measure the proportion of relevant items that are recommended. Another metric that we looked at is normalized discounted cumulative gain (NDCG) which evaluates how well the predicted items for a user are ranked based on relevance. Also we looked at mean average precision (MAP) which means it is the average precision for each user normalized over all users. The last thing that we looked at is the area under curve (AUC) which is the area under the receiver operating characteristic curve.</p>
+</div>
+<div class="section" id="hyperparameter-tuning">
+<h2>Hyperparameter Tuning<a class="headerlink" href="#hyperparameter-tuning" title="Permalink to this headline">¶</a></h2>
+<p>For this project, we are implementing Grid Search and Random Search to help us determine the best hyperparameters to use in our model based on the training data. First, we hyperparameter tuned the data to include only Santa Barbara properties, which consists of only about 9500 observations. Because of this smaller dataset, we opted to use Grid Search since it searches through every possible combination of hyperparameters passed through the function into the model. When we move up to a larger dataset, and need to account for a larger region like all of Southern California or possibly the entire country, we would need to use Random Search to obtain a random sample of the possible combinations. This is purely because of the larger dataset and the lack of powerful computational power to iterate through all the possible combinations.</p>
+<p>For now, since we focused on preparing a better model for Appfolio’s CS Capstone which only contains Santa Barbara Counties, tuning on just the Santa Barbara Counties was our best bet.</p>
+<p>The hyperparameters we tuned are latent dimension size, encoder architecture, activation function, likelihood, number of epochs, batch size, learning rate, and beta KL divergence term. The metric we want to look at is Mean Average Precision (MAP). MAP is a measure that takes in a ranked list of your recommendations and compares it to a list of the true set of relevant recommendations for that user. MAP rewards you for having many correct relevant recommendations in your list, and rewards you for putting the relevant recommendations at the top (you are also penalized more when incorrect guesses are higher up in the ranking). Therefore MAP is the best measure for overall recommendation system performance for our purposes. Since we are experimenting with multimodality, we tune for two different models, one including Constraint Adaptive Priors and another without. At the moment, the only feature we’ve included for multimodality is geographic location by longitude and latitude.</p>
+<p><img alt="" src="https://cdn.discordapp.com/attachments/927717200247275561/949423920602304552/Screen_Shot_2022-03-03_at_3.49.25_PM.png" /></p>
+<p><em>Figure 7. Testing Results for the best model for no Constraint Adaptive Prior.</em></p>
+<p><img alt="" src="https://cdn.discordapp.com/attachments/927717200247275561/949423768231608320/Screen_Shot_2022-03-03_at_3.51.02_PM.png" /></p>
+<p><em>Figure 8. Testing Results for the best model with Constraint Adaptive Prior.</em></p>
+<p>Above are the results from running the experiment and applying the best models to the testing data. Since we are looking at comparing the models using the Mean Average Precision, we see that metric increasing slightly when we add features using Constraint Adaptive Priors.</p>
+</div>
+<div class="section" id="results">
+<h2>Results<a class="headerlink" href="#results" title="Permalink to this headline">¶</a></h2>
+<p>We used a baseline model for comparison. In general we wanted to see if our model is actually performing well. So we compared the accuracy of our model with the accuracy of the baseline models to see if we improved upon it. We chose a collection of various popular recommender system algorithms (e.g. linear, non-linear, factorization based, neural network based, etc.) as our baseline models. The baseline models that we used in our projects are variational autoencoder (VAECF), poisson factorization (PF), hierarchical poisson factorization (HPF), Bayesian Personalized Ranking (BPR), Generalized Matrix Factorization (GMF), Multilayer Perceptron (MLP), and neural matrix factorization (NeuMF).</p>
+<p><img alt="" src="https://cdn.discordapp.com/attachments/927717200247275561/949423042260504597/unknown.png" /></p>
+<p><em>Figure 9. Resulting Metrics from Baseline Models and BiVae.</em></p>
+<p>From the results, we can see that our bilateral variational autoencoder with constrained adaptive priors outperformed all models in all metrics and specifically our most important metric, MAP.</p>
+</div>
+<div class="section" id="future-goals">
+<h2>Future Goals<a class="headerlink" href="#future-goals" title="Permalink to this headline">¶</a></h2>
+<p>After meeting our goal for the end of this quarter, which was  implementing a simple recommendation model in the CS capstone, we look forward to improving our current model by incorporating multimodality. By incorporating multimodality, we would be looking at different features to use like latitude, longitude, property type, prices and images. In addition, we would still take time to test other models if we can achieve a better performance than the current model on the website.</p>
+<p>Although the CS Capstone website is showing only properties in Santa Barbara County, we would like to see if we can build a model that can be applied to a larger geographic area, like all of California or the entire country.</p>
+<p><img alt="example.gif" src="../../_images/1_0_GIF_2.GIF" /></p>
+<p><em>Figure 10. How to Get Recommendations from the CS Capstone Website.</em></p>
 </div>
 </div>
 
@@ -746,17 +850,17 @@ const thebe_selector_output = ".output, .cell_output"
             
                 <!-- Previous / next buttons -->
 <div class='prev-next-area'> 
-    <a class='left-prev' id="prev-link" href="description.html" title="previous page">
+    <a class='left-prev' id="prev-link" href="update1.html" title="previous page">
         <i class="fas fa-angle-left"></i>
         <div class="prev-next-info">
             <p class="prev-next-subtitle">previous</p>
-            <p class="prev-next-title">AppFolio</p>
+            <p class="prev-next-title">Starting the Project</p>
         </div>
     </a>
-    <a class='right-next' id="next-link" href="update2.html" title="next page">
+    <a class='right-next' id="next-link" href="../calcofi/description.html" title="next page">
     <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">Creating a Simple Model</p>
+        <p class="prev-next-title">CalCOFI Project</p>
     </div>
     <i class="fas fa-angle-right"></i>
     </a>
