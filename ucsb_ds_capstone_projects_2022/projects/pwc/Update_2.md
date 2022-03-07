@@ -58,9 +58,9 @@ $\alpha, \beta$ is what we referred to earlier as *calibration*.
 
 ---
 
-### Percentiles
+#### Percentiles
 
-The idea with percentiles Is to set the range to a percentile of the distribution of weights seen during calibration. In practice many pre-built functions that perform quantization only take a look at the maximum and the minimum weights. We hypothesize that with the imbalance in classes there will be outliers in the distribution of weights across the layers.  Thus, the manual function will provide the better tradeoff between robustness and compression.  
+The idea with percentiles Is to set the range to a percentile of the distribution of weights seen during calibration. In practice, many pre-built functions that perform quantization only take a look at the maximum and the minimum weights. We hypothesize that with the imbalance in classes there will be outliers in the distribution of weights across the layers.  Thus, the manual function will provide the better tradeoff between robustness and compression.  
 
 --
 **Example**:
@@ -71,12 +71,12 @@ and implement the same quantization functions. If a weight exceeds a particular 
 
 ---
 
-#### Week 10 goal
+## Week 10 goal
 
 1. Create a Quantization function that considers the distribution of weights across layers and implements quantization accordingly.
 2. Analyze the tradeoff between accuracy and compression versus benchmark model. 
 
-### Looking Ahead
+## Looking Ahead
 1. At this moment in time we were able to resolve the RAM issue and get the 300 dimension word vectors GloVe model functioning. We are working on optimizing the trial model before running some final tests. We hypothesize that this model will produce the best results. 
 2. We hope to create our own word embeddings which would give us more access to applying compression methods elsewhere besides the layers of the model. 
 3. After our trials it is likely we might proceed with a more challenging task and a more robust framework to limit test our compression methods. A possible consideration would be working with audio/visual data. 
