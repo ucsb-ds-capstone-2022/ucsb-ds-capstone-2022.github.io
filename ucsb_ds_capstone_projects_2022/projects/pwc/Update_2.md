@@ -10,7 +10,7 @@ $$\text{$F1$ Score} =2 \cdot \frac{\text { Precision } \cdot \text { Recall }}{\
 
 where
 
-$$\begin{aligned} \text { Precision } &=\frac{T P}{T P+F P} \\ \text { Recall } &=\frac{T P}{T P+F N} \end{aligned}$$
+$$\begin{aligned} \text { Precision } &=\frac{T P}{T P+F P} \\[2.5mm] \text { Recall } &=\frac{T P}{T P+F N} \end{aligned}$$
 
 Precision measures the percentage of true positives from all positive cases detected by the model, while Recall(sensitivity) measures the percentage of positive cases the model detects successfully. Notice that $\mathrm{F} 1$ score reflects both metrics: the $\mathrm{F} 1$ score is high only when both Precision and Recall are high.
 
@@ -34,7 +34,7 @@ Layer selection was chosen manually by running 30 epochs with 5 trials with an a
 
 
 
-The figure depicts the "best tradeoff" region and shows additional layers do not provide a more optimal model when we want to maximize \mathrm{F} 1$. 
+The figure depicts the "best tradeoff" region and shows additional layers do not provide a more optimal model when we want to maximize $\mathrm{F} 1$. 
 
 
 ## Compression
@@ -48,13 +48,21 @@ There are two forms of quantization: post-training quantization and quantization
 **Note**: We are currently looking at implementing both forms.
 
 #### Symmetric and Asymmetric
-The two most common forms of calibration are Symmetric and Asymmetric.
+The two most common forms of *calibration* are Symmetric and Asymmetric.
 
 1.  **Asymmetric** quantization, we map the min/max in the float range to the min/max of the integer range. This is done by using a **zero-point** in addition to the scale factor.
 2. **Symmetric** quantization, instead of mapping the exact min/max of the float range to the quantized range, we choose the maximum absolute value between min/max. In addition, we don't use a zero-point. So, the floating-point range we're effectively quantizing is symmetric with respect to zero, and so is the quantized range.
 ---
 Symmetric quantization is incredibly quick to calculate, because we do not need to compute the zero point of reference, and we only consider the absolute maximum value. Asymmetric quantization is particularly useful for quantization when the distribution of weights/ activation outputs are are heavily asymmetric, but it comes with a higher cost. From our readings, **an efficient method is to use symmetric quantization for weights, asymmetric quantization for activation outputs with a subset of models weights.**
 
+A typical quantization function example:
+
+$$
+Q(w)=\operatorname{Int}\left(\left(\frac{w}{\beta-\alpha}\right) \cdot\left(2^{n}-1\right)+z\right.
+$$
+where $\alpha,\beta$. are clipping ranges to be chosen, $\mathrm{z}$ is a zero-point. Choosing
+$\alpha, \beta$
+is what we referred to earlier as *calibration*. 
 ---
 
 ### Percentiles
