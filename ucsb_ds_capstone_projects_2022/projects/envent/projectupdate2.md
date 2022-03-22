@@ -1,3 +1,5 @@
+## Update 2: Moving Towards Megapoll Assembly
+
 ## Concise Project Refresher
 
 Our project is using approximately 140 surveys on climate opinion in order to determine how different demographics influence opinions on climate change. The surveys we are using are public data that ask a variety of questions on the importance and validity of climate change, as well as demographic variables of the respondent such as education level, income, race, age, and gender across multiple countries.
@@ -12,10 +14,11 @@ For most of the quarter so far we have been sorting out 7 demographics from 140 
 ![](images/mod\_variable.png)
 **Above: making a “\_mod” variable to account for different occurrences of a single question divided by countries in survey responses*
 
-##Results 
+## Results 
 ![](images/gender\_graph.JPG)
 Prior to working with the data, we made predictions of  demographic variables that are going to have greater climate concern than other variables.As a group, we predicted that women would be more pro climate than males, educated individuals would be more pro climate than uneducated individuals, and families with less/ no children would be more pro climate than families with multiple children. Despite not having a complete dataset to create a model on quite yet, we have looked into some individual surveys to draw conclusions from. The graph above displays the respondent’s opinions of climate concern on a scale ranging from not at all serious to very serious. From the graph we can see that the different genders follow fairly similar trends in their opinion on the severity of climate change. The biggest difference in this particular survey shows that more females think that climate change is not serious than males who think climate change is not serious. This outcome is slightly different than our predicted results of women thinking climate change is more serious at a higher rate than men. However, this is only one survey from one country and does not at all reflect results as a whole. The graph corresponds to a survey that was taken in Egypt, Libya, and Kuwait. Perhaps in these countries, women are not aware of the implications of climate concern and therefore do not see it as a serious concern. Without taking all surveys from countries spanning across the world into account, we cannot make accurate predictions on the global opinion on climate change. However, looking into each individual survey can reveal a lot of information on each country's individual concern.
-##Next Steps
+
+## Next Steps
   
 Based on our current progress, the next goal we are actively working towards is **incorporating all the demographic variables** into the ENVENT lab’s megapoll so that we can begin **modeling what the best demographic predictors of climate concern are**. </p><p></p><p>After adding to the megapoll, we will be able to start making general exploratory plots to better understand the global trends of climate concern as opposed to what we could gather from the region-locked surveys alone. From there, we can begin to develop more sophisticated ML models to identify which of the variables (or combinations of them) are the best demographic predictors of climate concern.
 
