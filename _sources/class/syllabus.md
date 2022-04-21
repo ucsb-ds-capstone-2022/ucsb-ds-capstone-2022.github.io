@@ -43,7 +43,7 @@ Week | Topic | Project updates
 7 | Data tidying and visualization | Second post due
 8 | Storytelling with data |
 9 | Communication and collaboration |
-10 | Interim presentations I | Final winter post due
+10 | Interim presentations I |
 11 (finals week) | Interim presentations II |
 
 **Spring schedule**
@@ -53,13 +53,13 @@ Week | Topic | Project updates
 1 | Spring term logistics |
 2 | The big data paradox |
 3 | Mid-quarter presentations I |
-4 | Mid-quarter presentations II | First post due
+4 | Mid-quarter presentations II | Third post due
 5 | Mid-quarter presentations III |
 6 | Guest lecture: [Jessica Santana](https://www.jsantana.org/) |
-7 | Mid-quarter presentations IV | 
-8 | Mid-quarter presentations V | Second post due
+7 | Mid-quarter presentations IV |  
+8 | Mid-quarter presentations V | Fourth post due
 9 | TBD |
-10 | Final presentations I | Final winter post due
+10 | Final presentations I |
 11 (finals week) | Final presentations II |
 
 
