@@ -28,8 +28,8 @@ Date | Group 1 | Group 2 | Group 3
 ---|---|---|---
 April 18 | HG Insights | Carpe Data | CCBER
 April 25 | Sprague | CalCOFI | Evidation (Julio)
-May 9 | *Guest lecture*
 May 2 | CITS | PwC | NRI
+May 9 | *Guest lecture*
 May 16 | AppFolio | ERI | Allthenticate 
 May 23 | Evidation (Eric) | ENVENT
 
