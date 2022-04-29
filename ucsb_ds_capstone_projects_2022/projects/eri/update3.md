@@ -3,7 +3,7 @@
 Mid-Spring Quarter Update
 
 --- 
-**Project: Combining computer vision and satellite imagery to map agricultural investment and water use.**
+#### Project: Combining computer vision and satellite imagery to map agricultural investment and water use.
 --- 
 
 ### Recent Efforts
