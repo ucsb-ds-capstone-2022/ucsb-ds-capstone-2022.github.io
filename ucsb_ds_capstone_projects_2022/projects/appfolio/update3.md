@@ -1,4 +1,12 @@
-# Using Images for Recommendation
+# Implementing Hybrid Models and Image Features
+
+## Concise Refresher
+
+At the end of last quarter, we successfully implemented constrained adaptive priors to our Bilateral Variational Autoencoder (BiVaE) model and worked with the AppFolio CS Capstone team to deploy it onto their website. We are continuing our work to implement more features into our models in hopes of improving our recommendation accuracy.
+
+Additionally, we'd like to transition to exploring other models for recommendation as opposed to just focusing on the BiVaE model. We hope to improve our ranking metrics further as well as the efficiency of our inference.
+
+## Using Images for Recommendation
 
 Images have been shown to have vast predictive power for various tasks. When broken down, images are a 2D array of pixels, with each pixel consisting of 3 color channels (Red, Green, and Blue). Within that set of pixels lie plenty of datapoints. Let’s say an image in our data set has dimensions of 384 x 512 x 3. That yields nearly 600,000 data points in just one image. Clearly each pixel’s value does not hold the same predictive standing as an individual feature of the model, but the ensemble of pixels can open up patterns in a user’s image preferences that are difficult for humans to detect. For example, a user may have a predilection towards properties with green lawns out in front. Or perhaps user’s are drawn to photos with more vibrant color contrasts. Either way, a user’s interaction with images can be valuable in determining their preferences, and since we are lucky enough to have images associated with a majority of our properties, we hope to harness the influence that they have to offer.
 
