@@ -50,6 +50,7 @@ parts:
     sections:
     - file: projects/envent/projectupdate1
     - file: projects/envent/projectupdate2
+    - file: projects/envent/projectupdate3
   - file: projects/eri/description
     sections:
     - file: projects/eri/update1
