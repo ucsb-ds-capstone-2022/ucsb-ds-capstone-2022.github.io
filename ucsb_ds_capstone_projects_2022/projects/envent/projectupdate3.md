@@ -14,14 +14,7 @@ At this point we have gone through most of the surveys and extracted the relevan
 Thinking about how we’d exactly standardize the demographic variables of interest to us has been our primary task as of late and we’ve recently begun testing out some modeling approaches with both logistic and now linear regression.We started standardizing demographics based on the standardizations that were most attainable to finish. We have started with only standardizing gender, age, religion, and education level.  We ultimately decided on dropping our interest in the Number of Children variable as a demographic because not enough surveys asked the question nor did we feel the insights we’d possibly gather from it would be worth the time investment in comparison to the other variables.
   
 Model training for predicting one’s climate concern level based on demographic information is where we are yet to make much progress due to the sheer size of the dataprep task we were assigned. However since shifting gears for this quarter we have begun discussing ways in which to start building models off of our data.  
-  
 
-
-![](images/afro\_megapoll.png)
-*Above: Example snippet of the afrobarometer\_7 section of responses in the Megapoll*
-
-![](images/mod\_variable.png)
-**Above: making a “\_mod” variable to account for different occurrences of a single question divided by countries in survey responses*
 
 ## Successes and Challenges
 Our largest success by far was getting through about 90 percent of the surveys and beginning to brainstorm how to start standardizing the demographic variables of interest to our project. This achievement means that our group can finally begin prioritizing making actual analyses from the data and begin producing insights to compare with our established prior beliefs.   
