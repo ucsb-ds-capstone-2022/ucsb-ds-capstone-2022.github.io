@@ -48,4 +48,4 @@ Another concept that we are exploring is self-supervised learning. For this, we 
 ******
 
 ## References
-[1]  **[Brains and algorithms partially converge in natural language processing](https://ai.facebook.com/blog/dino-paws-computer-vision-with-self-supervised-transformers-and-10x-more-efficient-training/)**
+[1]  **[Advancing the state of the art in computer vision with self-supervised Transformers and 10x more efficient training](https://ai.facebook.com/blog/dino-paws-computer-vision-with-self-supervised-transformers-and-10x-more-efficient-training/)**
