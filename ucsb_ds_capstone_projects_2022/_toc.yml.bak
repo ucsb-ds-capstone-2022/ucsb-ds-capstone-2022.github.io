@@ -41,6 +41,7 @@ parts:
   - file: projects/eri/description
     sections:
     - file: projects/eri/update1
+    - file: projects/eri/update2
   - file: projects/evidation_eric/description
     sections:
     - file: projects/evidation_eric/update1
