@@ -1,6 +1,6 @@
 ![dataset_compare.png](sprague_lab.png)
 # Update 3
-Our team has been focused on coding our model in which fMRI activity can be reconstructed into the original visual stimulus image.  Currently, we are working on an encoder that can map the fMRI vectors to the CLIP space. This will allow us to generate an image using LAFITE’s pre-trained model which maps from the CLIP space to the image space. We also modified the StyleGAN2 architecture in order to be optimized for taking in fMRI inputs. This includes adjusting components such as the loss function and optimizing the input noise vector. 
+So far, our team has been focused on coding our model in which fMRI activity can be reconstructed into the original visual stimulus image.  Currently, we are working on an encoder that can map the fMRI vectors to the CLIP space. This will allow us to generate an image using LAFITE’s pre-trained model which maps from the CLIP space to the image space. We also modified the StyleGAN2 architecture in order to be optimized for taking in fMRI inputs. This includes adjusting components such as the loss function and optimizing the input noise vector. 
 | ![model.png](model.png) | 
 |:--:| 
 | *Figure 1. Model Process*|
