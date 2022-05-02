@@ -10,43 +10,30 @@ Still, the early week or two of the quarter was slow to start, as the team was h
 
 ### **Progress/Findings**
 
-We have generated several real time visualizations in the Kibana dashboard on our Elastic instance running on AWS. The first set of visualizations (Figures 1-4) show relevant real time use data for identifying issues within the application. One can infer from a spike of users opening and closing an application, turning bluetooth on and off, or refreshing the app that there is an issue with the performance of the app. Additionally, if there is a spike in messages about the phone trying to connect to local devices, there is clearly an issue on the backend of the app or device infrastructure. Figures 5 and 6 show the distribution of lock and unlock times, and can be used to identify abnormally long lock/unlock times, which can help identify edge-cases resulting in poor product performance.
-  
-![](images/app_launched_closed.png)
+In the last update, we were split between two separate types of visualization: live metrics and static distributional ones. While we were and still are able to generate both, it became that they would be far more effective if we were able to develop some sort of tool that Allthenticate could use to combine them into one. This led us to the idea of building a dashboard that would take care of both visualizations tasks as well as give us a deliverable tool for the company to use. This is where plotly really shines, because on top of its interactive visualization style, we were able to work with Plotly Dash to build this dashboard. Dash is a plotly framework that allows users to build web apps and dashboards, so any visuals we generate with Plotly are immediately compatible with Dash and easy to implement. Essentially, this allows us to put Python-based analytics in the hands of business analysts, marketing teams, or even backend engineers, which is extremely powerful for a long term solution. As our data evolves and new questions arise, the company will easily be able to integrate visualizations for them into the dashboard without much effort. 
+
+With Dash, we hope to include metrics like total users, total time saved, average lock/unlock time, as well as histograms, box plots, barcharts, and pie charts, of lock/unlock/connection times as well as heatmaps of connection patterns. The main goal of including so many different plots is to 1) get a general overview of the data and the strength of the product that Allthenticate is actually offering and 2) to be able to easily identify outliers and instances where the app is not working correctly. Boxplots and histograms would easily identify outliers within data, and an incorrect looking connection pattern could be very telling of an issue that needs to be fixed. One of the big aims of this project is to improve user experience and Allthenticate’s app as a whole, so finding instances where its not performing as expected through logs would be incredibly valuable to the company. 
+
+![](images/dashboard.png)
 <p align="center">
-<em>Figure 1. Count of Apps. Launched/Closed from 15.00hrs to 00.00hrs.</em>
+<em>Figure 1. New dashboard layout with visualizations.</em>
 </p> 
 
-![](images/ble_enabled_disabled.png)
+![](images/choice_bar.png)
 <p align="center">
-<em>Figure 2. Count of Bluetooth Connections/Disconnections from 15.00hrs to 00.00hrs.</em>
+<em>Figure 2. Selection dropdown for metrics currently tracked by dashboard.</em>
 </p> 
 
-![](images/app_refreshed.png)
+Here is a first draft of our dash app, with a histogram, faceted histogram, boxplot, barchart and pie chart (not pictured). There is a drop down at the top for different metrics, as well as an x-axis slider to make it easy to see the main distribution as well as zoom out and see large outliers. The added lines (in order) are 25th percentile, 50th percentile / median, 75th percentile, and 75th percentile + 1.5(IQR), which we’ve used as a measure for outliers. 
+
+We also have been taking steps toward our goal of publishing an academic paper regarding user happiness of the Allthenticate app. In order to gain more objective insight on how the users feel about the usage of the product, we came up with several questions. The questions are split into three categories: screening questions, in-test questions, and post-test questions. The screening questions will allow us to see what kind of people were testing out the app, while the in-test questions will give feedback on the actual usage of it. The post-test questions give us opinions we can use for future reference. Here are some summary questions, but feel free to check out our survey! (https://forms.gle/imj51aY34RXUMrr17)
+
+![](images/study_questions.png)
 <p align="center">
-<em>Figure 3. Count of times App is refreshed from 15.00hrs to 00.00hrs.</em>
+<em>Figure 3. Example of survey questions for usability study.</em>
 </p>
 
-![](images/device_connecting_not_connecting.png)
-<p align="center">
-<em>Figure 4. Device connecting to phone/ Device in range but not connecting from 15.00hrs to 00.00hrs.</em>
-</p> 
-
-
-Beyond real-time visualizations, we have also begun working towards generating meaningful static visualizations for deeper insights into the functionality of the company's products. This work has been somewhat slow as the updated app has yet to be deployed to all possible users, but we have worked to create a secure method for accessing data within a Python script using credentials that are ignored from Gitlab commits. 
-
-  ![](images/lock_unlock_time.png)
-<p align="center">
-<em>Figures 5,6. Histogram on time taken to lock/unlock a device.</em>
-</p> 
-
-Additionally, we have created a script for cleaning and formatting the data in a structure that will allow for time series analysis, with logs divided by each unique phone ID and device ID in order of the log’s timestamp.
-
-
-|    | phone                                | timestamp                  | phoneModel   | event_type   | uuid                                 |   type | locked   | connecting   | connected   | connectable   |   communicating |   processing_command |   action | time_delta             |
-|---:|:-------------------------------------|:---------------------------|:-------------|:-------------|:-------------------------------------|-------:|:---------|:-------------|:------------|:--------------|----------------:|---------------------:|---------:|:-----------------------|
-|  0 | 1234cf90-5d23-423b-8ffe-caddb46fb123 | 2022-03-02 09:08:11.251430 | DUB-LX0      | seen         | 123f95b7-1bb2-4a54-8340-123e375c480e |      1 | False    | False        | False       | True          |             nan |                  nan |      nan | NaT                    |
-|  1 | 1234cf90-5d23-423b-8ffe-caddb46fb123 | 2022-03-02 09:08:15.524714 | DUB-LX0      | seen         | 123f95b7-1bb2-4a54-8340-123e375c480e |      1 | True     | False        | False       | True          |             nan |                  nan |      nan | 0 days 00:00:04.273284 |
+If we end up deploying the survey to a relatively high number of users, the survey will provide very powerful feedback on the performance of the app/user satisfaction we can use as a “target variable” for our dataset. More on this in the next steps.
 
 ### **Next Steps**
 
