@@ -4,11 +4,12 @@
 
 ### **Additional background**
 
-As you may remember, Allthenticate is an app-based authenticator solution that allows users to use their phones as a central “password” for a number of different things they may need to authenticate (doors, computer, websites, etc). As a reminder, our goal in this capstone project is to 1) improve the user’s experience by determining when the app may not be functioning as intended and 2) to be able to quantify the ease of use, time saved, and security benefits compared to the traditional status quo. 
+As you may remember, Allthenticate is an app-based authenticator solution that allows users to use their phones as a central “password” for a number of different things they may need to authenticate (doors, computer, websites, etc). Our goals in this capstone project are to 1) improve the user’s experience by determining when the app may not be functioning as intended and 2) to be able to quantify the ease of use, time saved, and security benefits compared to the traditional status quo. 
 
-Since the first update we’ve made a lot of tangible progress, and are determined to make up any lost time that we might have experienced when getting our project up and running. We’ve finally gained access to data, which has been evolving daily. Initially, we were getting data from 3 test phones being used at Allthenticate’s offices to set up the logging infrastructure and iron out any issues in formatting of our data. However, as of late February/early March, the logging system has been pushed out to all of Allthenticate’s customers, meaning that we are now getting constantly updating data every minute of every day, from real users using the Allthenticate app. Additionally, we’ve gotten a shared repository setup on GitLab, which has allowed us to speed up the collaboration process and streamline our development process now that we reliably have access to data. 
-  
-In the previous update, we got some feedback advising us to explain the definitions of certain variables more clearly, something that we agreed would be helpful for not just others but ourselves as well. 
+Since the first update we’ve made a lot of tangible progress, and are determined to make up any lost time that we might have experienced when getting our project up and running. We’ve finally gained access to data, which has been evolving daily. Initially, we were getting data from 3 test phones being used at Allthenticate’s offices to set up the logging infrastructure and iron out any issues in formatting of our data. We are still working on deploying the logging infrastructure to all users, but in the meantime we have an increased number of test phones using the Allthenticate app. Additionally, we’ve set up a shared repository on GitLab, which has allowed us to speed up the collaboration process and streamline our development process now that we reliably have access to data. 
+
+In the previous update, we got some feedback advising us to explain the definitions of certain variables more clearly, something that we agreed would be helpful for not just others but ourselves as well. However, much of our logging infrastructure was still in development, so we spent a significant amount of time finalizing log format and structure into something standard. This can be seen and explained by Table 1 and 2. These logs capture information about user actions in the phone app, communication between phones and devices over bluetooth, and communication between phones and computers over FCM.
+
 
   **Table 1: Log Features**
   
@@ -33,9 +34,7 @@ In the previous update, we got some feedback advising us to explain the definiti
 
 ### **Initial Efforts/findings**
 
-Since much of our logging infrastructure was still in development, we spent significant time finalizing log format and structure into something standard. This can be seen and explained by Table 1. These logs capture information about user actions in the phone app, communication between phones and devices over bluetooth, and communication between phones and computers over FCM.
-
-We have generated several real time visualizations in the Kibana dashboard on our Elastic instance running on AWS. The first set of visualizations (Figures 1-4) show relevant real time use data for identifying issues within the application. One can infer from a spike of users opening and closing an application, turning bluetooth on and off, or refreshing the app that there is an issue with the performance of the app. Additionally, if there is a spike in messages about the phone trying to connect to local devices, there is clearly an issue on the backend of the app or device infrastructure.
+We have generated several real time visualizations in the Kibana dashboard on our Elastic instance running on AWS. The first set of visualizations (Figures 1-4) show relevant real time use data for identifying issues within the application. One can infer from a spike of users opening and closing an application, turning bluetooth on and off, or refreshing the app that there is an issue with the performance of the app. Additionally, if there is a spike in messages about the phone trying to connect to local devices, there is clearly an issue on the backend of the app or device infrastructure. Figures 5 and 6 show the distribution of lock and unlock times, and can be used to identify abnormally long lock/unlock times, which can help identify edge-cases resulting in poor product performance.
   
 ![](images/app_launched_closed.png)
 <p align="center">
@@ -58,7 +57,7 @@ We have generated several real time visualizations in the Kibana dashboard on ou
 </p> 
 
 
-Beyond real-time visualization work, we have begun work towards generating meaningful static visualizations for deeper insights into the functionality of the company's products. This work has been somewhat slow as the updated app has yet to be deployed to all users, but we have worked to create a secure method for accessing data within a Python script using credentials that are ignored from Github commits. Figures 5 and 6 show the distribution of lock and unlock times, and can be used to identify abnormally long unlock or lock times in real time, another method for identifying issues in the company infrastructure.
+Beyond real-time visualizations, we have also begun working towards generating meaningful static visualizations for deeper insights into the functionality of the company's products. This work has been somewhat slow as the updated app has yet to be deployed to all possible users, but we have worked to create a secure method for accessing data within a Python script using credentials that are ignored from Gitlab commits. 
 
   ![](images/lock_unlock_time.png)
 <p align="center">
