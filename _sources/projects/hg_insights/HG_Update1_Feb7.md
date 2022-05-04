@@ -1,5 +1,10 @@
-# hg_insights
-Project description
+# Update 1
+
+##                                             HG INSIGHTS
+
+Team Members: Atherv Gole, Cristian Razo, Eric Cha, Natasha Leodjaja, Qimin Tao <br>
+Sponsor: Rob Fox <br>
+Mentor: Leron Reznikov <br>
 
 ### Overview
 HG Insights is a data analytics company that offers an intelligence platform to help optimize strategic planning and sales execution. Our capstone team is working with HG Insights to develop a machine learning model to predict the adoption of existing and/or new technologies based on the respective qualities of a company. The primary goal of this project is to analyze patterns in product adoption to effectively engage with existing and/or potential customers.
