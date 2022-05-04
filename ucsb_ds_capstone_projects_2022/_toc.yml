@@ -82,4 +82,5 @@ parts:
     sections:
     - file: projects/sprague/Sprague_group_update_01
     - file: projects/sprague/Sprague_group_update_02
+    - file: projects/sprague/Sprague_group_update_03
 
