@@ -53,7 +53,7 @@ const thebe_selector_output = ".output, .cell_output"
     <script async="async" src="../../_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
-    <link rel="next" title="carpedata" href="../carpedata/description.html" />
+    <link rel="next" title="The Final Stretch" href="calcofi-update3.html" />
     <link rel="prev" title="CalCOFI Initial Progress and Goal Definition" href="calcofi-update1.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
@@ -274,6 +274,11 @@ const thebe_selector_output = ".output, .cell_output"
      Progress Update and Reflection
     </a>
    </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="calcofi-update3.html">
+     The Final Stretch
+    </a>
+   </li>
   </ul>
  </li>
  <li class="toctree-l1 has-children">
@@ -338,6 +343,11 @@ const thebe_selector_output = ".output, .cell_output"
    <li class="toctree-l2">
     <a class="reference internal" href="../cits/update2.html">
      Update 2
+    </a>
+   </li>
+   <li class="toctree-l2">
+    <a class="reference internal" href="../cits/update3.html">
+     Update 3
     </a>
    </li>
   </ul>
@@ -677,12 +687,12 @@ const thebe_selector_output = ".output, .cell_output"
 Our first step was to merge two different datasets provided by CalCOFI - one that stored the physical, chemical, and biological measurements from the seawater analysis, and another that stored spatial and temporal information about where and when the seawater sample was taken. As the entire dataset includes observations from 1949 through 2021, we subsetted the data to work with observations from 1970-2022 for the development of our visualizations.
 We have begun generating various graphs with the raw data that would allow users to grasp the spatial variability of oxygen concentration. One example of such a graph is the station line depth profile graph shown in Figure 1. This graph captures the varying oxygen concentration along one sampling line, for each of the 4 quarters (Winter, Spring, Summer, Fall) of a single year — thus, it illustrates how oxygen varies spatially during each season by depth and distance from shore.</p>
 <figure>
-	<img src="Images/Station line depth profile(2015 - Line 76.7).png">
+	<img src="Images/Station line depth profile(2015 - Line 76-7).png">
 	<figcaption>Figure 1. Oxygen concentration recorded at different depths and distances from shore along sampling line 76.7 in 2015. Depths (along the y-axis) are binned such that each bin contains a roughly equal number of observations.<figcaption>
 <figure>
 <p>Another example of a graph that explores the spatial variation of oxygen concentration is the thermocline plot displayed in Figure 2. This plot showcases how 3 significant features of seawater — oxygen concentration, salinity, and temperature — change as depth increases. Since the data from CalCOFI samples water at depths of over 500m below the surface, these depth profile plots help us recognize the depths at which these significant properties have the greatest variation. This will help guide us when we move on to identifying significant hypoxic events off the California coast.</p>
 <figure>
-	<img src="Images/Thermocline plot - 2012/3.png">
+	<img src="Images/Thermocline plot.png">
 	<figcaption>Figure 2. The above depth profile plot plots the change is oxygen concentration (measured in mL of O2 per liter of seawater), salinity (measured in the practical salinity scale), and temperature (degrees Celsius) against depth from surface (meters). Each individual line in the graph represents the measurements taken from seawater at a single sampling station.<figcaption>
 <figure>
 <p>We have also begun using the Shiny package in R — which enables us to build an interactive web app — to create a dashboard that displays a map of the CalCOFI sampling locations (Figure 3). The shiny dashboard takes the user’s inputted year and quarter and highlights the stations on the map that were sampled at that time. The user inputs will also be used to generate the corresponding graphs from Figures 1 and 2.</p>
@@ -730,10 +740,10 @@ From an exploratory standpoint, we are beginning to work on spatial interpolatio
             <p class="prev-next-title">CalCOFI Initial Progress and Goal Definition</p>
         </div>
     </a>
-    <a class='right-next' id="next-link" href="../carpedata/description.html" title="next page">
+    <a class='right-next' id="next-link" href="calcofi-update3.html" title="next page">
     <div class="prev-next-info">
         <p class="prev-next-subtitle">next</p>
-        <p class="prev-next-title">carpedata</p>
+        <p class="prev-next-title">The Final Stretch</p>
     </div>
     <i class="fas fa-angle-right"></i>
     </a>
