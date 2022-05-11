@@ -53,6 +53,8 @@ const thebe_selector_output = ".output, .cell_output"
     <script async="async" src="../../_static/sphinx-thebe.js"></script>
     <link rel="index" title="Index" href="../../genindex.html" />
     <link rel="search" title="Search" href="../../search.html" />
+    <link rel="next" title="NRI" href="../nri/description.html" />
+    <link rel="prev" title="Update 2" href="update%202-2.html" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <meta name="docsearch:language" content="None">
     
@@ -202,7 +204,7 @@ const thebe_selector_output = ".output, .cell_output"
   Projects
  </span>
 </p>
-<ul class="nav bd-sidenav">
+<ul class="current nav bd-sidenav">
  <li class="toctree-l1 has-children">
   <a class="reference internal" href="../allthenticate/description.html">
    Allthenticate
@@ -468,16 +470,16 @@ const thebe_selector_output = ".output, .cell_output"
    </li>
   </ul>
  </li>
- <li class="toctree-l1 has-children">
+ <li class="toctree-l1 current active has-children">
   <a class="reference internal" href="description.html">
    hg_insights
   </a>
-  <input class="toctree-checkbox" id="toctree-checkbox-13" name="toctree-checkbox-13" type="checkbox"/>
+  <input checked="" class="toctree-checkbox" id="toctree-checkbox-13" name="toctree-checkbox-13" type="checkbox"/>
   <label for="toctree-checkbox-13">
    <i class="fas fa-chevron-down">
    </i>
   </label>
-  <ul>
+  <ul class="current">
    <li class="toctree-l2">
     <a class="reference internal" href="HG_Update1_Feb7.html">
      Update 1
@@ -486,6 +488,11 @@ const thebe_selector_output = ".output, .cell_output"
    <li class="toctree-l2">
     <a class="reference internal" href="update%202-2.html">
      Update 2
+    </a>
+   </li>
+   <li class="toctree-l2 current active">
+    <a class="current reference internal" href="#">
+     Update 3
     </a>
    </li>
   </ul>
@@ -809,7 +816,7 @@ We then normalized the scores by company and binned them from 1-5 in an effort t
 <h3>Another Preliminary Model<a class="headerlink" href="#another-preliminary-model" title="Permalink to this headline">¶</a></h3>
 <p>Our second model combines the use of cosine similarity and the predictive algorithms introduced in the section above. Cosine similarity is a measure of similarity between two sequences of numbers which in this case consists of the company information including the categorical features.</p>
 <p>This model first takes the top 10 products of a company with the highest aggregated scores which is essentially the group of products that are most likely to be in use at the time the data was recorded. It then utilizes the cosine similarity function to find 10 similar products for each of the 10 products with high aggregated scores. Repeating products were removed in order to create a set of unique products. Lastly, the model then uses collaborative filtering to predict the ratings for each of those products.</p>
-<p><img alt="cosine%20similarity.png" src="projects/hg_insights/attachment:cosine%20similarity.png" /></p>
+<p><img alt="cosinesimilarity.png" src="projects/hg_insights/attachment:cosinesimilarity.png" /></p>
 </div>
 <div class="section" id="successes">
 <h3>Successes<a class="headerlink" href="#successes" title="Permalink to this headline">¶</a></h3>
@@ -868,7 +875,21 @@ We then normalized the scores by company and binned them from 1-5 in an effort t
               
             
                 <!-- Previous / next buttons -->
-<div class='prev-next-area'>
+<div class='prev-next-area'> 
+    <a class='left-prev' id="prev-link" href="update%202-2.html" title="previous page">
+        <i class="fas fa-angle-left"></i>
+        <div class="prev-next-info">
+            <p class="prev-next-subtitle">previous</p>
+            <p class="prev-next-title">Update 2</p>
+        </div>
+    </a>
+    <a class='right-next' id="next-link" href="../nri/description.html" title="next page">
+    <div class="prev-next-info">
+        <p class="prev-next-subtitle">next</p>
+        <p class="prev-next-title">NRI</p>
+    </div>
+    <i class="fas fa-angle-right"></i>
+    </a>
 </div>
             
         </div>

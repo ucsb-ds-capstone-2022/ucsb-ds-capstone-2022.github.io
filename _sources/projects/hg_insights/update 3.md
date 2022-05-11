@@ -24,7 +24,7 @@ Our second model combines the use of cosine similarity and the predictive algori
 	
 This model first takes the top 10 products of a company with the highest aggregated scores which is essentially the group of products that are most likely to be in use at the time the data was recorded. It then utilizes the cosine similarity function to find 10 similar products for each of the 10 products with high aggregated scores. Repeating products were removed in order to create a set of unique products. Lastly, the model then uses collaborative filtering to predict the ratings for each of those products. 
 
-![cosine%20similarity.png](attachment:cosine%20similarity.png)
+![cosinesimilarity.png](attachment:cosinesimilarity.png)
 
 ### Successes
 #### Preliminary accuracy of model and score creation
