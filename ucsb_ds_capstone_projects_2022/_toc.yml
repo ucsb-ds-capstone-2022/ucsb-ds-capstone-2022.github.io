@@ -75,6 +75,7 @@ parts:
     sections:
     - file: projects/hg_insights/HG_Update1_Feb7
     - file: projects/hg_insights/update 2-2
+    - file: projects/hg_insights/update 3
   - file: projects/nri/description
     sections:
     - file: projects/nri/update1
