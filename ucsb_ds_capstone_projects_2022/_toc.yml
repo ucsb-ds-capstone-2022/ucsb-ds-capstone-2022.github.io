@@ -46,6 +46,7 @@ parts:
     sections:
     - file: projects/ccber/update1
     - file: projects/ccber/update2
+    - file: projects/ccber/update3
   - file: projects/cits/description
     sections:
     - file: projects/cits/update1
